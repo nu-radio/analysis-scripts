@@ -1,0 +1,5020 @@
+{
+    "channels": {
+        "1": {
+            "adc_n_samples": 512,
+            "adc_sampling_frequency": 2,
+            "ant_orientation_phi": 0,
+            "ant_orientation_theta": 180,
+            "ant_position_x": 3,
+            "ant_position_y": 0,
+            "ant_position_z": -3,
+            "ant_rotation_phi": 180,
+            "ant_rotation_theta": 90,
+            "ant_type": "createLPDA_100MHz_InfFirn",
+            "cab_length": 5,
+            "cab_time_delay": 25,
+            "cab_type": "LMR_400",
+            "channel_id": 0,
+            "commission_time": "{TinyDate}:2017-11-01T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "noise_temperature": 250,
+            "station_id": 1
+        },
+        "2": {
+            "adc_n_samples": 512,
+            "adc_sampling_frequency": 2,
+            "ant_orientation_phi": 0,
+            "ant_orientation_theta": 180,
+            "ant_position_x": 0,
+            "ant_position_y": 3,
+            "ant_position_z": -3,
+            "ant_rotation_phi": 270,
+            "ant_rotation_theta": 90,
+            "ant_type": "createLPDA_100MHz_InfFirn",
+            "cab_length": 5,
+            "cab_time_delay": 25,
+            "cab_type": "LMR_400",
+            "channel_id": 1,
+            "commission_time": "{TinyDate}:2017-11-01T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "noise_temperature": 250,
+            "station_id": 1
+        },
+        "3": {
+            "adc_n_samples": 512,
+            "adc_sampling_frequency": 2,
+            "ant_orientation_phi": 0,
+            "ant_orientation_theta": 180,
+            "ant_position_x": -3,
+            "ant_position_y": 0,
+            "ant_position_z": -3,
+            "ant_rotation_phi": 0,
+            "ant_rotation_theta": 90,
+            "ant_type": "createLPDA_100MHz_InfFirn",
+            "cab_length": 5,
+            "cab_time_delay": 25,
+            "cab_type": "LMR_400",
+            "channel_id": 2,
+            "commission_time": "{TinyDate}:2017-11-01T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "noise_temperature": 250,
+            "station_id": 1
+        },
+        "4": {
+            "adc_n_samples": 512,
+            "adc_sampling_frequency": 2,
+            "ant_orientation_phi": 0,
+            "ant_orientation_theta": 180,
+            "ant_position_x": 0,
+            "ant_position_y": -3,
+            "ant_position_z": -3,
+            "ant_rotation_phi": 90,
+            "ant_rotation_theta": 90,
+            "ant_type": "createLPDA_100MHz_InfFirn",
+            "cab_length": 5,
+            "cab_time_delay": 25,
+            "cab_type": "LMR_400",
+            "channel_id": 3,
+            "commission_time": "{TinyDate}:2017-11-01T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "noise_temperature": 250,
+            "station_id": 1
+        },
+        "5": {
+            "adc_n_samples": 512,
+            "adc_sampling_frequency": 2,
+            "ant_orientation_phi": 0,
+            "ant_orientation_theta": 180,
+            "ant_position_x": 0,
+            "ant_position_y": 0,
+            "ant_position_z": -15,
+            "ant_rotation_phi": 0,
+            "ant_rotation_theta": 90,
+            "ant_type": "RNOG_vpol_v1_n1.4",
+            "cab_length": 20,
+            "cab_time_delay": 100,
+            "cab_type": "LMR_400",
+            "channel_id": 4,
+            "commission_time": "{TinyDate}:2017-11-01T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "noise_temperature": 300,
+            "station_id": 1
+        }
+    },
+    "stations": {
+        "1": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -10000.0,
+            "pos_northing": -12500.0,
+            "pos_site": "southpole",
+            "station_id": 1
+        },
+        "10": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -10000.0,
+            "pos_northing": -3500.0,
+            "pos_site": "southpole",
+            "station_id": 10
+        },
+        "100": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -7000.0,
+            "pos_northing": 8500.0,
+            "pos_site": "southpole",
+            "station_id": 100
+        },
+        "101": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -7000.0,
+            "pos_northing": 9500.0,
+            "pos_site": "southpole",
+            "station_id": 101
+        },
+        "102": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -7000.0,
+            "pos_northing": 10500.0,
+            "pos_site": "southpole",
+            "station_id": 102
+        },
+        "103": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -7000.0,
+            "pos_northing": 11500.0,
+            "pos_site": "southpole",
+            "station_id": 103
+        },
+        "104": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -7000.0,
+            "pos_northing": 12500.0,
+            "pos_site": "southpole",
+            "station_id": 104
+        },
+        "105": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -6000.0,
+            "pos_northing": -12500.0,
+            "pos_site": "southpole",
+            "station_id": 105
+        },
+        "106": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -6000.0,
+            "pos_northing": -11500.0,
+            "pos_site": "southpole",
+            "station_id": 106
+        },
+        "107": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -6000.0,
+            "pos_northing": -10500.0,
+            "pos_site": "southpole",
+            "station_id": 107
+        },
+        "108": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -6000.0,
+            "pos_northing": -9500.0,
+            "pos_site": "southpole",
+            "station_id": 108
+        },
+        "109": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -6000.0,
+            "pos_northing": -8500.0,
+            "pos_site": "southpole",
+            "station_id": 109
+        },
+        "11": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -10000.0,
+            "pos_northing": -2500.0,
+            "pos_site": "southpole",
+            "station_id": 11
+        },
+        "110": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -6000.0,
+            "pos_northing": -7500.0,
+            "pos_site": "southpole",
+            "station_id": 110
+        },
+        "111": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -6000.0,
+            "pos_northing": -6500.0,
+            "pos_site": "southpole",
+            "station_id": 111
+        },
+        "112": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -6000.0,
+            "pos_northing": -5500.0,
+            "pos_site": "southpole",
+            "station_id": 112
+        },
+        "113": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -6000.0,
+            "pos_northing": -4500.0,
+            "pos_site": "southpole",
+            "station_id": 113
+        },
+        "114": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -6000.0,
+            "pos_northing": -3500.0,
+            "pos_site": "southpole",
+            "station_id": 114
+        },
+        "115": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -6000.0,
+            "pos_northing": -2500.0,
+            "pos_site": "southpole",
+            "station_id": 115
+        },
+        "116": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -6000.0,
+            "pos_northing": -1500.0,
+            "pos_site": "southpole",
+            "station_id": 116
+        },
+        "117": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -6000.0,
+            "pos_northing": -500.0,
+            "pos_site": "southpole",
+            "station_id": 117
+        },
+        "118": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -6000.0,
+            "pos_northing": 500.0,
+            "pos_site": "southpole",
+            "station_id": 118
+        },
+        "119": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -6000.0,
+            "pos_northing": 1500.0,
+            "pos_site": "southpole",
+            "station_id": 119
+        },
+        "12": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -10000.0,
+            "pos_northing": -1500.0,
+            "pos_site": "southpole",
+            "station_id": 12
+        },
+        "120": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -6000.0,
+            "pos_northing": 2500.0,
+            "pos_site": "southpole",
+            "station_id": 120
+        },
+        "121": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -6000.0,
+            "pos_northing": 3500.0,
+            "pos_site": "southpole",
+            "station_id": 121
+        },
+        "122": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -6000.0,
+            "pos_northing": 4500.0,
+            "pos_site": "southpole",
+            "station_id": 122
+        },
+        "123": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -6000.0,
+            "pos_northing": 5500.0,
+            "pos_site": "southpole",
+            "station_id": 123
+        },
+        "124": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -6000.0,
+            "pos_northing": 6500.0,
+            "pos_site": "southpole",
+            "station_id": 124
+        },
+        "125": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -6000.0,
+            "pos_northing": 7500.0,
+            "pos_site": "southpole",
+            "station_id": 125
+        },
+        "126": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -6000.0,
+            "pos_northing": 8500.0,
+            "pos_site": "southpole",
+            "station_id": 126
+        },
+        "127": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -6000.0,
+            "pos_northing": 9500.0,
+            "pos_site": "southpole",
+            "station_id": 127
+        },
+        "128": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -6000.0,
+            "pos_northing": 10500.0,
+            "pos_site": "southpole",
+            "station_id": 128
+        },
+        "129": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -6000.0,
+            "pos_northing": 11500.0,
+            "pos_site": "southpole",
+            "station_id": 129
+        },
+        "13": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -10000.0,
+            "pos_northing": -500.0,
+            "pos_site": "southpole",
+            "station_id": 13
+        },
+        "130": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -6000.0,
+            "pos_northing": 12500.0,
+            "pos_site": "southpole",
+            "station_id": 130
+        },
+        "131": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -5000.0,
+            "pos_northing": -12500.0,
+            "pos_site": "southpole",
+            "station_id": 131
+        },
+        "132": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -5000.0,
+            "pos_northing": -11500.0,
+            "pos_site": "southpole",
+            "station_id": 132
+        },
+        "133": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -5000.0,
+            "pos_northing": -10500.0,
+            "pos_site": "southpole",
+            "station_id": 133
+        },
+        "134": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -5000.0,
+            "pos_northing": -9500.0,
+            "pos_site": "southpole",
+            "station_id": 134
+        },
+        "135": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -5000.0,
+            "pos_northing": -8500.0,
+            "pos_site": "southpole",
+            "station_id": 135
+        },
+        "136": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -5000.0,
+            "pos_northing": -7500.0,
+            "pos_site": "southpole",
+            "station_id": 136
+        },
+        "137": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -5000.0,
+            "pos_northing": -6500.0,
+            "pos_site": "southpole",
+            "station_id": 137
+        },
+        "138": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -5000.0,
+            "pos_northing": -5500.0,
+            "pos_site": "southpole",
+            "station_id": 138
+        },
+        "139": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -5000.0,
+            "pos_northing": -4500.0,
+            "pos_site": "southpole",
+            "station_id": 139
+        },
+        "14": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -10000.0,
+            "pos_northing": 500.0,
+            "pos_site": "southpole",
+            "station_id": 14
+        },
+        "140": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -5000.0,
+            "pos_northing": -3500.0,
+            "pos_site": "southpole",
+            "station_id": 140
+        },
+        "141": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -5000.0,
+            "pos_northing": -2500.0,
+            "pos_site": "southpole",
+            "station_id": 141
+        },
+        "142": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -5000.0,
+            "pos_northing": -1500.0,
+            "pos_site": "southpole",
+            "station_id": 142
+        },
+        "143": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -5000.0,
+            "pos_northing": -500.0,
+            "pos_site": "southpole",
+            "station_id": 143
+        },
+        "144": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -5000.0,
+            "pos_northing": 500.0,
+            "pos_site": "southpole",
+            "station_id": 144
+        },
+        "145": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -5000.0,
+            "pos_northing": 1500.0,
+            "pos_site": "southpole",
+            "station_id": 145
+        },
+        "146": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -5000.0,
+            "pos_northing": 2500.0,
+            "pos_site": "southpole",
+            "station_id": 146
+        },
+        "147": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -5000.0,
+            "pos_northing": 3500.0,
+            "pos_site": "southpole",
+            "station_id": 147
+        },
+        "148": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -5000.0,
+            "pos_northing": 4500.0,
+            "pos_site": "southpole",
+            "station_id": 148
+        },
+        "149": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -5000.0,
+            "pos_northing": 5500.0,
+            "pos_site": "southpole",
+            "station_id": 149
+        },
+        "15": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -10000.0,
+            "pos_northing": 1500.0,
+            "pos_site": "southpole",
+            "station_id": 15
+        },
+        "150": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -5000.0,
+            "pos_northing": 6500.0,
+            "pos_site": "southpole",
+            "station_id": 150
+        },
+        "151": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -5000.0,
+            "pos_northing": 7500.0,
+            "pos_site": "southpole",
+            "station_id": 151
+        },
+        "152": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -5000.0,
+            "pos_northing": 8500.0,
+            "pos_site": "southpole",
+            "station_id": 152
+        },
+        "153": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -5000.0,
+            "pos_northing": 9500.0,
+            "pos_site": "southpole",
+            "station_id": 153
+        },
+        "154": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -5000.0,
+            "pos_northing": 10500.0,
+            "pos_site": "southpole",
+            "station_id": 154
+        },
+        "155": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -5000.0,
+            "pos_northing": 11500.0,
+            "pos_site": "southpole",
+            "station_id": 155
+        },
+        "156": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -5000.0,
+            "pos_northing": 12500.0,
+            "pos_site": "southpole",
+            "station_id": 156
+        },
+        "157": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -4000.0,
+            "pos_northing": -12500.0,
+            "pos_site": "southpole",
+            "station_id": 157
+        },
+        "158": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -4000.0,
+            "pos_northing": -11500.0,
+            "pos_site": "southpole",
+            "station_id": 158
+        },
+        "159": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -4000.0,
+            "pos_northing": -10500.0,
+            "pos_site": "southpole",
+            "station_id": 159
+        },
+        "16": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -10000.0,
+            "pos_northing": 2500.0,
+            "pos_site": "southpole",
+            "station_id": 16
+        },
+        "160": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -4000.0,
+            "pos_northing": -9500.0,
+            "pos_site": "southpole",
+            "station_id": 160
+        },
+        "161": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -4000.0,
+            "pos_northing": -8500.0,
+            "pos_site": "southpole",
+            "station_id": 161
+        },
+        "162": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -4000.0,
+            "pos_northing": -7500.0,
+            "pos_site": "southpole",
+            "station_id": 162
+        },
+        "163": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -4000.0,
+            "pos_northing": -6500.0,
+            "pos_site": "southpole",
+            "station_id": 163
+        },
+        "164": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -4000.0,
+            "pos_northing": -5500.0,
+            "pos_site": "southpole",
+            "station_id": 164
+        },
+        "165": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -4000.0,
+            "pos_northing": -4500.0,
+            "pos_site": "southpole",
+            "station_id": 165
+        },
+        "166": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -4000.0,
+            "pos_northing": -3500.0,
+            "pos_site": "southpole",
+            "station_id": 166
+        },
+        "167": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -4000.0,
+            "pos_northing": -2500.0,
+            "pos_site": "southpole",
+            "station_id": 167
+        },
+        "168": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -4000.0,
+            "pos_northing": -1500.0,
+            "pos_site": "southpole",
+            "station_id": 168
+        },
+        "169": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -4000.0,
+            "pos_northing": -500.0,
+            "pos_site": "southpole",
+            "station_id": 169
+        },
+        "17": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -10000.0,
+            "pos_northing": 3500.0,
+            "pos_site": "southpole",
+            "station_id": 17
+        },
+        "170": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -4000.0,
+            "pos_northing": 500.0,
+            "pos_site": "southpole",
+            "station_id": 170
+        },
+        "171": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -4000.0,
+            "pos_northing": 1500.0,
+            "pos_site": "southpole",
+            "station_id": 171
+        },
+        "172": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -4000.0,
+            "pos_northing": 2500.0,
+            "pos_site": "southpole",
+            "station_id": 172
+        },
+        "173": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -4000.0,
+            "pos_northing": 3500.0,
+            "pos_site": "southpole",
+            "station_id": 173
+        },
+        "174": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -4000.0,
+            "pos_northing": 4500.0,
+            "pos_site": "southpole",
+            "station_id": 174
+        },
+        "175": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -4000.0,
+            "pos_northing": 5500.0,
+            "pos_site": "southpole",
+            "station_id": 175
+        },
+        "176": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -4000.0,
+            "pos_northing": 6500.0,
+            "pos_site": "southpole",
+            "station_id": 176
+        },
+        "177": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -4000.0,
+            "pos_northing": 7500.0,
+            "pos_site": "southpole",
+            "station_id": 177
+        },
+        "178": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -4000.0,
+            "pos_northing": 8500.0,
+            "pos_site": "southpole",
+            "station_id": 178
+        },
+        "179": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -4000.0,
+            "pos_northing": 9500.0,
+            "pos_site": "southpole",
+            "station_id": 179
+        },
+        "18": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -10000.0,
+            "pos_northing": 4500.0,
+            "pos_site": "southpole",
+            "station_id": 18
+        },
+        "180": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -4000.0,
+            "pos_northing": 10500.0,
+            "pos_site": "southpole",
+            "station_id": 180
+        },
+        "181": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -4000.0,
+            "pos_northing": 11500.0,
+            "pos_site": "southpole",
+            "station_id": 181
+        },
+        "182": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -4000.0,
+            "pos_northing": 12500.0,
+            "pos_site": "southpole",
+            "station_id": 182
+        },
+        "183": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -3000.0,
+            "pos_northing": -12500.0,
+            "pos_site": "southpole",
+            "station_id": 183
+        },
+        "184": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -3000.0,
+            "pos_northing": -11500.0,
+            "pos_site": "southpole",
+            "station_id": 184
+        },
+        "185": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -3000.0,
+            "pos_northing": -10500.0,
+            "pos_site": "southpole",
+            "station_id": 185
+        },
+        "186": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -3000.0,
+            "pos_northing": -9500.0,
+            "pos_site": "southpole",
+            "station_id": 186
+        },
+        "187": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -3000.0,
+            "pos_northing": -8500.0,
+            "pos_site": "southpole",
+            "station_id": 187
+        },
+        "188": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -3000.0,
+            "pos_northing": -7500.0,
+            "pos_site": "southpole",
+            "station_id": 188
+        },
+        "189": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -3000.0,
+            "pos_northing": -6500.0,
+            "pos_site": "southpole",
+            "station_id": 189
+        },
+        "19": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -10000.0,
+            "pos_northing": 5500.0,
+            "pos_site": "southpole",
+            "station_id": 19
+        },
+        "190": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -3000.0,
+            "pos_northing": -5500.0,
+            "pos_site": "southpole",
+            "station_id": 190
+        },
+        "191": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -3000.0,
+            "pos_northing": -4500.0,
+            "pos_site": "southpole",
+            "station_id": 191
+        },
+        "192": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -3000.0,
+            "pos_northing": -3500.0,
+            "pos_site": "southpole",
+            "station_id": 192
+        },
+        "193": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -3000.0,
+            "pos_northing": -2500.0,
+            "pos_site": "southpole",
+            "station_id": 193
+        },
+        "194": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -3000.0,
+            "pos_northing": -1500.0,
+            "pos_site": "southpole",
+            "station_id": 194
+        },
+        "195": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -3000.0,
+            "pos_northing": -500.0,
+            "pos_site": "southpole",
+            "station_id": 195
+        },
+        "196": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -3000.0,
+            "pos_northing": 500.0,
+            "pos_site": "southpole",
+            "station_id": 196
+        },
+        "197": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -3000.0,
+            "pos_northing": 1500.0,
+            "pos_site": "southpole",
+            "station_id": 197
+        },
+        "198": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -3000.0,
+            "pos_northing": 2500.0,
+            "pos_site": "southpole",
+            "station_id": 198
+        },
+        "199": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -3000.0,
+            "pos_northing": 3500.0,
+            "pos_site": "southpole",
+            "station_id": 199
+        },
+        "2": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -10000.0,
+            "pos_northing": -11500.0,
+            "pos_site": "southpole",
+            "station_id": 2
+        },
+        "20": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -10000.0,
+            "pos_northing": 6500.0,
+            "pos_site": "southpole",
+            "station_id": 20
+        },
+        "200": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -3000.0,
+            "pos_northing": 4500.0,
+            "pos_site": "southpole",
+            "station_id": 200
+        },
+        "201": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -3000.0,
+            "pos_northing": 5500.0,
+            "pos_site": "southpole",
+            "station_id": 201
+        },
+        "202": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -3000.0,
+            "pos_northing": 6500.0,
+            "pos_site": "southpole",
+            "station_id": 202
+        },
+        "203": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -3000.0,
+            "pos_northing": 7500.0,
+            "pos_site": "southpole",
+            "station_id": 203
+        },
+        "204": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -3000.0,
+            "pos_northing": 8500.0,
+            "pos_site": "southpole",
+            "station_id": 204
+        },
+        "205": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -3000.0,
+            "pos_northing": 9500.0,
+            "pos_site": "southpole",
+            "station_id": 205
+        },
+        "206": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -3000.0,
+            "pos_northing": 10500.0,
+            "pos_site": "southpole",
+            "station_id": 206
+        },
+        "207": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -3000.0,
+            "pos_northing": 11500.0,
+            "pos_site": "southpole",
+            "station_id": 207
+        },
+        "208": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -3000.0,
+            "pos_northing": 12500.0,
+            "pos_site": "southpole",
+            "station_id": 208
+        },
+        "209": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -2000.0,
+            "pos_northing": -12500.0,
+            "pos_site": "southpole",
+            "station_id": 209
+        },
+        "21": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -10000.0,
+            "pos_northing": 7500.0,
+            "pos_site": "southpole",
+            "station_id": 21
+        },
+        "210": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -2000.0,
+            "pos_northing": -11500.0,
+            "pos_site": "southpole",
+            "station_id": 210
+        },
+        "211": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -2000.0,
+            "pos_northing": -10500.0,
+            "pos_site": "southpole",
+            "station_id": 211
+        },
+        "212": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -2000.0,
+            "pos_northing": -9500.0,
+            "pos_site": "southpole",
+            "station_id": 212
+        },
+        "213": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -2000.0,
+            "pos_northing": -8500.0,
+            "pos_site": "southpole",
+            "station_id": 213
+        },
+        "214": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -2000.0,
+            "pos_northing": -7500.0,
+            "pos_site": "southpole",
+            "station_id": 214
+        },
+        "215": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -2000.0,
+            "pos_northing": -6500.0,
+            "pos_site": "southpole",
+            "station_id": 215
+        },
+        "216": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -2000.0,
+            "pos_northing": -5500.0,
+            "pos_site": "southpole",
+            "station_id": 216
+        },
+        "217": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -2000.0,
+            "pos_northing": -4500.0,
+            "pos_site": "southpole",
+            "station_id": 217
+        },
+        "218": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -2000.0,
+            "pos_northing": -3500.0,
+            "pos_site": "southpole",
+            "station_id": 218
+        },
+        "219": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -2000.0,
+            "pos_northing": -2500.0,
+            "pos_site": "southpole",
+            "station_id": 219
+        },
+        "22": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -10000.0,
+            "pos_northing": 8500.0,
+            "pos_site": "southpole",
+            "station_id": 22
+        },
+        "220": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -2000.0,
+            "pos_northing": -1500.0,
+            "pos_site": "southpole",
+            "station_id": 220
+        },
+        "221": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -2000.0,
+            "pos_northing": -500.0,
+            "pos_site": "southpole",
+            "station_id": 221
+        },
+        "222": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -2000.0,
+            "pos_northing": 500.0,
+            "pos_site": "southpole",
+            "station_id": 222
+        },
+        "223": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -2000.0,
+            "pos_northing": 1500.0,
+            "pos_site": "southpole",
+            "station_id": 223
+        },
+        "224": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -2000.0,
+            "pos_northing": 2500.0,
+            "pos_site": "southpole",
+            "station_id": 224
+        },
+        "225": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -2000.0,
+            "pos_northing": 3500.0,
+            "pos_site": "southpole",
+            "station_id": 225
+        },
+        "226": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -2000.0,
+            "pos_northing": 4500.0,
+            "pos_site": "southpole",
+            "station_id": 226
+        },
+        "227": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -2000.0,
+            "pos_northing": 5500.0,
+            "pos_site": "southpole",
+            "station_id": 227
+        },
+        "228": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -2000.0,
+            "pos_northing": 6500.0,
+            "pos_site": "southpole",
+            "station_id": 228
+        },
+        "229": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -2000.0,
+            "pos_northing": 7500.0,
+            "pos_site": "southpole",
+            "station_id": 229
+        },
+        "23": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -10000.0,
+            "pos_northing": 9500.0,
+            "pos_site": "southpole",
+            "station_id": 23
+        },
+        "230": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -2000.0,
+            "pos_northing": 8500.0,
+            "pos_site": "southpole",
+            "station_id": 230
+        },
+        "231": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -2000.0,
+            "pos_northing": 9500.0,
+            "pos_site": "southpole",
+            "station_id": 231
+        },
+        "232": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -2000.0,
+            "pos_northing": 10500.0,
+            "pos_site": "southpole",
+            "station_id": 232
+        },
+        "233": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -2000.0,
+            "pos_northing": 11500.0,
+            "pos_site": "southpole",
+            "station_id": 233
+        },
+        "234": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -2000.0,
+            "pos_northing": 12500.0,
+            "pos_site": "southpole",
+            "station_id": 234
+        },
+        "235": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -1000.0,
+            "pos_northing": -12500.0,
+            "pos_site": "southpole",
+            "station_id": 235
+        },
+        "236": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -1000.0,
+            "pos_northing": -11500.0,
+            "pos_site": "southpole",
+            "station_id": 236
+        },
+        "237": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -1000.0,
+            "pos_northing": -10500.0,
+            "pos_site": "southpole",
+            "station_id": 237
+        },
+        "238": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -1000.0,
+            "pos_northing": -9500.0,
+            "pos_site": "southpole",
+            "station_id": 238
+        },
+        "239": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -1000.0,
+            "pos_northing": -8500.0,
+            "pos_site": "southpole",
+            "station_id": 239
+        },
+        "24": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -10000.0,
+            "pos_northing": 10500.0,
+            "pos_site": "southpole",
+            "station_id": 24
+        },
+        "240": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -1000.0,
+            "pos_northing": -7500.0,
+            "pos_site": "southpole",
+            "station_id": 240
+        },
+        "241": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -1000.0,
+            "pos_northing": -6500.0,
+            "pos_site": "southpole",
+            "station_id": 241
+        },
+        "242": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -1000.0,
+            "pos_northing": -5500.0,
+            "pos_site": "southpole",
+            "station_id": 242
+        },
+        "243": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -1000.0,
+            "pos_northing": -4500.0,
+            "pos_site": "southpole",
+            "station_id": 243
+        },
+        "244": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -1000.0,
+            "pos_northing": -3500.0,
+            "pos_site": "southpole",
+            "station_id": 244
+        },
+        "245": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -1000.0,
+            "pos_northing": -2500.0,
+            "pos_site": "southpole",
+            "station_id": 245
+        },
+        "246": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -1000.0,
+            "pos_northing": -1500.0,
+            "pos_site": "southpole",
+            "station_id": 246
+        },
+        "247": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -1000.0,
+            "pos_northing": -500.0,
+            "pos_site": "southpole",
+            "station_id": 247
+        },
+        "248": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -1000.0,
+            "pos_northing": 500.0,
+            "pos_site": "southpole",
+            "station_id": 248
+        },
+        "249": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -1000.0,
+            "pos_northing": 1500.0,
+            "pos_site": "southpole",
+            "station_id": 249
+        },
+        "25": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -10000.0,
+            "pos_northing": 11500.0,
+            "pos_site": "southpole",
+            "station_id": 25
+        },
+        "250": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -1000.0,
+            "pos_northing": 2500.0,
+            "pos_site": "southpole",
+            "station_id": 250
+        },
+        "251": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -1000.0,
+            "pos_northing": 3500.0,
+            "pos_site": "southpole",
+            "station_id": 251
+        },
+        "252": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -1000.0,
+            "pos_northing": 4500.0,
+            "pos_site": "southpole",
+            "station_id": 252
+        },
+        "253": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -1000.0,
+            "pos_northing": 5500.0,
+            "pos_site": "southpole",
+            "station_id": 253
+        },
+        "254": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -1000.0,
+            "pos_northing": 6500.0,
+            "pos_site": "southpole",
+            "station_id": 254
+        },
+        "255": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -1000.0,
+            "pos_northing": 7500.0,
+            "pos_site": "southpole",
+            "station_id": 255
+        },
+        "256": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -1000.0,
+            "pos_northing": 8500.0,
+            "pos_site": "southpole",
+            "station_id": 256
+        },
+        "257": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -1000.0,
+            "pos_northing": 9500.0,
+            "pos_site": "southpole",
+            "station_id": 257
+        },
+        "258": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -1000.0,
+            "pos_northing": 10500.0,
+            "pos_site": "southpole",
+            "station_id": 258
+        },
+        "259": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -1000.0,
+            "pos_northing": 11500.0,
+            "pos_site": "southpole",
+            "station_id": 259
+        },
+        "26": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -10000.0,
+            "pos_northing": 12500.0,
+            "pos_site": "southpole",
+            "station_id": 26
+        },
+        "260": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -1000.0,
+            "pos_northing": 12500.0,
+            "pos_site": "southpole",
+            "station_id": 260
+        },
+        "261": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 0.0,
+            "pos_northing": -12500.0,
+            "pos_site": "southpole",
+            "station_id": 261
+        },
+        "262": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 0.0,
+            "pos_northing": -11500.0,
+            "pos_site": "southpole",
+            "station_id": 262
+        },
+        "263": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 0.0,
+            "pos_northing": -10500.0,
+            "pos_site": "southpole",
+            "station_id": 263
+        },
+        "264": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 0.0,
+            "pos_northing": -9500.0,
+            "pos_site": "southpole",
+            "station_id": 264
+        },
+        "265": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 0.0,
+            "pos_northing": -8500.0,
+            "pos_site": "southpole",
+            "station_id": 265
+        },
+        "266": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 0.0,
+            "pos_northing": -7500.0,
+            "pos_site": "southpole",
+            "station_id": 266
+        },
+        "267": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 0.0,
+            "pos_northing": -6500.0,
+            "pos_site": "southpole",
+            "station_id": 267
+        },
+        "268": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 0.0,
+            "pos_northing": -5500.0,
+            "pos_site": "southpole",
+            "station_id": 268
+        },
+        "269": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 0.0,
+            "pos_northing": -4500.0,
+            "pos_site": "southpole",
+            "station_id": 269
+        },
+        "27": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -9000.0,
+            "pos_northing": -12500.0,
+            "pos_site": "southpole",
+            "station_id": 27
+        },
+        "270": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 0.0,
+            "pos_northing": -3500.0,
+            "pos_site": "southpole",
+            "station_id": 270
+        },
+        "271": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 0.0,
+            "pos_northing": -2500.0,
+            "pos_site": "southpole",
+            "station_id": 271
+        },
+        "272": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 0.0,
+            "pos_northing": -1500.0,
+            "pos_site": "southpole",
+            "station_id": 272
+        },
+        "273": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 0.0,
+            "pos_northing": -500.0,
+            "pos_site": "southpole",
+            "station_id": 273
+        },
+        "274": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 0.0,
+            "pos_northing": 500.0,
+            "pos_site": "southpole",
+            "station_id": 274
+        },
+        "275": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 0.0,
+            "pos_northing": 1500.0,
+            "pos_site": "southpole",
+            "station_id": 275
+        },
+        "276": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 0.0,
+            "pos_northing": 2500.0,
+            "pos_site": "southpole",
+            "station_id": 276
+        },
+        "277": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 0.0,
+            "pos_northing": 3500.0,
+            "pos_site": "southpole",
+            "station_id": 277
+        },
+        "278": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 0.0,
+            "pos_northing": 4500.0,
+            "pos_site": "southpole",
+            "station_id": 278
+        },
+        "279": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 0.0,
+            "pos_northing": 5500.0,
+            "pos_site": "southpole",
+            "station_id": 279
+        },
+        "28": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -9000.0,
+            "pos_northing": -11500.0,
+            "pos_site": "southpole",
+            "station_id": 28
+        },
+        "280": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 0.0,
+            "pos_northing": 6500.0,
+            "pos_site": "southpole",
+            "station_id": 280
+        },
+        "281": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 0.0,
+            "pos_northing": 7500.0,
+            "pos_site": "southpole",
+            "station_id": 281
+        },
+        "282": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 0.0,
+            "pos_northing": 8500.0,
+            "pos_site": "southpole",
+            "station_id": 282
+        },
+        "283": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 0.0,
+            "pos_northing": 9500.0,
+            "pos_site": "southpole",
+            "station_id": 283
+        },
+        "284": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 0.0,
+            "pos_northing": 10500.0,
+            "pos_site": "southpole",
+            "station_id": 284
+        },
+        "285": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 0.0,
+            "pos_northing": 11500.0,
+            "pos_site": "southpole",
+            "station_id": 285
+        },
+        "286": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 0.0,
+            "pos_northing": 12500.0,
+            "pos_site": "southpole",
+            "station_id": 286
+        },
+        "287": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 1000.0,
+            "pos_northing": -12500.0,
+            "pos_site": "southpole",
+            "station_id": 287
+        },
+        "288": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 1000.0,
+            "pos_northing": -11500.0,
+            "pos_site": "southpole",
+            "station_id": 288
+        },
+        "289": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 1000.0,
+            "pos_northing": -10500.0,
+            "pos_site": "southpole",
+            "station_id": 289
+        },
+        "29": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -9000.0,
+            "pos_northing": -10500.0,
+            "pos_site": "southpole",
+            "station_id": 29
+        },
+        "290": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 1000.0,
+            "pos_northing": -9500.0,
+            "pos_site": "southpole",
+            "station_id": 290
+        },
+        "291": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 1000.0,
+            "pos_northing": -8500.0,
+            "pos_site": "southpole",
+            "station_id": 291
+        },
+        "292": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 1000.0,
+            "pos_northing": -7500.0,
+            "pos_site": "southpole",
+            "station_id": 292
+        },
+        "293": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 1000.0,
+            "pos_northing": -6500.0,
+            "pos_site": "southpole",
+            "station_id": 293
+        },
+        "294": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 1000.0,
+            "pos_northing": -5500.0,
+            "pos_site": "southpole",
+            "station_id": 294
+        },
+        "295": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 1000.0,
+            "pos_northing": -4500.0,
+            "pos_site": "southpole",
+            "station_id": 295
+        },
+        "296": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 1000.0,
+            "pos_northing": -3500.0,
+            "pos_site": "southpole",
+            "station_id": 296
+        },
+        "297": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 1000.0,
+            "pos_northing": -2500.0,
+            "pos_site": "southpole",
+            "station_id": 297
+        },
+        "298": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 1000.0,
+            "pos_northing": -1500.0,
+            "pos_site": "southpole",
+            "station_id": 298
+        },
+        "299": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 1000.0,
+            "pos_northing": -500.0,
+            "pos_site": "southpole",
+            "station_id": 299
+        },
+        "3": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -10000.0,
+            "pos_northing": -10500.0,
+            "pos_site": "southpole",
+            "station_id": 3
+        },
+        "30": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -9000.0,
+            "pos_northing": -9500.0,
+            "pos_site": "southpole",
+            "station_id": 30
+        },
+        "300": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 1000.0,
+            "pos_northing": 500.0,
+            "pos_site": "southpole",
+            "station_id": 300
+        },
+        "301": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 1000.0,
+            "pos_northing": 1500.0,
+            "pos_site": "southpole",
+            "station_id": 301
+        },
+        "302": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 1000.0,
+            "pos_northing": 2500.0,
+            "pos_site": "southpole",
+            "station_id": 302
+        },
+        "303": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 1000.0,
+            "pos_northing": 3500.0,
+            "pos_site": "southpole",
+            "station_id": 303
+        },
+        "304": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 1000.0,
+            "pos_northing": 4500.0,
+            "pos_site": "southpole",
+            "station_id": 304
+        },
+        "305": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 1000.0,
+            "pos_northing": 5500.0,
+            "pos_site": "southpole",
+            "station_id": 305
+        },
+        "306": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 1000.0,
+            "pos_northing": 6500.0,
+            "pos_site": "southpole",
+            "station_id": 306
+        },
+        "307": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 1000.0,
+            "pos_northing": 7500.0,
+            "pos_site": "southpole",
+            "station_id": 307
+        },
+        "308": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 1000.0,
+            "pos_northing": 8500.0,
+            "pos_site": "southpole",
+            "station_id": 308
+        },
+        "309": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 1000.0,
+            "pos_northing": 9500.0,
+            "pos_site": "southpole",
+            "station_id": 309
+        },
+        "31": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -9000.0,
+            "pos_northing": -8500.0,
+            "pos_site": "southpole",
+            "station_id": 31
+        },
+        "310": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 1000.0,
+            "pos_northing": 10500.0,
+            "pos_site": "southpole",
+            "station_id": 310
+        },
+        "311": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 1000.0,
+            "pos_northing": 11500.0,
+            "pos_site": "southpole",
+            "station_id": 311
+        },
+        "312": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 1000.0,
+            "pos_northing": 12500.0,
+            "pos_site": "southpole",
+            "station_id": 312
+        },
+        "313": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 2000.0,
+            "pos_northing": -12500.0,
+            "pos_site": "southpole",
+            "station_id": 313
+        },
+        "314": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 2000.0,
+            "pos_northing": -11500.0,
+            "pos_site": "southpole",
+            "station_id": 314
+        },
+        "315": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 2000.0,
+            "pos_northing": -10500.0,
+            "pos_site": "southpole",
+            "station_id": 315
+        },
+        "316": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 2000.0,
+            "pos_northing": -9500.0,
+            "pos_site": "southpole",
+            "station_id": 316
+        },
+        "317": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 2000.0,
+            "pos_northing": -8500.0,
+            "pos_site": "southpole",
+            "station_id": 317
+        },
+        "318": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 2000.0,
+            "pos_northing": -7500.0,
+            "pos_site": "southpole",
+            "station_id": 318
+        },
+        "319": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 2000.0,
+            "pos_northing": -6500.0,
+            "pos_site": "southpole",
+            "station_id": 319
+        },
+        "32": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -9000.0,
+            "pos_northing": -7500.0,
+            "pos_site": "southpole",
+            "station_id": 32
+        },
+        "320": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 2000.0,
+            "pos_northing": -5500.0,
+            "pos_site": "southpole",
+            "station_id": 320
+        },
+        "321": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 2000.0,
+            "pos_northing": -4500.0,
+            "pos_site": "southpole",
+            "station_id": 321
+        },
+        "322": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 2000.0,
+            "pos_northing": -3500.0,
+            "pos_site": "southpole",
+            "station_id": 322
+        },
+        "323": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 2000.0,
+            "pos_northing": -2500.0,
+            "pos_site": "southpole",
+            "station_id": 323
+        },
+        "324": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 2000.0,
+            "pos_northing": -1500.0,
+            "pos_site": "southpole",
+            "station_id": 324
+        },
+        "325": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 2000.0,
+            "pos_northing": -500.0,
+            "pos_site": "southpole",
+            "station_id": 325
+        },
+        "326": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 2000.0,
+            "pos_northing": 500.0,
+            "pos_site": "southpole",
+            "station_id": 326
+        },
+        "327": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 2000.0,
+            "pos_northing": 1500.0,
+            "pos_site": "southpole",
+            "station_id": 327
+        },
+        "328": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 2000.0,
+            "pos_northing": 2500.0,
+            "pos_site": "southpole",
+            "station_id": 328
+        },
+        "329": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 2000.0,
+            "pos_northing": 3500.0,
+            "pos_site": "southpole",
+            "station_id": 329
+        },
+        "33": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -9000.0,
+            "pos_northing": -6500.0,
+            "pos_site": "southpole",
+            "station_id": 33
+        },
+        "330": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 2000.0,
+            "pos_northing": 4500.0,
+            "pos_site": "southpole",
+            "station_id": 330
+        },
+        "331": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 2000.0,
+            "pos_northing": 5500.0,
+            "pos_site": "southpole",
+            "station_id": 331
+        },
+        "332": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 2000.0,
+            "pos_northing": 6500.0,
+            "pos_site": "southpole",
+            "station_id": 332
+        },
+        "333": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 2000.0,
+            "pos_northing": 7500.0,
+            "pos_site": "southpole",
+            "station_id": 333
+        },
+        "334": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 2000.0,
+            "pos_northing": 8500.0,
+            "pos_site": "southpole",
+            "station_id": 334
+        },
+        "335": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 2000.0,
+            "pos_northing": 9500.0,
+            "pos_site": "southpole",
+            "station_id": 335
+        },
+        "336": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 2000.0,
+            "pos_northing": 10500.0,
+            "pos_site": "southpole",
+            "station_id": 336
+        },
+        "337": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 2000.0,
+            "pos_northing": 11500.0,
+            "pos_site": "southpole",
+            "station_id": 337
+        },
+        "338": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 2000.0,
+            "pos_northing": 12500.0,
+            "pos_site": "southpole",
+            "station_id": 338
+        },
+        "339": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 3000.0,
+            "pos_northing": -12500.0,
+            "pos_site": "southpole",
+            "station_id": 339
+        },
+        "34": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -9000.0,
+            "pos_northing": -5500.0,
+            "pos_site": "southpole",
+            "station_id": 34
+        },
+        "340": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 3000.0,
+            "pos_northing": -11500.0,
+            "pos_site": "southpole",
+            "station_id": 340
+        },
+        "341": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 3000.0,
+            "pos_northing": -10500.0,
+            "pos_site": "southpole",
+            "station_id": 341
+        },
+        "342": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 3000.0,
+            "pos_northing": -9500.0,
+            "pos_site": "southpole",
+            "station_id": 342
+        },
+        "343": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 3000.0,
+            "pos_northing": -8500.0,
+            "pos_site": "southpole",
+            "station_id": 343
+        },
+        "344": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 3000.0,
+            "pos_northing": -7500.0,
+            "pos_site": "southpole",
+            "station_id": 344
+        },
+        "345": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 3000.0,
+            "pos_northing": -6500.0,
+            "pos_site": "southpole",
+            "station_id": 345
+        },
+        "346": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 3000.0,
+            "pos_northing": -5500.0,
+            "pos_site": "southpole",
+            "station_id": 346
+        },
+        "347": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 3000.0,
+            "pos_northing": -4500.0,
+            "pos_site": "southpole",
+            "station_id": 347
+        },
+        "348": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 3000.0,
+            "pos_northing": -3500.0,
+            "pos_site": "southpole",
+            "station_id": 348
+        },
+        "349": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 3000.0,
+            "pos_northing": -2500.0,
+            "pos_site": "southpole",
+            "station_id": 349
+        },
+        "35": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -9000.0,
+            "pos_northing": -4500.0,
+            "pos_site": "southpole",
+            "station_id": 35
+        },
+        "350": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 3000.0,
+            "pos_northing": -1500.0,
+            "pos_site": "southpole",
+            "station_id": 350
+        },
+        "351": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 3000.0,
+            "pos_northing": -500.0,
+            "pos_site": "southpole",
+            "station_id": 351
+        },
+        "352": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 3000.0,
+            "pos_northing": 500.0,
+            "pos_site": "southpole",
+            "station_id": 352
+        },
+        "353": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 3000.0,
+            "pos_northing": 1500.0,
+            "pos_site": "southpole",
+            "station_id": 353
+        },
+        "354": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 3000.0,
+            "pos_northing": 2500.0,
+            "pos_site": "southpole",
+            "station_id": 354
+        },
+        "355": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 3000.0,
+            "pos_northing": 3500.0,
+            "pos_site": "southpole",
+            "station_id": 355
+        },
+        "356": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 3000.0,
+            "pos_northing": 4500.0,
+            "pos_site": "southpole",
+            "station_id": 356
+        },
+        "357": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 3000.0,
+            "pos_northing": 5500.0,
+            "pos_site": "southpole",
+            "station_id": 357
+        },
+        "358": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 3000.0,
+            "pos_northing": 6500.0,
+            "pos_site": "southpole",
+            "station_id": 358
+        },
+        "359": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 3000.0,
+            "pos_northing": 7500.0,
+            "pos_site": "southpole",
+            "station_id": 359
+        },
+        "36": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -9000.0,
+            "pos_northing": -3500.0,
+            "pos_site": "southpole",
+            "station_id": 36
+        },
+        "360": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 3000.0,
+            "pos_northing": 8500.0,
+            "pos_site": "southpole",
+            "station_id": 360
+        },
+        "361": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 3000.0,
+            "pos_northing": 9500.0,
+            "pos_site": "southpole",
+            "station_id": 361
+        },
+        "362": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 3000.0,
+            "pos_northing": 10500.0,
+            "pos_site": "southpole",
+            "station_id": 362
+        },
+        "363": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 3000.0,
+            "pos_northing": 11500.0,
+            "pos_site": "southpole",
+            "station_id": 363
+        },
+        "364": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 3000.0,
+            "pos_northing": 12500.0,
+            "pos_site": "southpole",
+            "station_id": 364
+        },
+        "365": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 4000.0,
+            "pos_northing": -12500.0,
+            "pos_site": "southpole",
+            "station_id": 365
+        },
+        "366": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 4000.0,
+            "pos_northing": -11500.0,
+            "pos_site": "southpole",
+            "station_id": 366
+        },
+        "367": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 4000.0,
+            "pos_northing": -10500.0,
+            "pos_site": "southpole",
+            "station_id": 367
+        },
+        "368": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 4000.0,
+            "pos_northing": -9500.0,
+            "pos_site": "southpole",
+            "station_id": 368
+        },
+        "369": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 4000.0,
+            "pos_northing": -8500.0,
+            "pos_site": "southpole",
+            "station_id": 369
+        },
+        "37": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -9000.0,
+            "pos_northing": -2500.0,
+            "pos_site": "southpole",
+            "station_id": 37
+        },
+        "370": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 4000.0,
+            "pos_northing": -7500.0,
+            "pos_site": "southpole",
+            "station_id": 370
+        },
+        "371": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 4000.0,
+            "pos_northing": -6500.0,
+            "pos_site": "southpole",
+            "station_id": 371
+        },
+        "372": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 4000.0,
+            "pos_northing": -5500.0,
+            "pos_site": "southpole",
+            "station_id": 372
+        },
+        "373": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 4000.0,
+            "pos_northing": -4500.0,
+            "pos_site": "southpole",
+            "station_id": 373
+        },
+        "374": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 4000.0,
+            "pos_northing": -3500.0,
+            "pos_site": "southpole",
+            "station_id": 374
+        },
+        "375": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 4000.0,
+            "pos_northing": -2500.0,
+            "pos_site": "southpole",
+            "station_id": 375
+        },
+        "376": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 4000.0,
+            "pos_northing": -1500.0,
+            "pos_site": "southpole",
+            "station_id": 376
+        },
+        "377": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 4000.0,
+            "pos_northing": -500.0,
+            "pos_site": "southpole",
+            "station_id": 377
+        },
+        "378": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 4000.0,
+            "pos_northing": 500.0,
+            "pos_site": "southpole",
+            "station_id": 378
+        },
+        "379": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 4000.0,
+            "pos_northing": 1500.0,
+            "pos_site": "southpole",
+            "station_id": 379
+        },
+        "38": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -9000.0,
+            "pos_northing": -1500.0,
+            "pos_site": "southpole",
+            "station_id": 38
+        },
+        "380": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 4000.0,
+            "pos_northing": 2500.0,
+            "pos_site": "southpole",
+            "station_id": 380
+        },
+        "381": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 4000.0,
+            "pos_northing": 3500.0,
+            "pos_site": "southpole",
+            "station_id": 381
+        },
+        "382": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 4000.0,
+            "pos_northing": 4500.0,
+            "pos_site": "southpole",
+            "station_id": 382
+        },
+        "383": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 4000.0,
+            "pos_northing": 5500.0,
+            "pos_site": "southpole",
+            "station_id": 383
+        },
+        "384": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 4000.0,
+            "pos_northing": 6500.0,
+            "pos_site": "southpole",
+            "station_id": 384
+        },
+        "385": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 4000.0,
+            "pos_northing": 7500.0,
+            "pos_site": "southpole",
+            "station_id": 385
+        },
+        "386": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 4000.0,
+            "pos_northing": 8500.0,
+            "pos_site": "southpole",
+            "station_id": 386
+        },
+        "387": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 4000.0,
+            "pos_northing": 9500.0,
+            "pos_site": "southpole",
+            "station_id": 387
+        },
+        "388": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 4000.0,
+            "pos_northing": 10500.0,
+            "pos_site": "southpole",
+            "station_id": 388
+        },
+        "389": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 4000.0,
+            "pos_northing": 11500.0,
+            "pos_site": "southpole",
+            "station_id": 389
+        },
+        "39": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -9000.0,
+            "pos_northing": -500.0,
+            "pos_site": "southpole",
+            "station_id": 39
+        },
+        "390": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 4000.0,
+            "pos_northing": 12500.0,
+            "pos_site": "southpole",
+            "station_id": 390
+        },
+        "391": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 5000.0,
+            "pos_northing": -12500.0,
+            "pos_site": "southpole",
+            "station_id": 391
+        },
+        "392": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 5000.0,
+            "pos_northing": -11500.0,
+            "pos_site": "southpole",
+            "station_id": 392
+        },
+        "393": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 5000.0,
+            "pos_northing": -10500.0,
+            "pos_site": "southpole",
+            "station_id": 393
+        },
+        "394": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 5000.0,
+            "pos_northing": -9500.0,
+            "pos_site": "southpole",
+            "station_id": 394
+        },
+        "395": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 5000.0,
+            "pos_northing": -8500.0,
+            "pos_site": "southpole",
+            "station_id": 395
+        },
+        "396": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 5000.0,
+            "pos_northing": -7500.0,
+            "pos_site": "southpole",
+            "station_id": 396
+        },
+        "397": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 5000.0,
+            "pos_northing": -6500.0,
+            "pos_site": "southpole",
+            "station_id": 397
+        },
+        "398": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 5000.0,
+            "pos_northing": -5500.0,
+            "pos_site": "southpole",
+            "station_id": 398
+        },
+        "399": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 5000.0,
+            "pos_northing": -4500.0,
+            "pos_site": "southpole",
+            "station_id": 399
+        },
+        "4": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -10000.0,
+            "pos_northing": -9500.0,
+            "pos_site": "southpole",
+            "station_id": 4
+        },
+        "40": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -9000.0,
+            "pos_northing": 500.0,
+            "pos_site": "southpole",
+            "station_id": 40
+        },
+        "400": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 5000.0,
+            "pos_northing": -3500.0,
+            "pos_site": "southpole",
+            "station_id": 400
+        },
+        "401": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 5000.0,
+            "pos_northing": -2500.0,
+            "pos_site": "southpole",
+            "station_id": 401
+        },
+        "402": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 5000.0,
+            "pos_northing": -1500.0,
+            "pos_site": "southpole",
+            "station_id": 402
+        },
+        "403": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 5000.0,
+            "pos_northing": -500.0,
+            "pos_site": "southpole",
+            "station_id": 403
+        },
+        "404": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 5000.0,
+            "pos_northing": 500.0,
+            "pos_site": "southpole",
+            "station_id": 404
+        },
+        "405": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 5000.0,
+            "pos_northing": 1500.0,
+            "pos_site": "southpole",
+            "station_id": 405
+        },
+        "406": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 5000.0,
+            "pos_northing": 2500.0,
+            "pos_site": "southpole",
+            "station_id": 406
+        },
+        "407": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 5000.0,
+            "pos_northing": 3500.0,
+            "pos_site": "southpole",
+            "station_id": 407
+        },
+        "408": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 5000.0,
+            "pos_northing": 4500.0,
+            "pos_site": "southpole",
+            "station_id": 408
+        },
+        "409": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 5000.0,
+            "pos_northing": 5500.0,
+            "pos_site": "southpole",
+            "station_id": 409
+        },
+        "41": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -9000.0,
+            "pos_northing": 1500.0,
+            "pos_site": "southpole",
+            "station_id": 41
+        },
+        "410": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 5000.0,
+            "pos_northing": 6500.0,
+            "pos_site": "southpole",
+            "station_id": 410
+        },
+        "411": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 5000.0,
+            "pos_northing": 7500.0,
+            "pos_site": "southpole",
+            "station_id": 411
+        },
+        "412": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 5000.0,
+            "pos_northing": 8500.0,
+            "pos_site": "southpole",
+            "station_id": 412
+        },
+        "413": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 5000.0,
+            "pos_northing": 9500.0,
+            "pos_site": "southpole",
+            "station_id": 413
+        },
+        "414": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 5000.0,
+            "pos_northing": 10500.0,
+            "pos_site": "southpole",
+            "station_id": 414
+        },
+        "415": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 5000.0,
+            "pos_northing": 11500.0,
+            "pos_site": "southpole",
+            "station_id": 415
+        },
+        "416": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 5000.0,
+            "pos_northing": 12500.0,
+            "pos_site": "southpole",
+            "station_id": 416
+        },
+        "417": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 6000.0,
+            "pos_northing": -12500.0,
+            "pos_site": "southpole",
+            "station_id": 417
+        },
+        "418": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 6000.0,
+            "pos_northing": -11500.0,
+            "pos_site": "southpole",
+            "station_id": 418
+        },
+        "419": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 6000.0,
+            "pos_northing": -10500.0,
+            "pos_site": "southpole",
+            "station_id": 419
+        },
+        "42": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -9000.0,
+            "pos_northing": 2500.0,
+            "pos_site": "southpole",
+            "station_id": 42
+        },
+        "420": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 6000.0,
+            "pos_northing": -9500.0,
+            "pos_site": "southpole",
+            "station_id": 420
+        },
+        "421": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 6000.0,
+            "pos_northing": -8500.0,
+            "pos_site": "southpole",
+            "station_id": 421
+        },
+        "422": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 6000.0,
+            "pos_northing": -7500.0,
+            "pos_site": "southpole",
+            "station_id": 422
+        },
+        "423": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 6000.0,
+            "pos_northing": -6500.0,
+            "pos_site": "southpole",
+            "station_id": 423
+        },
+        "424": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 6000.0,
+            "pos_northing": -5500.0,
+            "pos_site": "southpole",
+            "station_id": 424
+        },
+        "425": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 6000.0,
+            "pos_northing": -4500.0,
+            "pos_site": "southpole",
+            "station_id": 425
+        },
+        "426": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 6000.0,
+            "pos_northing": -3500.0,
+            "pos_site": "southpole",
+            "station_id": 426
+        },
+        "427": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 6000.0,
+            "pos_northing": -2500.0,
+            "pos_site": "southpole",
+            "station_id": 427
+        },
+        "428": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 6000.0,
+            "pos_northing": -1500.0,
+            "pos_site": "southpole",
+            "station_id": 428
+        },
+        "429": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 6000.0,
+            "pos_northing": -500.0,
+            "pos_site": "southpole",
+            "station_id": 429
+        },
+        "43": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -9000.0,
+            "pos_northing": 3500.0,
+            "pos_site": "southpole",
+            "station_id": 43
+        },
+        "430": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 6000.0,
+            "pos_northing": 500.0,
+            "pos_site": "southpole",
+            "station_id": 430
+        },
+        "431": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 6000.0,
+            "pos_northing": 1500.0,
+            "pos_site": "southpole",
+            "station_id": 431
+        },
+        "432": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 6000.0,
+            "pos_northing": 2500.0,
+            "pos_site": "southpole",
+            "station_id": 432
+        },
+        "433": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 6000.0,
+            "pos_northing": 3500.0,
+            "pos_site": "southpole",
+            "station_id": 433
+        },
+        "434": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 6000.0,
+            "pos_northing": 4500.0,
+            "pos_site": "southpole",
+            "station_id": 434
+        },
+        "435": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 6000.0,
+            "pos_northing": 5500.0,
+            "pos_site": "southpole",
+            "station_id": 435
+        },
+        "436": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 6000.0,
+            "pos_northing": 6500.0,
+            "pos_site": "southpole",
+            "station_id": 436
+        },
+        "437": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 6000.0,
+            "pos_northing": 7500.0,
+            "pos_site": "southpole",
+            "station_id": 437
+        },
+        "438": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 6000.0,
+            "pos_northing": 8500.0,
+            "pos_site": "southpole",
+            "station_id": 438
+        },
+        "439": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 6000.0,
+            "pos_northing": 9500.0,
+            "pos_site": "southpole",
+            "station_id": 439
+        },
+        "44": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -9000.0,
+            "pos_northing": 4500.0,
+            "pos_site": "southpole",
+            "station_id": 44
+        },
+        "440": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 6000.0,
+            "pos_northing": 10500.0,
+            "pos_site": "southpole",
+            "station_id": 440
+        },
+        "441": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 6000.0,
+            "pos_northing": 11500.0,
+            "pos_site": "southpole",
+            "station_id": 441
+        },
+        "442": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 6000.0,
+            "pos_northing": 12500.0,
+            "pos_site": "southpole",
+            "station_id": 442
+        },
+        "443": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 7000.0,
+            "pos_northing": -12500.0,
+            "pos_site": "southpole",
+            "station_id": 443
+        },
+        "444": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 7000.0,
+            "pos_northing": -11500.0,
+            "pos_site": "southpole",
+            "station_id": 444
+        },
+        "445": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 7000.0,
+            "pos_northing": -10500.0,
+            "pos_site": "southpole",
+            "station_id": 445
+        },
+        "446": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 7000.0,
+            "pos_northing": -9500.0,
+            "pos_site": "southpole",
+            "station_id": 446
+        },
+        "447": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 7000.0,
+            "pos_northing": -8500.0,
+            "pos_site": "southpole",
+            "station_id": 447
+        },
+        "448": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 7000.0,
+            "pos_northing": -7500.0,
+            "pos_site": "southpole",
+            "station_id": 448
+        },
+        "449": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 7000.0,
+            "pos_northing": -6500.0,
+            "pos_site": "southpole",
+            "station_id": 449
+        },
+        "45": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -9000.0,
+            "pos_northing": 5500.0,
+            "pos_site": "southpole",
+            "station_id": 45
+        },
+        "450": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 7000.0,
+            "pos_northing": -5500.0,
+            "pos_site": "southpole",
+            "station_id": 450
+        },
+        "451": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 7000.0,
+            "pos_northing": -4500.0,
+            "pos_site": "southpole",
+            "station_id": 451
+        },
+        "452": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 7000.0,
+            "pos_northing": -3500.0,
+            "pos_site": "southpole",
+            "station_id": 452
+        },
+        "453": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 7000.0,
+            "pos_northing": -2500.0,
+            "pos_site": "southpole",
+            "station_id": 453
+        },
+        "454": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 7000.0,
+            "pos_northing": -1500.0,
+            "pos_site": "southpole",
+            "station_id": 454
+        },
+        "455": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 7000.0,
+            "pos_northing": -500.0,
+            "pos_site": "southpole",
+            "station_id": 455
+        },
+        "456": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 7000.0,
+            "pos_northing": 500.0,
+            "pos_site": "southpole",
+            "station_id": 456
+        },
+        "457": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 7000.0,
+            "pos_northing": 1500.0,
+            "pos_site": "southpole",
+            "station_id": 457
+        },
+        "458": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 7000.0,
+            "pos_northing": 2500.0,
+            "pos_site": "southpole",
+            "station_id": 458
+        },
+        "459": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 7000.0,
+            "pos_northing": 3500.0,
+            "pos_site": "southpole",
+            "station_id": 459
+        },
+        "46": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -9000.0,
+            "pos_northing": 6500.0,
+            "pos_site": "southpole",
+            "station_id": 46
+        },
+        "460": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 7000.0,
+            "pos_northing": 4500.0,
+            "pos_site": "southpole",
+            "station_id": 460
+        },
+        "461": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 7000.0,
+            "pos_northing": 5500.0,
+            "pos_site": "southpole",
+            "station_id": 461
+        },
+        "462": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 7000.0,
+            "pos_northing": 6500.0,
+            "pos_site": "southpole",
+            "station_id": 462
+        },
+        "463": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 7000.0,
+            "pos_northing": 7500.0,
+            "pos_site": "southpole",
+            "station_id": 463
+        },
+        "464": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 7000.0,
+            "pos_northing": 8500.0,
+            "pos_site": "southpole",
+            "station_id": 464
+        },
+        "465": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 7000.0,
+            "pos_northing": 9500.0,
+            "pos_site": "southpole",
+            "station_id": 465
+        },
+        "466": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 7000.0,
+            "pos_northing": 10500.0,
+            "pos_site": "southpole",
+            "station_id": 466
+        },
+        "467": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 7000.0,
+            "pos_northing": 11500.0,
+            "pos_site": "southpole",
+            "station_id": 467
+        },
+        "468": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 7000.0,
+            "pos_northing": 12500.0,
+            "pos_site": "southpole",
+            "station_id": 468
+        },
+        "469": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 8000.0,
+            "pos_northing": -12500.0,
+            "pos_site": "southpole",
+            "station_id": 469
+        },
+        "47": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -9000.0,
+            "pos_northing": 7500.0,
+            "pos_site": "southpole",
+            "station_id": 47
+        },
+        "470": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 8000.0,
+            "pos_northing": -11500.0,
+            "pos_site": "southpole",
+            "station_id": 470
+        },
+        "471": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 8000.0,
+            "pos_northing": -10500.0,
+            "pos_site": "southpole",
+            "station_id": 471
+        },
+        "472": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 8000.0,
+            "pos_northing": -9500.0,
+            "pos_site": "southpole",
+            "station_id": 472
+        },
+        "473": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 8000.0,
+            "pos_northing": -8500.0,
+            "pos_site": "southpole",
+            "station_id": 473
+        },
+        "474": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 8000.0,
+            "pos_northing": -7500.0,
+            "pos_site": "southpole",
+            "station_id": 474
+        },
+        "475": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 8000.0,
+            "pos_northing": -6500.0,
+            "pos_site": "southpole",
+            "station_id": 475
+        },
+        "476": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 8000.0,
+            "pos_northing": -5500.0,
+            "pos_site": "southpole",
+            "station_id": 476
+        },
+        "477": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 8000.0,
+            "pos_northing": -4500.0,
+            "pos_site": "southpole",
+            "station_id": 477
+        },
+        "478": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 8000.0,
+            "pos_northing": -3500.0,
+            "pos_site": "southpole",
+            "station_id": 478
+        },
+        "479": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 8000.0,
+            "pos_northing": -2500.0,
+            "pos_site": "southpole",
+            "station_id": 479
+        },
+        "48": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -9000.0,
+            "pos_northing": 8500.0,
+            "pos_site": "southpole",
+            "station_id": 48
+        },
+        "480": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 8000.0,
+            "pos_northing": -1500.0,
+            "pos_site": "southpole",
+            "station_id": 480
+        },
+        "481": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 8000.0,
+            "pos_northing": -500.0,
+            "pos_site": "southpole",
+            "station_id": 481
+        },
+        "482": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 8000.0,
+            "pos_northing": 500.0,
+            "pos_site": "southpole",
+            "station_id": 482
+        },
+        "483": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 8000.0,
+            "pos_northing": 1500.0,
+            "pos_site": "southpole",
+            "station_id": 483
+        },
+        "484": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 8000.0,
+            "pos_northing": 2500.0,
+            "pos_site": "southpole",
+            "station_id": 484
+        },
+        "485": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 8000.0,
+            "pos_northing": 3500.0,
+            "pos_site": "southpole",
+            "station_id": 485
+        },
+        "486": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 8000.0,
+            "pos_northing": 4500.0,
+            "pos_site": "southpole",
+            "station_id": 486
+        },
+        "487": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 8000.0,
+            "pos_northing": 5500.0,
+            "pos_site": "southpole",
+            "station_id": 487
+        },
+        "488": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 8000.0,
+            "pos_northing": 6500.0,
+            "pos_site": "southpole",
+            "station_id": 488
+        },
+        "489": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 8000.0,
+            "pos_northing": 7500.0,
+            "pos_site": "southpole",
+            "station_id": 489
+        },
+        "49": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -9000.0,
+            "pos_northing": 9500.0,
+            "pos_site": "southpole",
+            "station_id": 49
+        },
+        "490": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 8000.0,
+            "pos_northing": 8500.0,
+            "pos_site": "southpole",
+            "station_id": 490
+        },
+        "491": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 8000.0,
+            "pos_northing": 9500.0,
+            "pos_site": "southpole",
+            "station_id": 491
+        },
+        "492": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 8000.0,
+            "pos_northing": 10500.0,
+            "pos_site": "southpole",
+            "station_id": 492
+        },
+        "493": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 8000.0,
+            "pos_northing": 11500.0,
+            "pos_site": "southpole",
+            "station_id": 493
+        },
+        "494": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 8000.0,
+            "pos_northing": 12500.0,
+            "pos_site": "southpole",
+            "station_id": 494
+        },
+        "495": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 9000.0,
+            "pos_northing": -12500.0,
+            "pos_site": "southpole",
+            "station_id": 495
+        },
+        "496": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 9000.0,
+            "pos_northing": -11500.0,
+            "pos_site": "southpole",
+            "station_id": 496
+        },
+        "497": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 9000.0,
+            "pos_northing": -10500.0,
+            "pos_site": "southpole",
+            "station_id": 497
+        },
+        "498": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 9000.0,
+            "pos_northing": -9500.0,
+            "pos_site": "southpole",
+            "station_id": 498
+        },
+        "499": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 9000.0,
+            "pos_northing": -8500.0,
+            "pos_site": "southpole",
+            "station_id": 499
+        },
+        "5": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -10000.0,
+            "pos_northing": -8500.0,
+            "pos_site": "southpole",
+            "station_id": 5
+        },
+        "50": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -9000.0,
+            "pos_northing": 10500.0,
+            "pos_site": "southpole",
+            "station_id": 50
+        },
+        "500": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 9000.0,
+            "pos_northing": -7500.0,
+            "pos_site": "southpole",
+            "station_id": 500
+        },
+        "501": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 9000.0,
+            "pos_northing": -6500.0,
+            "pos_site": "southpole",
+            "station_id": 501
+        },
+        "502": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 9000.0,
+            "pos_northing": -5500.0,
+            "pos_site": "southpole",
+            "station_id": 502
+        },
+        "503": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 9000.0,
+            "pos_northing": -4500.0,
+            "pos_site": "southpole",
+            "station_id": 503
+        },
+        "504": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 9000.0,
+            "pos_northing": -3500.0,
+            "pos_site": "southpole",
+            "station_id": 504
+        },
+        "505": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 9000.0,
+            "pos_northing": -2500.0,
+            "pos_site": "southpole",
+            "station_id": 505
+        },
+        "506": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 9000.0,
+            "pos_northing": -1500.0,
+            "pos_site": "southpole",
+            "station_id": 506
+        },
+        "507": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 9000.0,
+            "pos_northing": -500.0,
+            "pos_site": "southpole",
+            "station_id": 507
+        },
+        "508": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 9000.0,
+            "pos_northing": 500.0,
+            "pos_site": "southpole",
+            "station_id": 508
+        },
+        "509": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 9000.0,
+            "pos_northing": 1500.0,
+            "pos_site": "southpole",
+            "station_id": 509
+        },
+        "51": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -9000.0,
+            "pos_northing": 11500.0,
+            "pos_site": "southpole",
+            "station_id": 51
+        },
+        "510": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 9000.0,
+            "pos_northing": 2500.0,
+            "pos_site": "southpole",
+            "station_id": 510
+        },
+        "511": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 9000.0,
+            "pos_northing": 3500.0,
+            "pos_site": "southpole",
+            "station_id": 511
+        },
+        "512": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 9000.0,
+            "pos_northing": 4500.0,
+            "pos_site": "southpole",
+            "station_id": 512
+        },
+        "513": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 9000.0,
+            "pos_northing": 5500.0,
+            "pos_site": "southpole",
+            "station_id": 513
+        },
+        "514": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 9000.0,
+            "pos_northing": 6500.0,
+            "pos_site": "southpole",
+            "station_id": 514
+        },
+        "515": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 9000.0,
+            "pos_northing": 7500.0,
+            "pos_site": "southpole",
+            "station_id": 515
+        },
+        "516": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 9000.0,
+            "pos_northing": 8500.0,
+            "pos_site": "southpole",
+            "station_id": 516
+        },
+        "517": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 9000.0,
+            "pos_northing": 9500.0,
+            "pos_site": "southpole",
+            "station_id": 517
+        },
+        "518": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 9000.0,
+            "pos_northing": 10500.0,
+            "pos_site": "southpole",
+            "station_id": 518
+        },
+        "519": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 9000.0,
+            "pos_northing": 11500.0,
+            "pos_site": "southpole",
+            "station_id": 519
+        },
+        "52": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -9000.0,
+            "pos_northing": 12500.0,
+            "pos_site": "southpole",
+            "station_id": 52
+        },
+        "520": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 9000.0,
+            "pos_northing": 12500.0,
+            "pos_site": "southpole",
+            "station_id": 520
+        },
+        "521": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 10000.0,
+            "pos_northing": -12500.0,
+            "pos_site": "southpole",
+            "station_id": 521
+        },
+        "522": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 10000.0,
+            "pos_northing": -11500.0,
+            "pos_site": "southpole",
+            "station_id": 522
+        },
+        "523": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 10000.0,
+            "pos_northing": -10500.0,
+            "pos_site": "southpole",
+            "station_id": 523
+        },
+        "524": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 10000.0,
+            "pos_northing": -9500.0,
+            "pos_site": "southpole",
+            "station_id": 524
+        },
+        "525": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 10000.0,
+            "pos_northing": -8500.0,
+            "pos_site": "southpole",
+            "station_id": 525
+        },
+        "526": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 10000.0,
+            "pos_northing": -7500.0,
+            "pos_site": "southpole",
+            "station_id": 526
+        },
+        "527": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 10000.0,
+            "pos_northing": -6500.0,
+            "pos_site": "southpole",
+            "station_id": 527
+        },
+        "528": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 10000.0,
+            "pos_northing": -5500.0,
+            "pos_site": "southpole",
+            "station_id": 528
+        },
+        "529": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 10000.0,
+            "pos_northing": -4500.0,
+            "pos_site": "southpole",
+            "station_id": 529
+        },
+        "53": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -8000.0,
+            "pos_northing": -12500.0,
+            "pos_site": "southpole",
+            "station_id": 53
+        },
+        "530": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 10000.0,
+            "pos_northing": -3500.0,
+            "pos_site": "southpole",
+            "station_id": 530
+        },
+        "531": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 10000.0,
+            "pos_northing": -2500.0,
+            "pos_site": "southpole",
+            "station_id": 531
+        },
+        "532": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 10000.0,
+            "pos_northing": -1500.0,
+            "pos_site": "southpole",
+            "station_id": 532
+        },
+        "533": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 10000.0,
+            "pos_northing": -500.0,
+            "pos_site": "southpole",
+            "station_id": 533
+        },
+        "534": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 10000.0,
+            "pos_northing": 500.0,
+            "pos_site": "southpole",
+            "station_id": 534
+        },
+        "535": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 10000.0,
+            "pos_northing": 1500.0,
+            "pos_site": "southpole",
+            "station_id": 535
+        },
+        "536": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 10000.0,
+            "pos_northing": 2500.0,
+            "pos_site": "southpole",
+            "station_id": 536
+        },
+        "537": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 10000.0,
+            "pos_northing": 3500.0,
+            "pos_site": "southpole",
+            "station_id": 537
+        },
+        "538": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 10000.0,
+            "pos_northing": 4500.0,
+            "pos_site": "southpole",
+            "station_id": 538
+        },
+        "539": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 10000.0,
+            "pos_northing": 5500.0,
+            "pos_site": "southpole",
+            "station_id": 539
+        },
+        "54": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -8000.0,
+            "pos_northing": -11500.0,
+            "pos_site": "southpole",
+            "station_id": 54
+        },
+        "540": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 10000.0,
+            "pos_northing": 6500.0,
+            "pos_site": "southpole",
+            "station_id": 540
+        },
+        "541": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 10000.0,
+            "pos_northing": 7500.0,
+            "pos_site": "southpole",
+            "station_id": 541
+        },
+        "542": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 10000.0,
+            "pos_northing": 8500.0,
+            "pos_site": "southpole",
+            "station_id": 542
+        },
+        "543": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 10000.0,
+            "pos_northing": 9500.0,
+            "pos_site": "southpole",
+            "station_id": 543
+        },
+        "544": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 10000.0,
+            "pos_northing": 10500.0,
+            "pos_site": "southpole",
+            "station_id": 544
+        },
+        "545": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 10000.0,
+            "pos_northing": 11500.0,
+            "pos_site": "southpole",
+            "station_id": 545
+        },
+        "546": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": 10000.0,
+            "pos_northing": 12500.0,
+            "pos_site": "southpole",
+            "station_id": 546
+        },
+        "55": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -8000.0,
+            "pos_northing": -10500.0,
+            "pos_site": "southpole",
+            "station_id": 55
+        },
+        "56": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -8000.0,
+            "pos_northing": -9500.0,
+            "pos_site": "southpole",
+            "station_id": 56
+        },
+        "57": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -8000.0,
+            "pos_northing": -8500.0,
+            "pos_site": "southpole",
+            "station_id": 57
+        },
+        "58": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -8000.0,
+            "pos_northing": -7500.0,
+            "pos_site": "southpole",
+            "station_id": 58
+        },
+        "59": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -8000.0,
+            "pos_northing": -6500.0,
+            "pos_site": "southpole",
+            "station_id": 59
+        },
+        "6": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -10000.0,
+            "pos_northing": -7500.0,
+            "pos_site": "southpole",
+            "station_id": 6
+        },
+        "60": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -8000.0,
+            "pos_northing": -5500.0,
+            "pos_site": "southpole",
+            "station_id": 60
+        },
+        "61": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -8000.0,
+            "pos_northing": -4500.0,
+            "pos_site": "southpole",
+            "station_id": 61
+        },
+        "62": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -8000.0,
+            "pos_northing": -3500.0,
+            "pos_site": "southpole",
+            "station_id": 62
+        },
+        "63": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -8000.0,
+            "pos_northing": -2500.0,
+            "pos_site": "southpole",
+            "station_id": 63
+        },
+        "64": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -8000.0,
+            "pos_northing": -1500.0,
+            "pos_site": "southpole",
+            "station_id": 64
+        },
+        "65": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -8000.0,
+            "pos_northing": -500.0,
+            "pos_site": "southpole",
+            "station_id": 65
+        },
+        "66": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -8000.0,
+            "pos_northing": 500.0,
+            "pos_site": "southpole",
+            "station_id": 66
+        },
+        "67": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -8000.0,
+            "pos_northing": 1500.0,
+            "pos_site": "southpole",
+            "station_id": 67
+        },
+        "68": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -8000.0,
+            "pos_northing": 2500.0,
+            "pos_site": "southpole",
+            "station_id": 68
+        },
+        "69": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -8000.0,
+            "pos_northing": 3500.0,
+            "pos_site": "southpole",
+            "station_id": 69
+        },
+        "7": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -10000.0,
+            "pos_northing": -6500.0,
+            "pos_site": "southpole",
+            "station_id": 7
+        },
+        "70": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -8000.0,
+            "pos_northing": 4500.0,
+            "pos_site": "southpole",
+            "station_id": 70
+        },
+        "71": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -8000.0,
+            "pos_northing": 5500.0,
+            "pos_site": "southpole",
+            "station_id": 71
+        },
+        "72": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -8000.0,
+            "pos_northing": 6500.0,
+            "pos_site": "southpole",
+            "station_id": 72
+        },
+        "73": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -8000.0,
+            "pos_northing": 7500.0,
+            "pos_site": "southpole",
+            "station_id": 73
+        },
+        "74": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -8000.0,
+            "pos_northing": 8500.0,
+            "pos_site": "southpole",
+            "station_id": 74
+        },
+        "75": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -8000.0,
+            "pos_northing": 9500.0,
+            "pos_site": "southpole",
+            "station_id": 75
+        },
+        "76": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -8000.0,
+            "pos_northing": 10500.0,
+            "pos_site": "southpole",
+            "station_id": 76
+        },
+        "77": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -8000.0,
+            "pos_northing": 11500.0,
+            "pos_site": "southpole",
+            "station_id": 77
+        },
+        "78": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -8000.0,
+            "pos_northing": 12500.0,
+            "pos_site": "southpole",
+            "station_id": 78
+        },
+        "79": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -7000.0,
+            "pos_northing": -12500.0,
+            "pos_site": "southpole",
+            "station_id": 79
+        },
+        "8": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -10000.0,
+            "pos_northing": -5500.0,
+            "pos_site": "southpole",
+            "station_id": 8
+        },
+        "80": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -7000.0,
+            "pos_northing": -11500.0,
+            "pos_site": "southpole",
+            "station_id": 80
+        },
+        "81": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -7000.0,
+            "pos_northing": -10500.0,
+            "pos_site": "southpole",
+            "station_id": 81
+        },
+        "82": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -7000.0,
+            "pos_northing": -9500.0,
+            "pos_site": "southpole",
+            "station_id": 82
+        },
+        "83": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -7000.0,
+            "pos_northing": -8500.0,
+            "pos_site": "southpole",
+            "station_id": 83
+        },
+        "84": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -7000.0,
+            "pos_northing": -7500.0,
+            "pos_site": "southpole",
+            "station_id": 84
+        },
+        "85": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -7000.0,
+            "pos_northing": -6500.0,
+            "pos_site": "southpole",
+            "station_id": 85
+        },
+        "86": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -7000.0,
+            "pos_northing": -5500.0,
+            "pos_site": "southpole",
+            "station_id": 86
+        },
+        "87": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -7000.0,
+            "pos_northing": -4500.0,
+            "pos_site": "southpole",
+            "station_id": 87
+        },
+        "88": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -7000.0,
+            "pos_northing": -3500.0,
+            "pos_site": "southpole",
+            "station_id": 88
+        },
+        "89": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -7000.0,
+            "pos_northing": -2500.0,
+            "pos_site": "southpole",
+            "station_id": 89
+        },
+        "9": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -10000.0,
+            "pos_northing": -4500.0,
+            "pos_site": "southpole",
+            "station_id": 9
+        },
+        "90": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -7000.0,
+            "pos_northing": -1500.0,
+            "pos_site": "southpole",
+            "station_id": 90
+        },
+        "91": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -7000.0,
+            "pos_northing": -500.0,
+            "pos_site": "southpole",
+            "station_id": 91
+        },
+        "92": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -7000.0,
+            "pos_northing": 500.0,
+            "pos_site": "southpole",
+            "station_id": 92
+        },
+        "93": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -7000.0,
+            "pos_northing": 1500.0,
+            "pos_site": "southpole",
+            "station_id": 93
+        },
+        "94": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -7000.0,
+            "pos_northing": 2500.0,
+            "pos_site": "southpole",
+            "station_id": 94
+        },
+        "95": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -7000.0,
+            "pos_northing": 3500.0,
+            "pos_site": "southpole",
+            "station_id": 95
+        },
+        "96": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -7000.0,
+            "pos_northing": 4500.0,
+            "pos_site": "southpole",
+            "station_id": 96
+        },
+        "97": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -7000.0,
+            "pos_northing": 5500.0,
+            "pos_site": "southpole",
+            "station_id": 97
+        },
+        "98": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -7000.0,
+            "pos_northing": 6500.0,
+            "pos_site": "southpole",
+            "station_id": 98
+        },
+        "99": {
+            "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+            "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+            "pos_altitude": null,
+            "pos_easting": -7000.0,
+            "pos_northing": 7500.0,
+            "pos_site": "southpole",
+            "station_id": 99
+        }
+    }
+}
