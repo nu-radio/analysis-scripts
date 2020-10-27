@@ -41,15 +41,32 @@ main_low_angle = -53. * units.deg
 main_high_angle = 47. * units.deg
 default_angles = np.arcsin(np.linspace(np.sin(main_low_angle), np.sin(main_high_angle), 15))
 
+passband_low = {}
+passband_high = {}
+filter_type = {}
+order_low = {}
+order_high = {}
+for channel_id in range(0, 9):
+    passband_low[channel_id] = [0 * units.MHz, 240 * units.MHz]
+    passband_high[channel_id] = [80 * units.MHz, 800 * units.GHz]
+    filter_type[channel_id] = 'cheby1'
+    order_low[channel_id] = 9
+    order_high[channel_id] = 4
+passband_low[9] = [1 * units.MHz, 730 * units.MHz]
+filter_type[9] = 'cheby1'
+order_low[9] = 9
+passband_high[9] = [100 * units.MHz, 100 * units.GHz]
+order_high[9] = 4
+
 
 class mySimulation(simulation.simulation):
 
     def _detector_simulation_filter_amp(self, evt, station, det):
 
         channelBandPassFilter.run(evt, station, det,
-                                  passband=[0 * units.MHz, 240 * units.MHz], filter_type="cheby1", order=9, rp=0.1)
+                                  passband=passband_low, filter_type=filter_type, order=order_low, rp=0.1)
         channelBandPassFilter.run(evt, station, det,
-                                  passband=[80 * units.MHz, 800 * units.GHz], filter_type="cheby1", order=4, rp=0.1)
+                                  passband=passband_high, filter_type=filter_type, order=order_high, rp=0.1)
 
     def _detector_simulation_trigger(self, evt, station, det):
 #         threshold = {}
