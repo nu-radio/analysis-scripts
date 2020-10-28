@@ -36,10 +36,10 @@ phasedArrayTrigger = pa_trig_sim.triggerSimulator()
 triggerTimeAdjuster = NuRadioReco.modules.triggerTimeAdjuster.triggerTimeAdjuster()
 
 # assuming that PA consists out of 8 antennas (channel 0-7)
-
-main_low_angle = -53. * units.deg
-main_high_angle = 47. * units.deg
-default_angles = np.arcsin(np.linspace(np.sin(main_low_angle), np.sin(main_high_angle), 15))
+main_low_angle = np.deg2rad(-59.54968597864437)
+main_high_angle = np.deg2rad(59.54968597864437)
+phasing_angles_4ant = np.arcsin(np.linspace(np.sin(main_low_angle), np.sin(main_high_angle), 11))
+phasing_angles_8ant = np.arcsin(np.linspace(np.sin(main_low_angle), np.sin(main_high_angle), 21))
 
 passband_low = {}
 passband_high = {}
@@ -47,11 +47,11 @@ filter_type = {}
 order_low = {}
 order_high = {}
 for channel_id in range(0, 9):
-    passband_low[channel_id] = [0 * units.MHz, 240 * units.MHz]
-    passband_high[channel_id] = [80 * units.MHz, 800 * units.GHz]
+    passband_low[channel_id] = [80 * units.MHz, 230 * units.MHz]
+    passband_high[channel_id] = [0 * units.MHz, 240 * units.MHz]
     filter_type[channel_id] = 'cheby1'
-    order_low[channel_id] = 9
-    order_high[channel_id] = 4
+    order_low[channel_id] = 4
+    order_high[channel_id] = 9
 passband_low[9] = [1 * units.MHz, 730 * units.MHz]
 filter_type[9] = 'cheby1'
 order_low[9] = 9
@@ -69,9 +69,9 @@ class mySimulation(simulation.simulation):
                                   passband=passband_high, filter_type=filter_type, order=order_high, rp=0.1)
 
     def _detector_simulation_trigger(self, evt, station, det):
-#         threshold = {}
-#         for channel_id in det.get_channel_ids(station.get_id()):
-#             threshold[channel_id] = 2.5 * self._Vrms_per_channel[station.get_id()][channel_id]
+        #         threshold = {}
+        #         for channel_id in det.get_channel_ids(station.get_id()):
+        #             threshold[channel_id] = 2.5 * self._Vrms_per_channel[station.get_id()][channel_id]
         # run a simple threshold trigger on the central antenna
 
         # channel 8 is a noiseless channel at 100m depth
@@ -105,39 +105,45 @@ class mySimulation(simulation.simulation):
         # it is important to downsample after the simple threhold trigger not introduce uncerrtainties in the maximum
         # signal amplitudes when calculating the threshold trigger.
         channelResampler.run(evt, station, det, sampling_rate=self._sampling_rate_detector)
-        phasedArrayTrigger.run(evt, station, det,
-                               threshold=1.82 * self._Vrms_per_channel[station.get_id()][4],  # assuming all pa channels have the same bandwidth and noise temperature
-                               triggered_channels=range(0, 8),  # run trigger on 8 antennas
-                               trigger_name=f'PA_8channel_100Hz',
-                               secondary_channels=None,
-                               phasing_angles=default_angles,
-                               secondary_phasing_angles=[],
-                               set_not_triggered=False,
-                               window_time=10.67 * units.ns,
-                               coupled=True,
-                               ref_index=1.75,
-                               cut_times=(None, None),
-                               trigger_adc=False,
-                               upsampling_factor=2,
-                               nyquist_zone=None,
-                               bandwidth_edge=20 * units.MHz)
-        phasedArrayTrigger.run(evt, station, det,
-                               threshold=1.77 * self._Vrms_per_channel[station.get_id()][4],  # assuming all pa channels have the same bandwidth and noise temperature
-                               triggered_channels=range(2, 6),  # run trigger on 8 antennas
-                               trigger_name=f'PA_4channel_100Hz',
-                               secondary_channels=None,
-                               phasing_angles=default_angles,
-                               secondary_phasing_angles=[],
-                               set_not_triggered=False,
-                               window_time=10.67 * units.ns,
-                               coupled=True,
-                               ref_index=1.75,
-                               cut_times=(None, None),
-                               trigger_adc=False,
-                               upsampling_factor=1,
-                               nyquist_zone=None,
-                               bandwidth_edge=20 * units.MHz)
 
+        # x2 for upsampling
+        window_4ant = int(16 * units.ns * self._sampling_rate_detector * 2.0) 
+        step_4ant = int(8 * units.ns * self._sampling_rate_detector * 2.0)
+
+        # x4 for upsampling
+        window_8ant = int(16 * units.ns * self._sampling_rate_detector * 4.0)
+        step_8ant = int(8 * units.ns * self._sampling_rate_detector * 4.0)
+
+        Vrms = self._Vrms_per_channel[station.get_id()][4]
+
+        phasedArrayTrigger.run(evt, station, det,
+                               Vrms = Vrms,
+                               threshold = 1.83 * np.power(Vrms, 2.0) * window_8ant, # see phased trigger module for explanation                               
+                               triggered_channels=range(0, 8),
+                               phasing_angles=phasing_angles_8ant,
+                               ref_index = 1.75,
+                               trigger_name=f'PA_8channel_100Hz', # the name of the trigger
+                               trigger_adc=False, # Don't have a seperate ADC for the trigger
+                               adc_output=f'voltage', # output in volts
+                               trigger_filter=None,
+                               upsampling_factor=4,
+                               window=window_8ant,
+                               step=step_8ant)
+
+        # run the 4 phased trigger
+        phasedArrayTrigger.run(evt, station, det,
+                               Vrms = Vrms,
+                               threshold = 1.77 * np.power(Vrms, 2.0) * window_4ant,
+                               triggered_channels=range(2, 6),
+                               phasing_angles=phasing_angles_4ant,
+                               ref_index = 1.75,
+                               trigger_name=f'PA_4channel_100Hz', # the name of the trigger
+                               trigger_adc=False, # Don't have a seperate ADC for the trigger
+                               adc_output=f'voltage', # output in volts
+                               trigger_filter=None,
+                               upsampling_factor=2,
+                               window=window_4ant,
+                               step = step_4ant)
 
 parser = argparse.ArgumentParser(description='Run NuRadioMC simulation')
 parser.add_argument('inputfilename', type=str,
