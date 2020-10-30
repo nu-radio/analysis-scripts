@@ -47,8 +47,8 @@ filter_type = {}
 order_low = {}
 order_high = {}
 for channel_id in range(0, 9):
-    passband_low[channel_id] = [80 * units.MHz, 230 * units.MHz]
-    passband_high[channel_id] = [0 * units.MHz, 240 * units.MHz]
+    passband_low[channel_id] = [80 * units.MHz, 100 * units.GHz]
+    passband_high[channel_id] = [0 * units.MHz, 230 * units.MHz]
     filter_type[channel_id] = 'cheby1'
     order_low[channel_id] = 4
     order_high[channel_id] = 9
