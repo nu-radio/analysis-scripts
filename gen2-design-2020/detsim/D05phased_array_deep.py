@@ -101,11 +101,6 @@ class mySimulation(simulation.simulation):
                                      number_concidences=1,
                                      trigger_name=f'dipole_1.0sigma')
 
-        # downsample to detector resolution
-        # it is important to downsample after the simple threhold trigger not introduce uncerrtainties in the maximum
-        # signal amplitudes when calculating the threshold trigger.
-        channelResampler.run(evt, station, det, sampling_rate=self._sampling_rate_detector)
-
         # x2 for upsampling
         window_4ant = int(16 * units.ns * self._sampling_rate_detector * 2.0) 
         step_4ant = int(8 * units.ns * self._sampling_rate_detector * 2.0)
