@@ -124,13 +124,10 @@ class mySimulation(simulation.simulation):
                             number_concidences=1,
                             trigger_name=f'dipole_1.0sigma')
 
-<<<<<<< HEAD
         # Trigger windows
         Vrms = self._Vrms_per_channel[station.get_id()][4]
         resample = self._cfg['sampling_rate'] * units.GHz # Old name, just the MC clock frequency
 
-=======
->>>>>>> 24388ee9675f7d223e19f75f2e69ac0db17d9f70
         # x2 for upsampling
         window_4ant = int(16 * units.ns * self._sampling_rate_detector * 2.0) 
         step_4ant = int(8 * units.ns * self._sampling_rate_detector * 2.0)
