@@ -21,14 +21,15 @@ import copy
 logging.basicConfig(level=logging.WARNING)
 logger = logging.getLogger("runMB")
 
-# pa_trigger_rate_4channels_2xupsampiling
-#   100 Hz -> 1.77
-#   10 Hz -> 1.97
-#   1 Hz -> 2.17
-# pa_trigger_rate_8channels_4xupsampiling
-#   100 Hz -> 1.82
-#   10 Hz -> 2.02
-#   1 Hz -> 2.23
+# 4 channel, 2x sampling, fft upsampling, 16 ns window
+# 100 Hz -> 1.89
+# 10 Hz -> 2.14
+# 1 Hz -> 2.38
+
+# 8 channel, 4x sampling, fft upsampling, 16 ns window
+# 100 Hz -> 1.95
+# 10 Hz -> 2.19
+# 1 Hz -> 2.43
 
 # initialize detector sim modules
 simpleThreshold = NuRadioReco.modules.trigger.simpleThreshold.triggerSimulator()
@@ -52,8 +53,8 @@ phasing_angles_8ant = np.arcsin(np.linspace(np.sin(main_low_angle), np.sin(main_
 min_freq = 0.0 * units.MHz
 max_freq = 250.0 * units.MHz
 fff = np.linspace(min_freq, max_freq, 10000)
-filt1_highres = channelBandPassFilter.get_filter(fff, 0, 0, None, passband=[0, 240 * units.MHz], filter_type="cheby1", order=9, rp=.1)
-filt2_highres = channelBandPassFilter.get_filter(fff, 0, 0, None, passband=[80 * units.MHz, 230 * units.MHz], filter_type="cheby1", order=4, rp=.1)
+filt1_highres = channelBandPassFilter.get_filter(fff, 0, 0, None, passband=[0, 235 * units.MHz], filter_type="cheby1", order=9, rp=.1)
+filt2_highres = channelBandPassFilter.get_filter(fff, 0, 0, None, passband=[87 * units.MHz, 225 * units.MHz], filter_type="cheby1", order=4, rp=.1)
 filt_highres = filt1_highres * filt2_highres
 bandwidth = np.trapz(np.abs(filt_highres) ** 2, fff)
 Vrms_ratio = np.sqrt(bandwidth / (max_freq - min_freq))
@@ -64,8 +65,8 @@ filter_type = {}
 order_low = {}
 order_high = {}
 for channel_id in range(0, 9):
-    passband_low[channel_id] = [80 * units.MHz, 100 * units.GHz]
-    passband_high[channel_id] = [0 * units.MHz, 230 * units.MHz]
+    passband_low[channel_id] = [87 * units.MHz, 225 * units.GHz]
+    passband_high[channel_id] = [0 * units.MHz, 235 * units.MHz]
     filter_type[channel_id] = 'cheby1'
     order_low[channel_id] = 4
     order_high[channel_id] = 9
@@ -79,9 +80,9 @@ class mySimulation(simulation.simulation):
 
     def _detector_simulation_filter_amp(self, evt, station, det):
 
-        channelBandPassFilter.run(evt, station, det, passband=[80 * units.MHz, 230 * units.MHz],
+        channelBandPassFilter.run(evt, station, det, passband=[87 * units.MHz, 225 * units.MHz],
                                   filter_type='cheby1', order=4, rp=.1)
-        channelBandPassFilter.run(evt, station, det, passband=[0 * units.MHz, 240 * units.MHz],
+        channelBandPassFilter.run(evt, station, det, passband=[0 * units.MHz, 235 * units.MHz],
                                   filter_type='cheby1', order=9, rp=.1)
 
     def _detector_simulation_trigger(self, evt, station, det):                                       
@@ -90,12 +91,6 @@ class mySimulation(simulation.simulation):
         for channel in station.iter_channels():
             trace = np.array(channel.get_trace())
             original_traces[channel.get_id()] = trace
-
-        # No resampling, keep things high resolution for the fidelity of the single triggers
-        channelBandPassFilter.run(evt, station, det, passband=[80 * units.MHz, 230 * units.MHz],
-                                  filter_type='cheby1', order=4, rp=.1)
-        channelBandPassFilter.run(evt, station, det, passband=[0 * units.MHz, 240 * units.MHz],
-                                  filter_type='cheby1', order=9, rp=.1)
 
         # channel 8 is a noiseless channel at 100m depth
         simpleThreshold.run(evt, station, det,
@@ -147,9 +142,9 @@ class mySimulation(simulation.simulation):
                                      min_freq=min_freq, max_freq=max_freq, type='rayleigh')
 
         # bandpass filter trace, the upper bound is higher then the sampling rate which makes it just a highpass filter
-        channelBandPassFilter.run(evt, station, det, passband=[0 * units.MHz, 240.0 * units.MHz],
+        channelBandPassFilter.run(evt, station, det, passband=[0 * units.MHz, 235.0 * units.MHz],
                                   filter_type='cheby1', order=9, rp=.1)
-        channelBandPassFilter.run(evt, station, det, passband=[80.0 * units.MHz, 230.0 * units.MHz],
+        channelBandPassFilter.run(evt, station, det, passband=[87.0 * units.MHz, 225.0 * units.MHz],
                                   filter_type='cheby1', order=4, rp=.1)
 
         for channel in station.iter_channels():
@@ -160,7 +155,7 @@ class mySimulation(simulation.simulation):
             # run the 4 phased trigger
         phasedArrayTrigger.run(evt, station, det,
                                Vrms = Vrms,
-                               threshold = 1.83 * np.power(Vrms, 2.0) * window_8ant, # see phased trigger module for explanation
+                               threshold = 1.95 * np.power(Vrms, 2.0) * window_8ant, # see phased trigger module for explanation
                                triggered_channels=range(0, 8),
                                phasing_angles=phasing_angles_8ant,
                                ref_index = 1.75,
@@ -175,7 +170,7 @@ class mySimulation(simulation.simulation):
         # run the 4 phased trigger
         phasedArrayTrigger.run(evt, station, det,
                                Vrms = Vrms,
-                               threshold = 1.77 * np.power(Vrms, 2.0) * window_4ant,
+                               threshold = 1.89 * np.power(Vrms, 2.0) * window_4ant,
                                triggered_channels=range(2, 6),
                                phasing_angles=phasing_angles_4ant,
                                ref_index = 1.75,
@@ -193,11 +188,6 @@ class mySimulation(simulation.simulation):
         # downsample trace back to detector sampling rate
         resample = self._sampling_rate_detector
         channelResampler.run(evt, station, det, sampling_rate=resample)
-
-        channelBandPassFilter.run(evt, station, det, passband=[80 * units.MHz, 230 * units.MHz],
-                                  filter_type='cheby1', order=4, rp=.1)
-        channelBandPassFilter.run(evt, station, det, passband=[0 * units.MHz, 240 * units.MHz],
-                                  filter_type='cheby1', order=9, rp=.1)
 
         # channel 8 is a noiseless channel at 100m depth
         simpleThreshold.run(evt, station, det,
@@ -232,13 +222,12 @@ class mySimulation(simulation.simulation):
             filtered_signal_traces[channel.get_id()] = trace
             channel.set_trace(np.zeros(len(trace)), sampling_rate=resample)
 
-
         channelGenericNoiseAdder.run(evt, station, det, amplitude = Vrms / Vrms_ratio,
                                      min_freq=min_freq, max_freq=max_freq, type='rayleigh')
 
-        channelBandPassFilter.run(evt, station, det, passband=[0 * units.MHz, 240.0 * units.MHz],
+        channelBandPassFilter.run(evt, station, det, passband=[0 * units.MHz, 235.0 * units.MHz],
                                   filter_type='cheby1', order=9, rp=.1)
-        channelBandPassFilter.run(evt, station, det, passband=[80.0 * units.MHz, 230.0 * units.MHz],
+        channelBandPassFilter.run(evt, station, det, passband=[87.0 * units.MHz, 225.0 * units.MHz],
                                   filter_type='cheby1', order=4, rp=.1)
 
         for channel in station.iter_channels():
@@ -248,7 +237,7 @@ class mySimulation(simulation.simulation):
 
         phasedArrayTrigger.run(evt, station, det,
                                Vrms = Vrms,
-                               threshold = 1.83 * np.power(Vrms, 2.0) * window_8ant, # see phased trigger module for explanation
+                               threshold = 1.95 * np.power(Vrms, 2.0) * window_8ant, # see phased trigger module for explanation
                                triggered_channels=range(0, 8),
                                phasing_angles=phasing_angles_8ant,
                                ref_index = 1.75,
@@ -263,7 +252,7 @@ class mySimulation(simulation.simulation):
         # run the 4 phased trigger
         phasedArrayTrigger.run(evt, station, det,
                                Vrms = Vrms,
-                               threshold = 1.77 * np.power(Vrms, 2.0) * window_4ant,
+                               threshold = 1.89 * np.power(Vrms, 2.0) * window_4ant,
                                triggered_channels=range(2, 6),
                                phasing_angles=phasing_angles_4ant,
                                ref_index = 1.75,
@@ -289,10 +278,10 @@ parser.add_argument('outputfilenameNuRadioReco', type=str, nargs='?', default=No
 args = parser.parse_args()
 
 sim = mySimulation(inputfilename=args.inputfilename,
-                            outputfilename=args.outputfilename,
-                            detectorfile=args.detectordescription,
-                            outputfilenameNuRadioReco=args.outputfilenameNuRadioReco,
-                            config_file=args.config,
+                   outputfilename=args.outputfilename,
+                   detectorfile=args.detectordescription,
+                   outputfilenameNuRadioReco=args.outputfilenameNuRadioReco,
+                   config_file=args.config,
                    default_detector_station=1)
 sim.run()
 
