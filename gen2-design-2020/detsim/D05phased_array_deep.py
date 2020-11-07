@@ -12,6 +12,7 @@ import numpy as np
 from scipy import constants
 from NuRadioMC.simulation import simulation
 import scipy
+import copy
 import matplotlib.pyplot as plt
 import logging
 logging.basicConfig(level=logging.WARNING)
@@ -80,6 +81,8 @@ class mySimulation(simulation.simulation):
 
     def _detector_simulation_trigger(self, evt, station, det):
 
+        resample = 5.0 * units.GHz
+
         # channel 8 is a noiseless channel at 100m depth
         simpleThreshold.run(evt, station, det,
                                      threshold=3 * self._Vrms_per_channel[station.get_id()][8],
@@ -115,6 +118,8 @@ class mySimulation(simulation.simulation):
         window_8ant = int(16 * units.ns * self._sampling_rate_detector * 4.0)
         step_8ant = int(8 * units.ns * self._sampling_rate_detector * 4.0)
 
+        Vrms = self._Vrms_per_channel[station.get_id()][4]
+
         # Seperately add noise, filter it, then add filtered signal back in
         filtered_signal_traces = {}
         for channel in station.iter_channels():
@@ -135,8 +140,6 @@ class mySimulation(simulation.simulation):
             trace = copy.deepcopy(filtered_signal_traces[channel.get_id()][:])
             noise = channel.get_trace()
             channel.set_trace(trace + noise, sampling_rate=resample)
-
-        Vrms = self._Vrms_per_channel[station.get_id()][4]
 
         phasedArrayTrigger.run(evt, station, det,
                                Vrms = Vrms,
