@@ -17,14 +17,15 @@ import logging
 logging.basicConfig(level=logging.WARNING)
 logger = logging.getLogger("runMB")
 
-# pa_trigger_rate_4channels_2xupsampiling
-#   100 Hz -> 1.77
-#   10 Hz -> 1.97
-#   1 Hz -> 2.17
-# pa_trigger_rate_8channels_4xupsampiling
-#   100 Hz -> 1.82
-#   10 Hz -> 2.02
-#   1 Hz -> 2.23
+# 4 channel, 2x sampling, fft upsampling, 16 ns window
+# 100 Hz -> 1.88
+# 10 Hz -> 2.11
+# 1 Hz -> 2.34
+
+# 8 channel, 4x sampling, fft upsampling, 16 ns window
+# 100 Hz -> 1.95
+# 10 Hz -> 2.18
+# 1 Hz -> 2.41
 
 # initialize detector sim modules
 simpleThreshold = NuRadioReco.modules.trigger.simpleThreshold.triggerSimulator()
@@ -102,7 +103,7 @@ class mySimulation(simulation.simulation):
                                      trigger_name=f'dipole_1.0sigma')
 
         # x2 for upsampling
-        window_4ant = int(16 * units.ns * self._sampling_rate_detector * 2.0) 
+        window_4ant = int(16 * units.ns * self._sampling_rate_detector * 2.0)
         step_4ant = int(8 * units.ns * self._sampling_rate_detector * 2.0)
 
         # x4 for upsampling
@@ -112,14 +113,14 @@ class mySimulation(simulation.simulation):
         Vrms = self._Vrms_per_channel[station.get_id()][4]
 
         phasedArrayTrigger.run(evt, station, det,
-                               Vrms = Vrms,
-                               threshold = 1.83 * np.power(Vrms, 2.0) * window_8ant, # see phased trigger module for explanation                               
+                               Vrms=Vrms,
+                               threshold=1.95 * np.power(Vrms, 2.0) * window_8ant,  # see phased trigger module for explanation
                                triggered_channels=range(0, 8),
                                phasing_angles=phasing_angles_8ant,
-                               ref_index = 1.75,
-                               trigger_name=f'PA_8channel_100Hz', # the name of the trigger
-                               trigger_adc=False, # Don't have a seperate ADC for the trigger
-                               adc_output=f'voltage', # output in volts
+                               ref_index=1.75,
+                               trigger_name=f'PA_8channel_100Hz',  # the name of the trigger
+                               trigger_adc=False,  # Don't have a seperate ADC for the trigger
+                               adc_output=f'voltage',  # output in volts
                                trigger_filter=None,
                                upsampling_factor=4,
                                window=window_8ant,
@@ -127,18 +128,19 @@ class mySimulation(simulation.simulation):
 
         # run the 4 phased trigger
         phasedArrayTrigger.run(evt, station, det,
-                               Vrms = Vrms,
-                               threshold = 1.77 * np.power(Vrms, 2.0) * window_4ant,
+                               Vrms=Vrms,
+                               threshold=1.88 * np.power(Vrms, 2.0) * window_4ant,
                                triggered_channels=range(2, 6),
                                phasing_angles=phasing_angles_4ant,
-                               ref_index = 1.75,
-                               trigger_name=f'PA_4channel_100Hz', # the name of the trigger
-                               trigger_adc=False, # Don't have a seperate ADC for the trigger
-                               adc_output=f'voltage', # output in volts
+                               ref_index=1.75,
+                               trigger_name=f'PA_4channel_100Hz',  # the name of the trigger
+                               trigger_adc=False,  # Don't have a seperate ADC for the trigger
+                               adc_output=f'voltage',  # output in volts
                                trigger_filter=None,
                                upsampling_factor=2,
                                window=window_4ant,
-                               step = step_4ant)
+                               step=step_4ant)
+
 
 parser = argparse.ArgumentParser(description='Run NuRadioMC simulation')
 parser.add_argument('inputfilename', type=str,
