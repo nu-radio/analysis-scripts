@@ -1,20 +1,18 @@
 import argparse
-import NuRadioReco.modules.efieldToVoltageConverter
-import NuRadioReco.modules.trigger.highLowThreshold
-import NuRadioReco.modules.trigger.simpleThreshold
-import NuRadioReco.modules.phasedarray.triggerSimulator as pa_trig_sim
-import NuRadioReco.modules.channelBandPassFilter
-import NuRadioReco.modules.channelResampler
-import NuRadioReco.modules.triggerTimeAdjuster
-from NuRadioReco.utilities import units
-import yaml
-import numpy as np
-from scipy import constants
 from NuRadioMC.simulation import simulation
+import NuRadioReco.modules.efieldToVoltageConverter
+import NuRadioReco.modules.trigger.simpleThreshold
+import NuRadioReco.modules.phasedarray.triggerSimulator
+import NuRadioReco.modules.channelBandPassFilter
+from NuRadioReco.utilities import units
+import numpy as np
 import scipy
-import copy
+from scipy import constants
 import matplotlib.pyplot as plt
 import logging
+import copy
+import yaml
+
 logging.basicConfig(level=logging.WARNING)
 logger = logging.getLogger("runMB")
 
@@ -30,27 +28,14 @@ logger = logging.getLogger("runMB")
 
 # initialize detector sim modules
 simpleThreshold = NuRadioReco.modules.trigger.simpleThreshold.triggerSimulator()
-highLowThreshold = NuRadioReco.modules.trigger.highLowThreshold.triggerSimulator()
 channelBandPassFilter = NuRadioReco.modules.channelBandPassFilter.channelBandPassFilter()
-channelResampler = NuRadioReco.modules.channelResampler.channelResampler()
-phasedArrayTrigger = pa_trig_sim.triggerSimulator()
-channelGenericNoiseAdder = NuRadioReco.modules.channelGenericNoiseAdder.channelGenericNoiseAdder()
-triggerTimeAdjuster = NuRadioReco.modules.triggerTimeAdjuster.triggerTimeAdjuster()
+phasedArrayTrigger = NuRadioReco.modules.phasedarray.triggerSimulator.triggerSimulator()
 
 # assuming that PA consists out of 8 antennas (channel 0-7)
 main_low_angle = np.deg2rad(-59.54968597864437)
 main_high_angle = np.deg2rad(59.54968597864437)
 phasing_angles_4ant = np.arcsin(np.linspace(np.sin(main_low_angle), np.sin(main_high_angle), 11))
 phasing_angles_8ant = np.arcsin(np.linspace(np.sin(main_low_angle), np.sin(main_high_angle), 21))
-
-min_freq = 0.0 * units.MHz
-max_freq = 250.0 * units.MHz
-fff = np.linspace(min_freq, max_freq, 10000)
-filt1_highres = channelBandPassFilter.get_filter(fff, 0, 0, None, passband=[0, 237 * units.MHz], filter_type="cheby1", order=9, rp=.1)
-filt2_highres = channelBandPassFilter.get_filter(fff, 0, 0, None, passband=[96 * units.MHz, 100 * units.GHz], filter_type="cheby1", order=4, rp=.1)
-filt_highres = filt1_highres * filt2_highres
-bandwidth = np.trapz(np.abs(filt_highres) ** 2, fff)
-Vrms_ratio = np.sqrt(bandwidth / (max_freq - min_freq))
 
 passband_low = {}
 passband_high = {}
@@ -59,16 +44,15 @@ order_low = {}
 order_high = {}
 for channel_id in range(0, 9):
     passband_low[channel_id] = [96 * units.MHz, 100 * units.GHz]
-    passband_high[channel_id] = [0 * units.MHz, 237 * units.MHz]
+    passband_high[channel_id] = [0 * units.MHz, 220 * units.MHz]
     filter_type[channel_id] = 'cheby1'
     order_low[channel_id] = 4
-    order_high[channel_id] = 9
-passband_low[9] = [1 * units.MHz, 730 * units.MHz]
+    order_high[channel_id] = 7
+passband_low[9] = [1 * units.MHz, 660 * units.MHz]
 filter_type[9] = 'cheby1'
-order_low[9] = 9
+order_low[9] = 7
 passband_high[9] = [100 * units.MHz, 100 * units.GHz]
 order_high[9] = 4
-
 
 class mySimulation(simulation.simulation):
 
@@ -80,8 +64,6 @@ class mySimulation(simulation.simulation):
                                   passband=passband_high, filter_type=filter_type, order=order_high, rp=0.1)
 
     def _detector_simulation_trigger(self, evt, station, det):
-
-        resample = 5.0 * units.GHz
 
         # channel 8 is a noiseless channel at 100m depth
         simpleThreshold.run(evt, station, det,
@@ -110,36 +92,13 @@ class mySimulation(simulation.simulation):
                                      number_concidences=1,
                                      trigger_name=f'dipole_1.0sigma')
 
-        # x2 for upsampling
-        window_4ant = int(16 * units.ns * self._sampling_rate_detector * 2.0) 
-        step_4ant = int(8 * units.ns * self._sampling_rate_detector * 2.0)
-
-        # x4 for upsampling
-        window_8ant = int(16 * units.ns * self._sampling_rate_detector * 4.0)
-        step_8ant = int(8 * units.ns * self._sampling_rate_detector * 4.0)
 
         Vrms = self._Vrms_per_channel[station.get_id()][4]
 
-        # Seperately add noise, filter it, then add filtered signal back in
-        filtered_signal_traces = {}
-        for channel in station.iter_channels():
-            trace = np.array(channel.get_trace())
-            filtered_signal_traces[channel.get_id()] = trace
-            channel.set_trace(np.zeros(len(trace)), sampling_rate=resample)
-
-        channelGenericNoiseAdder.run(evt, station, det, amplitude = Vrms / Vrms_ratio,
-                                     min_freq=min_freq, max_freq=max_freq, type='rayleigh')
-
-        # bandpass filter trace, the upper bound is higher then the sampling rate which makes it just a highpass filter
-        channelBandPassFilter.run(evt, station, det, passband=[0 * units.MHz, 237.0 * units.MHz],
-                                  filter_type='cheby1', order=9, rp=.1)
-        channelBandPassFilter.run(evt, station, det, passband=[96.0 * units.MHz, 100.0 * units.GHz],
-                                  filter_type='cheby1', order=4, rp=.1)
-
-        for channel in station.iter_channels():
-            trace = copy.deepcopy(filtered_signal_traces[channel.get_id()][:])
-            noise = channel.get_trace()
-            channel.set_trace(trace + noise, sampling_rate=resample)
+        # run the 8 phased trigger
+        # x4 for upsampling
+        window_8ant = int(16 * units.ns * self._sampling_rate_detector * 4.0)
+        step_8ant = int(8 * units.ns * self._sampling_rate_detector * 4.0)
 
         phasedArrayTrigger.run(evt, station, det,
                                Vrms = Vrms,
@@ -156,6 +115,10 @@ class mySimulation(simulation.simulation):
                                step=step_8ant)
 
         # run the 4 phased trigger
+        # x2 for upsampling
+        window_4ant = int(16 * units.ns * self._sampling_rate_detector * 2.0) 
+        step_4ant = int(8 * units.ns * self._sampling_rate_detector * 2.0)
+
         phasedArrayTrigger.run(evt, station, det,
                                Vrms = Vrms,
                                threshold = 1.88 * np.power(Vrms, 2.0) * window_4ant,
