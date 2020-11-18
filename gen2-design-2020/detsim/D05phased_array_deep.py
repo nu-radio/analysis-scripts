@@ -17,14 +17,14 @@ logging.basicConfig(level=logging.WARNING)
 logger = logging.getLogger("runMB")
 
 # 4 channel, 2x sampling, fft upsampling, 16 ns window
-# 100 Hz -> 1.88
-# 10 Hz -> 2.11
-# 1 Hz -> 2.34
+# 100 Hz -> 30.85
+# 10 Hz -> 35.67
+# 1 Hz -> 41.35
 
 # 8 channel, 4x sampling, fft upsampling, 16 ns window
-# 100 Hz -> 1.95
-# 10 Hz -> 2.18
-# 1 Hz -> 2.41
+# 100 Hz -> 62.15
+# 10 Hz -> 69.06
+# 1 Hz -> 75.75
 
 # initialize detector sim modules
 simpleThreshold = NuRadioReco.modules.trigger.simpleThreshold.triggerSimulator()
@@ -102,7 +102,7 @@ class mySimulation(simulation.simulation):
 
         phasedArrayTrigger.run(evt, station, det,
                                Vrms = Vrms,
-                               threshold = 1.95 * np.power(Vrms, 2.0) * window_8ant, # see phased trigger module for explanation                               
+                               threshold = 62.15 * np.power(Vrms, 2.0), # see phased trigger module for explanation                               
                                triggered_channels=range(0, 8),
                                phasing_angles=phasing_angles_8ant,
                                ref_index = 1.75,
@@ -121,7 +121,7 @@ class mySimulation(simulation.simulation):
 
         phasedArrayTrigger.run(evt, station, det,
                                Vrms = Vrms,
-                               threshold = 1.88 * np.power(Vrms, 2.0) * window_4ant,
+                               threshold = 30.85 * np.power(Vrms, 2.0),
                                triggered_channels=range(2, 6),
                                phasing_angles=phasing_angles_4ant,
                                ref_index = 1.75,
