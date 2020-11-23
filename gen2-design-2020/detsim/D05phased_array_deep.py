@@ -48,11 +48,7 @@ for channel_id in range(0, 9):
     filter_type[channel_id] = 'cheby1'
     order_low[channel_id] = 4
     order_high[channel_id] = 7
-passband_low[9] = [1 * units.MHz, 660 * units.MHz]
-filter_type[9] = 'cheby1'
-order_low[9] = 7
-passband_high[9] = [100 * units.MHz, 100 * units.GHz]
-order_high[9] = 4
+
 
 class mySimulation(simulation.simulation):
 
@@ -66,6 +62,11 @@ class mySimulation(simulation.simulation):
     def _detector_simulation_trigger(self, evt, station, det):
 
         # channel 8 is a noiseless channel at 100m depth
+        simpleThreshold.run(evt, station, det,
+                                     threshold=4 * self._Vrms_per_channel[station.get_id()][8],
+                                     triggered_channels=[8],  # run trigger on all channels
+                                     number_concidences=1,
+                                     trigger_name=f'dipole_4sigma')
         simpleThreshold.run(evt, station, det,
                                      threshold=3 * self._Vrms_per_channel[station.get_id()][8],
                                      triggered_channels=[8],  # run trigger on all channels
@@ -92,7 +93,6 @@ class mySimulation(simulation.simulation):
                                      number_concidences=1,
                                      trigger_name=f'dipole_1.0sigma')
 
-
         Vrms = self._Vrms_per_channel[station.get_id()][4]
 
         # run the 8 phased trigger
@@ -101,14 +101,14 @@ class mySimulation(simulation.simulation):
         step_8ant = int(8 * units.ns * self._sampling_rate_detector * 4.0)
 
         phasedArrayTrigger.run(evt, station, det,
-                               Vrms = Vrms,
-                               threshold = 62.15 * np.power(Vrms, 2.0), # see phased trigger module for explanation                               
+                               Vrms=Vrms,
+                               threshold=62.15 * np.power(Vrms, 2.0),  # see phased trigger module for explanation
                                triggered_channels=range(0, 8),
                                phasing_angles=phasing_angles_8ant,
-                               ref_index = 1.75,
-                               trigger_name=f'PA_8channel_100Hz', # the name of the trigger
-                               trigger_adc=False, # Don't have a seperate ADC for the trigger
-                               adc_output=f'voltage', # output in volts
+                               ref_index=1.75,
+                               trigger_name=f'PA_8channel_100Hz',  # the name of the trigger
+                               trigger_adc=False,  # Don't have a seperate ADC for the trigger
+                               adc_output=f'voltage',  # output in volts
                                trigger_filter=None,
                                upsampling_factor=4,
                                window=window_8ant,
@@ -116,22 +116,23 @@ class mySimulation(simulation.simulation):
 
         # run the 4 phased trigger
         # x2 for upsampling
-        window_4ant = int(16 * units.ns * self._sampling_rate_detector * 2.0) 
+        window_4ant = int(16 * units.ns * self._sampling_rate_detector * 2.0)
         step_4ant = int(8 * units.ns * self._sampling_rate_detector * 2.0)
 
         phasedArrayTrigger.run(evt, station, det,
-                               Vrms = Vrms,
-                               threshold = 30.85 * np.power(Vrms, 2.0),
+                               Vrms=Vrms,
+                               threshold=30.85 * np.power(Vrms, 2.0),
                                triggered_channels=range(2, 6),
                                phasing_angles=phasing_angles_4ant,
-                               ref_index = 1.75,
-                               trigger_name=f'PA_4channel_100Hz', # the name of the trigger
-                               trigger_adc=False, # Don't have a seperate ADC for the trigger
-                               adc_output=f'voltage', # output in volts
+                               ref_index=1.75,
+                               trigger_name=f'PA_4channel_100Hz',  # the name of the trigger
+                               trigger_adc=False,  # Don't have a seperate ADC for the trigger
+                               adc_output=f'voltage',  # output in volts
                                trigger_filter=None,
                                upsampling_factor=2,
                                window=window_4ant,
-                               step = step_4ant)
+                               step=step_4ant)
+
 
 parser = argparse.ArgumentParser(description='Run NuRadioMC simulation')
 parser.add_argument('inputfilename', type=str,
