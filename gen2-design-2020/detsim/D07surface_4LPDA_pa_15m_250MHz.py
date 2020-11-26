@@ -10,6 +10,7 @@ import NuRadioReco.modules.triggerTimeAdjuster
 import NuRadioReco.modules.channelAntennaDedispersion
 import NuRadioReco.modules.ARIANNA.hardwareResponseIncorporator
 import NuRadioReco.modules.custom.deltaT.calculateAmplitudePerRaySolution
+import NuRadioReco.modules.phasedarray.triggerSimulator
 from NuRadioReco.utilities import units
 import yaml
 import numpy as np
@@ -25,6 +26,7 @@ logger = logging.getLogger("runMB")
 simpleThreshold = NuRadioReco.modules.trigger.simpleThreshold.triggerSimulator()
 highLowThreshold = NuRadioReco.modules.trigger.highLowThreshold.triggerSimulator()
 channelBandPassFilter = NuRadioReco.modules.channelBandPassFilter.channelBandPassFilter()
+phasedArrayTrigger = NuRadioReco.modules.phasedarray.triggerSimulator.triggerSimulator()
 
 triggerTimeAdjuster = NuRadioReco.modules.triggerTimeAdjuster.triggerTimeAdjuster()
 
@@ -36,6 +38,11 @@ thresholds = {
   'fhigh': 0.15,
   'flow': 0.08
   }
+
+main_low_angle = np.deg2rad(-59.54968597864437)
+main_high_angle = np.deg2rad(59.54968597864437)
+phasing_angles_4ant = np.arcsin(np.linspace(np.sin(main_low_angle), np.sin(main_high_angle), 11))
+phasing_angles_8ant = np.arcsin(np.linspace(np.sin(main_low_angle), np.sin(main_high_angle), 21))
 
 passband_low = {}
 passband_high = {}
