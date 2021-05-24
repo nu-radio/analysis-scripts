@@ -1,37 +1,44 @@
 import argparse
-from NuRadioMC.simulation import simulation
+# import detector simulation modules
 import NuRadioReco.modules.efieldToVoltageConverter
+import NuRadioReco.modules.trigger.highLowThreshold
 import NuRadioReco.modules.trigger.simpleThreshold
-import NuRadioReco.modules.phasedarray.triggerSimulator
+import NuRadioReco.modules.channelResampler
 import NuRadioReco.modules.channelBandPassFilter
+import NuRadioReco.modules.channelGenericNoiseAdder
+import NuRadioReco.modules.triggerTimeAdjuster
+import NuRadioReco.modules.channelAntennaDedispersion
+import NuRadioReco.modules.ARIANNA.hardwareResponseIncorporator
+import NuRadioReco.modules.custom.deltaT.calculateAmplitudePerRaySolution
+import NuRadioReco.modules.phasedarray.triggerSimulator
 from NuRadioReco.utilities import units
+import yaml
 import numpy as np
-import scipy
 from scipy import constants
+from NuRadioMC.simulation import simulation
+import scipy
 import matplotlib.pyplot as plt
 import logging
-import copy
-import yaml
-
 logging.basicConfig(level=logging.WARNING)
 logger = logging.getLogger("runMB")
 
-# 4 channel, 2x sampling, fft upsampling, 16 ns window
-# 100 Hz -> 30.85
-# 10 Hz -> 35.67
-# 1 Hz -> 41.35
-
-# 8 channel, 4x sampling, fft upsampling, 16 ns window
-# 100 Hz -> 62.15
-# 10 Hz -> 69.06
-# 1 Hz -> 75.75
-
 # initialize detector sim modules
 simpleThreshold = NuRadioReco.modules.trigger.simpleThreshold.triggerSimulator()
+highLowThreshold = NuRadioReco.modules.trigger.highLowThreshold.triggerSimulator()
 channelBandPassFilter = NuRadioReco.modules.channelBandPassFilter.channelBandPassFilter()
 phasedArrayTrigger = NuRadioReco.modules.phasedarray.triggerSimulator.triggerSimulator()
 
-# assuming that PA consists out of 8 antennas (channel 0-7)
+triggerTimeAdjuster = NuRadioReco.modules.triggerTimeAdjuster.triggerTimeAdjuster()
+
+thresholds = {
+  '2/4_100Hz': 3.9498194908011524,
+  '2/4_10mHz': 4.919151494949084,
+  '2/6_100Hz': 4.04625348733533,
+  '2/6_10mHz': 5.015585491483261,
+  'fhigh': 0.15,
+  'flow': 0.08
+  }
+
 main_low_angle = np.deg2rad(-59.54968597864437)
 main_high_angle = np.deg2rad(59.54968597864437)
 phasing_angles_4ant = np.arcsin(np.linspace(np.sin(main_low_angle), np.sin(main_high_angle), 11))
@@ -42,7 +49,13 @@ passband_high = {}
 filter_type = {}
 order_low = {}
 order_high = {}
-for channel_id in range(0, 9):
+for channel_id in range(0, 4):
+    passband_low[channel_id] = [1 * units.MHz, thresholds['fhigh']]
+    passband_high[channel_id] = [thresholds['flow'], 800 * units.GHz]
+    filter_type[channel_id] = 'butter'
+    order_low[channel_id] = 10
+    order_high[channel_id] = 5
+for channel_id in range(4, 13):
     passband_low[channel_id] = [96 * units.MHz, 100 * units.GHz]
     passband_high[channel_id] = [0 * units.MHz, 220 * units.MHz]
     filter_type[channel_id] = 'cheby1'
@@ -53,48 +66,87 @@ for channel_id in range(0, 9):
 class mySimulation(simulation.simulation):
 
     def _detector_simulation_filter_amp(self, evt, station, det):
-
         channelBandPassFilter.run(evt, station, det,
                                   passband=passband_low, filter_type=filter_type, order=order_low, rp=0.1)
         channelBandPassFilter.run(evt, station, det,
                                   passband=passband_high, filter_type=filter_type, order=order_high, rp=0.1)
 
     def _detector_simulation_trigger(self, evt, station, det):
+        # run a high/low trigger on the 4 downward pointing LPDAs
+        threshold_high = {}
+        threshold_low = {}
+        for channel_id in det.get_channel_ids(station.get_id()):
+            threshold_high[channel_id] = 2 * self._Vrms_per_channel[station.get_id()][channel_id]
+            threshold_low[channel_id] = -2 * self._Vrms_per_channel[station.get_id()][channel_id]
+        highLowThreshold.run(evt, station, det,
+                                    threshold_high=threshold_high,
+                                    threshold_low=threshold_low,
+                                    coinc_window=40 * units.ns,
+                                    triggered_channels=[0, 1, 2, 3],  # select the LPDA channels
+                                    number_concidences=2,  # 2/4 majority logic
+                                    trigger_name='LPDA_2of4_2sigma')
+
+        threshold_high = {}
+        threshold_low = {}
+        for channel_id in det.get_channel_ids(station.get_id()):
+            threshold_high[channel_id] = thresholds['2/4_100Hz'] * self._Vrms_per_channel[station.get_id()][channel_id]
+            threshold_low[channel_id] = -thresholds['2/4_100Hz'] * self._Vrms_per_channel[station.get_id()][channel_id]
+        highLowThreshold.run(evt, station, det,
+                                    threshold_high=threshold_high,
+                                    threshold_low=threshold_low,
+                                    coinc_window=40 * units.ns,
+                                    triggered_channels=[0, 1, 2, 3],  # select the LPDA channels
+                                    number_concidences=2,  # 2/4 majority logic
+                                    trigger_name='LPDA_2of4_100Hz',
+                                    set_not_triggered=not self._station.has_triggered())
+
+        threshold_high = {}
+        threshold_low = {}
+        for channel_id in det.get_channel_ids(station.get_id()):
+            threshold_high[channel_id] = thresholds['2/4_10mHz'] * self._Vrms_per_channel[station.get_id()][channel_id]
+            threshold_low[channel_id] = -thresholds['2/4_10mHz'] * self._Vrms_per_channel[station.get_id()][channel_id]
+        highLowThreshold.run(evt, station, det,
+                                    threshold_high=threshold_high,
+                                    threshold_low=threshold_low,
+                                    coinc_window=40 * units.ns,
+                                    triggered_channels=[0, 1, 2, 3],  # select the LPDA channels
+                                    number_concidences=2,  # 2/4 majority logic
+                                    trigger_name='LPDA_2of4_10mHz',
+                                    set_not_triggered=not self._station.has_triggered())
 
         # channel 8 is a noiseless channel at 100m depth
         simpleThreshold.run(evt, station, det,
-                                     threshold=4 * self._Vrms_per_channel[station.get_id()][8],
-                                     triggered_channels=[8],  # run trigger on all channels
+                                     threshold=4 * self._Vrms_per_channel[station.get_id()][12],
+                                     triggered_channels=[12],  # run trigger on all channels
                                      number_concidences=1,
                                      trigger_name=f'dipole_4sigma')
         simpleThreshold.run(evt, station, det,
-                                     threshold=3 * self._Vrms_per_channel[station.get_id()][8],
-                                     triggered_channels=[8],  # run trigger on all channels
+                                     threshold=3 * self._Vrms_per_channel[station.get_id()][12],
+                                     triggered_channels=[12],  # run trigger on all channels
                                      number_concidences=1,
                                      trigger_name=f'dipole_3.0sigma')
         simpleThreshold.run(evt, station, det,
-                                     threshold=2.5 * self._Vrms_per_channel[station.get_id()][8],
-                                     triggered_channels=[8],  # run trigger on all channels
+                                     threshold=2.5 * self._Vrms_per_channel[station.get_id()][12],
+                                     triggered_channels=[12],  # run trigger on all channels
                                      number_concidences=1,
                                      trigger_name=f'dipole_2.5sigma')
         simpleThreshold.run(evt, station, det,
-                                     threshold=2.0 * self._Vrms_per_channel[station.get_id()][8],
-                                     triggered_channels=[8],  # run trigger on all channels
+                                     threshold=2.0 * self._Vrms_per_channel[station.get_id()][12],
+                                     triggered_channels=[12],  # run trigger on all channels
                                      number_concidences=1,
                                      trigger_name=f'dipole_2.0sigma')
         simpleThreshold.run(evt, station, det,
-                                     threshold=1.5 * self._Vrms_per_channel[station.get_id()][8],
-                                     triggered_channels=[8],  # run trigger on all channels
+                                     threshold=1.5 * self._Vrms_per_channel[station.get_id()][12],
+                                     triggered_channels=[12],  # run trigger on all channels
                                      number_concidences=1,
                                      trigger_name=f'dipole_1.5sigma')
         simpleThreshold.run(evt, station, det,
-                                     threshold=1.0 * self._Vrms_per_channel[station.get_id()][8],
-                                     triggered_channels=[8],  # run trigger on all channels
+                                     threshold=1.0 * self._Vrms_per_channel[station.get_id()][12],
+                                     triggered_channels=[12],  # run trigger on all channels
                                      number_concidences=1,
                                      trigger_name=f'dipole_1.0sigma')
 
-        Vrms = self._Vrms_per_channel[station.get_id()][4]
-
+        Vrms = self._Vrms_per_channel[station.get_id()][8]
         # run the 8 phased trigger
         # x4 for upsampling
         window_8ant = int(16 * units.ns * self._sampling_rate_detector * 4.0)
@@ -103,7 +155,7 @@ class mySimulation(simulation.simulation):
         phasedArrayTrigger.run(evt, station, det,
                                Vrms=Vrms,
                                threshold=62.15 * np.power(Vrms, 2.0),  # see phased trigger module for explanation
-                               triggered_channels=range(0, 8),
+                               triggered_channels=range(4, 12),
                                phasing_angles=phasing_angles_8ant,
                                ref_index=1.75,
                                trigger_name=f'PA_8channel_100Hz',  # the name of the trigger
@@ -122,7 +174,7 @@ class mySimulation(simulation.simulation):
         phasedArrayTrigger.run(evt, station, det,
                                Vrms=Vrms,
                                threshold=30.85 * np.power(Vrms, 2.0),
-                               triggered_channels=range(2, 6),
+                               triggered_channels=range(6, 10),
                                phasing_angles=phasing_angles_4ant,
                                ref_index=1.75,
                                trigger_name=f'PA_4channel_100Hz',  # the name of the trigger
@@ -154,3 +206,4 @@ sim = mySimulation(inputfilename=args.inputfilename,
                             config_file=args.config,
                             default_detector_station=1)
 sim.run()
+

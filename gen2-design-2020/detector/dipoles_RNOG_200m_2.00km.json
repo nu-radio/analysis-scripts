@@ -1,7 +1,7 @@
 {
     "channels": {
         "1": {
-            "adc_n_samples": 512,
+            "adc_n_samples": 5120,
             "adc_nbits": 8,
             "adc_noise_nbits": 5,
             "adc_sampling_frequency": 2,
