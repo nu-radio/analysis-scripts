@@ -1,0 +1,1874 @@
+{
+    "1001": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -8653,
+        "pos_northing": 5573,
+        "pos_site": "southpole",
+        "station_id": 1001,
+        "reference_station": 1001
+    },
+    "1002": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -7778,
+        "pos_northing": 7089,
+        "pos_site": "southpole",
+        "station_id": 1002,
+        "reference_station": 1001
+    },
+    "1003": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -6903,
+        "pos_northing": 8605,
+        "pos_site": "southpole",
+        "station_id": 1003,
+        "reference_station": 1001
+    },
+    "1004": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -6028,
+        "pos_northing": 10120,
+        "pos_site": "southpole",
+        "station_id": 1004,
+        "reference_station": 1001
+    },
+    "1005": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -10403,
+        "pos_northing": -488,
+        "pos_site": "southpole",
+        "station_id": 1005,
+        "reference_station": 1001
+    },
+    "1006": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -9528,
+        "pos_northing": 1027,
+        "pos_site": "southpole",
+        "station_id": 1006,
+        "reference_station": 1001
+    },
+    "1007": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -8653,
+        "pos_northing": 2542,
+        "pos_site": "southpole",
+        "station_id": 1007,
+        "reference_station": 1001
+    },
+    "1008": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -7778,
+        "pos_northing": 4058,
+        "pos_site": "southpole",
+        "station_id": 1008,
+        "reference_station": 1001
+    },
+    "1009": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -6903,
+        "pos_northing": 5573,
+        "pos_site": "southpole",
+        "station_id": 1009,
+        "reference_station": 1001
+    },
+    "1010": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -6028,
+        "pos_northing": 7089,
+        "pos_site": "southpole",
+        "station_id": 1010,
+        "reference_station": 1001
+    },
+    "1011": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -5153,
+        "pos_northing": 8605,
+        "pos_site": "southpole",
+        "station_id": 1011,
+        "reference_station": 1001
+    },
+    "1012": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -4278,
+        "pos_northing": 10120,
+        "pos_site": "southpole",
+        "station_id": 1012,
+        "reference_station": 1001
+    },
+    "1013": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -3403,
+        "pos_northing": 11636,
+        "pos_site": "southpole",
+        "station_id": 1013,
+        "reference_station": 1001
+    },
+    "1014": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -2528,
+        "pos_northing": 13151,
+        "pos_site": "southpole",
+        "station_id": 1014,
+        "reference_station": 1001
+    },
+    "1015": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -1653,
+        "pos_northing": 14667,
+        "pos_site": "southpole",
+        "station_id": 1015,
+        "reference_station": 1001
+    },
+    "1016": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -10403,
+        "pos_northing": -3519,
+        "pos_site": "southpole",
+        "station_id": 1016,
+        "reference_station": 1001
+    },
+    "1017": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -9528,
+        "pos_northing": -2003,
+        "pos_site": "southpole",
+        "station_id": 1017,
+        "reference_station": 1001
+    },
+    "1018": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -8653,
+        "pos_northing": -488,
+        "pos_site": "southpole",
+        "station_id": 1018,
+        "reference_station": 1001
+    },
+    "1019": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -7778,
+        "pos_northing": 1027,
+        "pos_site": "southpole",
+        "station_id": 1019,
+        "reference_station": 1001
+    },
+    "1020": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -6903,
+        "pos_northing": 2542,
+        "pos_site": "southpole",
+        "station_id": 1020,
+        "reference_station": 1001
+    },
+    "1021": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -6028,
+        "pos_northing": 4058,
+        "pos_site": "southpole",
+        "station_id": 1021,
+        "reference_station": 1001
+    },
+    "1022": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -5153,
+        "pos_northing": 5573,
+        "pos_site": "southpole",
+        "station_id": 1022,
+        "reference_station": 1001
+    },
+    "1023": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -4278,
+        "pos_northing": 7089,
+        "pos_site": "southpole",
+        "station_id": 1023,
+        "reference_station": 1001
+    },
+    "1024": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -3403,
+        "pos_northing": 8605,
+        "pos_site": "southpole",
+        "station_id": 1024,
+        "reference_station": 1001
+    },
+    "1025": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -2528,
+        "pos_northing": 10120,
+        "pos_site": "southpole",
+        "station_id": 1025,
+        "reference_station": 1001
+    },
+    "1026": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -1653,
+        "pos_northing": 11636,
+        "pos_site": "southpole",
+        "station_id": 1026,
+        "reference_station": 1001
+    },
+    "1027": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -778,
+        "pos_northing": 13151,
+        "pos_site": "southpole",
+        "station_id": 1027,
+        "reference_station": 1001
+    },
+    "1028": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 96,
+        "pos_northing": 14667,
+        "pos_site": "southpole",
+        "station_id": 1028,
+        "reference_station": 1001
+    },
+    "1029": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 971,
+        "pos_northing": 16182,
+        "pos_site": "southpole",
+        "station_id": 1029,
+        "reference_station": 1001
+    },
+    "1030": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -10403,
+        "pos_northing": -6550,
+        "pos_site": "southpole",
+        "station_id": 1030,
+        "reference_station": 1001
+    },
+    "1031": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -9528,
+        "pos_northing": -5034,
+        "pos_site": "southpole",
+        "station_id": 1031,
+        "reference_station": 1001
+    },
+    "1032": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -8653,
+        "pos_northing": -3519,
+        "pos_site": "southpole",
+        "station_id": 1032,
+        "reference_station": 1001
+    },
+    "1033": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -7778,
+        "pos_northing": -2003,
+        "pos_site": "southpole",
+        "station_id": 1033,
+        "reference_station": 1001
+    },
+    "1034": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -6903,
+        "pos_northing": -488,
+        "pos_site": "southpole",
+        "station_id": 1034,
+        "reference_station": 1001
+    },
+    "1035": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -6028,
+        "pos_northing": 1027,
+        "pos_site": "southpole",
+        "station_id": 1035,
+        "reference_station": 1001
+    },
+    "1036": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -5153,
+        "pos_northing": 2542,
+        "pos_site": "southpole",
+        "station_id": 1036,
+        "reference_station": 1001
+    },
+    "1037": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -4278,
+        "pos_northing": 4058,
+        "pos_site": "southpole",
+        "station_id": 1037,
+        "reference_station": 1001
+    },
+    "1038": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -3403,
+        "pos_northing": 5573,
+        "pos_site": "southpole",
+        "station_id": 1038,
+        "reference_station": 1001
+    },
+    "1039": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -2528,
+        "pos_northing": 7089,
+        "pos_site": "southpole",
+        "station_id": 1039,
+        "reference_station": 1001
+    },
+    "1040": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -1653,
+        "pos_northing": 8605,
+        "pos_site": "southpole",
+        "station_id": 1040,
+        "reference_station": 1001
+    },
+    "1041": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -778,
+        "pos_northing": 10120,
+        "pos_site": "southpole",
+        "station_id": 1041,
+        "reference_station": 1001
+    },
+    "1042": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 96,
+        "pos_northing": 11636,
+        "pos_site": "southpole",
+        "station_id": 1042,
+        "reference_station": 1001
+    },
+    "1043": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 971,
+        "pos_northing": 13151,
+        "pos_site": "southpole",
+        "station_id": 1043,
+        "reference_station": 1001
+    },
+    "1044": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 1846,
+        "pos_northing": 14667,
+        "pos_site": "southpole",
+        "station_id": 1044,
+        "reference_station": 1001
+    },
+    "1045": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 2721,
+        "pos_northing": 16182,
+        "pos_site": "southpole",
+        "station_id": 1045,
+        "reference_station": 1001
+    },
+    "1046": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 3596,
+        "pos_northing": 17698,
+        "pos_site": "southpole",
+        "station_id": 1046,
+        "reference_station": 1001
+    },
+    "1047": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -9528,
+        "pos_northing": -8065,
+        "pos_site": "southpole",
+        "station_id": 1047,
+        "reference_station": 1001
+    },
+    "1048": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -8653,
+        "pos_northing": -6550,
+        "pos_site": "southpole",
+        "station_id": 1048,
+        "reference_station": 1001
+    },
+    "1049": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -7778,
+        "pos_northing": -5034,
+        "pos_site": "southpole",
+        "station_id": 1049,
+        "reference_station": 1001
+    },
+    "1050": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -6903,
+        "pos_northing": -3519,
+        "pos_site": "southpole",
+        "station_id": 1050,
+        "reference_station": 1001
+    },
+    "1051": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -6028,
+        "pos_northing": -2003,
+        "pos_site": "southpole",
+        "station_id": 1051,
+        "reference_station": 1001
+    },
+    "1052": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -5153,
+        "pos_northing": -488,
+        "pos_site": "southpole",
+        "station_id": 1052,
+        "reference_station": 1001
+    },
+    "1053": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -4278,
+        "pos_northing": 1027,
+        "pos_site": "southpole",
+        "station_id": 1053,
+        "reference_station": 1001
+    },
+    "1054": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -3403,
+        "pos_northing": 2542,
+        "pos_site": "southpole",
+        "station_id": 1054,
+        "reference_station": 1001
+    },
+    "1055": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -2528,
+        "pos_northing": 4058,
+        "pos_site": "southpole",
+        "station_id": 1055,
+        "reference_station": 1001
+    },
+    "1056": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -1653,
+        "pos_northing": 5573,
+        "pos_site": "southpole",
+        "station_id": 1056,
+        "reference_station": 1001
+    },
+    "1057": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -778,
+        "pos_northing": 7089,
+        "pos_site": "southpole",
+        "station_id": 1057,
+        "reference_station": 1001
+    },
+    "1058": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 96,
+        "pos_northing": 8605,
+        "pos_site": "southpole",
+        "station_id": 1058,
+        "reference_station": 1001
+    },
+    "1059": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 971,
+        "pos_northing": 10120,
+        "pos_site": "southpole",
+        "station_id": 1059,
+        "reference_station": 1001
+    },
+    "1060": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 1846,
+        "pos_northing": 11636,
+        "pos_site": "southpole",
+        "station_id": 1060,
+        "reference_station": 1001
+    },
+    "1061": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 2721,
+        "pos_northing": 13151,
+        "pos_site": "southpole",
+        "station_id": 1061,
+        "reference_station": 1001
+    },
+    "1062": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 3596,
+        "pos_northing": 14667,
+        "pos_site": "southpole",
+        "station_id": 1062,
+        "reference_station": 1001
+    },
+    "1063": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 4471,
+        "pos_northing": 16182,
+        "pos_site": "southpole",
+        "station_id": 1063,
+        "reference_station": 1001
+    },
+    "1064": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 5346,
+        "pos_northing": 17698,
+        "pos_site": "southpole",
+        "station_id": 1064,
+        "reference_station": 1001
+    },
+    "1065": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -8653,
+        "pos_northing": -9581,
+        "pos_site": "southpole",
+        "station_id": 1065,
+        "reference_station": 1001
+    },
+    "1066": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -7778,
+        "pos_northing": -8065,
+        "pos_site": "southpole",
+        "station_id": 1066,
+        "reference_station": 1001
+    },
+    "1067": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -6903,
+        "pos_northing": -6550,
+        "pos_site": "southpole",
+        "station_id": 1067,
+        "reference_station": 1001
+    },
+    "1068": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -6028,
+        "pos_northing": -5034,
+        "pos_site": "southpole",
+        "station_id": 1068,
+        "reference_station": 1001
+    },
+    "1069": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -5153,
+        "pos_northing": -3519,
+        "pos_site": "southpole",
+        "station_id": 1069,
+        "reference_station": 1001
+    },
+    "1070": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -4278,
+        "pos_northing": -2003,
+        "pos_site": "southpole",
+        "station_id": 1070,
+        "reference_station": 1001
+    },
+    "1071": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -3403,
+        "pos_northing": -488,
+        "pos_site": "southpole",
+        "station_id": 1071,
+        "reference_station": 1001
+    },
+    "1072": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -2528,
+        "pos_northing": 1027,
+        "pos_site": "southpole",
+        "station_id": 1072,
+        "reference_station": 1001
+    },
+    "1073": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -1653,
+        "pos_northing": 2542,
+        "pos_site": "southpole",
+        "station_id": 1073,
+        "reference_station": 1001
+    },
+    "1074": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -778,
+        "pos_northing": 4058,
+        "pos_site": "southpole",
+        "station_id": 1074,
+        "reference_station": 1001
+    },
+    "1075": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 96,
+        "pos_northing": 5573,
+        "pos_site": "southpole",
+        "station_id": 1075,
+        "reference_station": 1001
+    },
+    "1076": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 971,
+        "pos_northing": 7089,
+        "pos_site": "southpole",
+        "station_id": 1076,
+        "reference_station": 1001
+    },
+    "1077": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 1846,
+        "pos_northing": 8605,
+        "pos_site": "southpole",
+        "station_id": 1077,
+        "reference_station": 1001
+    },
+    "1078": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 2721,
+        "pos_northing": 10120,
+        "pos_site": "southpole",
+        "station_id": 1078,
+        "reference_station": 1001
+    },
+    "1079": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 3596,
+        "pos_northing": 11636,
+        "pos_site": "southpole",
+        "station_id": 1079,
+        "reference_station": 1001
+    },
+    "1080": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 4471,
+        "pos_northing": 13151,
+        "pos_site": "southpole",
+        "station_id": 1080,
+        "reference_station": 1001
+    },
+    "1081": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 5346,
+        "pos_northing": 14667,
+        "pos_site": "southpole",
+        "station_id": 1081,
+        "reference_station": 1001
+    },
+    "1082": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 6221,
+        "pos_northing": 16182,
+        "pos_site": "southpole",
+        "station_id": 1082,
+        "reference_station": 1001
+    },
+    "1083": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -8653,
+        "pos_northing": -12612,
+        "pos_site": "southpole",
+        "station_id": 1083,
+        "reference_station": 1001
+    },
+    "1084": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -7778,
+        "pos_northing": -11096,
+        "pos_site": "southpole",
+        "station_id": 1084,
+        "reference_station": 1001
+    },
+    "1085": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -6903,
+        "pos_northing": -9581,
+        "pos_site": "southpole",
+        "station_id": 1085,
+        "reference_station": 1001
+    },
+    "1086": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -6028,
+        "pos_northing": -8065,
+        "pos_site": "southpole",
+        "station_id": 1086,
+        "reference_station": 1001
+    },
+    "1087": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -5153,
+        "pos_northing": -6550,
+        "pos_site": "southpole",
+        "station_id": 1087,
+        "reference_station": 1001
+    },
+    "1088": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -4278,
+        "pos_northing": -5034,
+        "pos_site": "southpole",
+        "station_id": 1088,
+        "reference_station": 1001
+    },
+    "1089": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -3403,
+        "pos_northing": -3519,
+        "pos_site": "southpole",
+        "station_id": 1089,
+        "reference_station": 1001
+    },
+    "1090": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -2528,
+        "pos_northing": -2003,
+        "pos_site": "southpole",
+        "station_id": 1090,
+        "reference_station": 1001
+    },
+    "1091": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -1653,
+        "pos_northing": -488,
+        "pos_site": "southpole",
+        "station_id": 1091,
+        "reference_station": 1001
+    },
+    "1092": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -778,
+        "pos_northing": 1027,
+        "pos_site": "southpole",
+        "station_id": 1092,
+        "reference_station": 1001
+    },
+    "1093": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 96,
+        "pos_northing": 2542,
+        "pos_site": "southpole",
+        "station_id": 1093,
+        "reference_station": 1001
+    },
+    "1094": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 971,
+        "pos_northing": 4058,
+        "pos_site": "southpole",
+        "station_id": 1094,
+        "reference_station": 1001
+    },
+    "1095": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 1846,
+        "pos_northing": 5573,
+        "pos_site": "southpole",
+        "station_id": 1095,
+        "reference_station": 1001
+    },
+    "1096": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 2721,
+        "pos_northing": 7089,
+        "pos_site": "southpole",
+        "station_id": 1096,
+        "reference_station": 1001
+    },
+    "1097": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 3596,
+        "pos_northing": 8605,
+        "pos_site": "southpole",
+        "station_id": 1097,
+        "reference_station": 1001
+    },
+    "1098": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 4471,
+        "pos_northing": 10120,
+        "pos_site": "southpole",
+        "station_id": 1098,
+        "reference_station": 1001
+    },
+    "1099": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 5346,
+        "pos_northing": 11636,
+        "pos_site": "southpole",
+        "station_id": 1099,
+        "reference_station": 1001
+    },
+    "1100": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 6221,
+        "pos_northing": 13151,
+        "pos_site": "southpole",
+        "station_id": 1100,
+        "reference_station": 1001
+    },
+    "1101": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -7778,
+        "pos_northing": -14128,
+        "pos_site": "southpole",
+        "station_id": 1101,
+        "reference_station": 1001
+    },
+    "1102": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -6903,
+        "pos_northing": -12612,
+        "pos_site": "southpole",
+        "station_id": 1102,
+        "reference_station": 1001
+    },
+    "1103": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -6028,
+        "pos_northing": -11096,
+        "pos_site": "southpole",
+        "station_id": 1103,
+        "reference_station": 1001
+    },
+    "1104": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -5153,
+        "pos_northing": -9581,
+        "pos_site": "southpole",
+        "station_id": 1104,
+        "reference_station": 1001
+    },
+    "1105": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -4278,
+        "pos_northing": -8065,
+        "pos_site": "southpole",
+        "station_id": 1105,
+        "reference_station": 1001
+    },
+    "1106": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -3403,
+        "pos_northing": -6550,
+        "pos_site": "southpole",
+        "station_id": 1106,
+        "reference_station": 1001
+    },
+    "1107": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -2528,
+        "pos_northing": -5034,
+        "pos_site": "southpole",
+        "station_id": 1107,
+        "reference_station": 1001
+    },
+    "1108": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -1653,
+        "pos_northing": -3519,
+        "pos_site": "southpole",
+        "station_id": 1108,
+        "reference_station": 1001
+    },
+    "1109": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -778,
+        "pos_northing": -2003,
+        "pos_site": "southpole",
+        "station_id": 1109,
+        "reference_station": 1001
+    },
+    "1110": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 96,
+        "pos_northing": -488,
+        "pos_site": "southpole",
+        "station_id": 1110,
+        "reference_station": 1001
+    },
+    "1111": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 971,
+        "pos_northing": 1027,
+        "pos_site": "southpole",
+        "station_id": 1111,
+        "reference_station": 1001
+    },
+    "1112": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 1846,
+        "pos_northing": 2542,
+        "pos_site": "southpole",
+        "station_id": 1112,
+        "reference_station": 1001
+    },
+    "1113": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 2721,
+        "pos_northing": 4058,
+        "pos_site": "southpole",
+        "station_id": 1113,
+        "reference_station": 1001
+    },
+    "1114": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 3596,
+        "pos_northing": 5573,
+        "pos_site": "southpole",
+        "station_id": 1114,
+        "reference_station": 1001
+    },
+    "1115": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 4471,
+        "pos_northing": 7089,
+        "pos_site": "southpole",
+        "station_id": 1115,
+        "reference_station": 1001
+    },
+    "1116": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 5346,
+        "pos_northing": 8605,
+        "pos_site": "southpole",
+        "station_id": 1116,
+        "reference_station": 1001
+    },
+    "1117": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 6221,
+        "pos_northing": 10120,
+        "pos_site": "southpole",
+        "station_id": 1117,
+        "reference_station": 1001
+    },
+    "1118": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 7096,
+        "pos_northing": 11636,
+        "pos_site": "southpole",
+        "station_id": 1118,
+        "reference_station": 1001
+    },
+    "1119": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -6903,
+        "pos_northing": -15643,
+        "pos_site": "southpole",
+        "station_id": 1119,
+        "reference_station": 1001
+    },
+    "1120": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -6028,
+        "pos_northing": -14128,
+        "pos_site": "southpole",
+        "station_id": 1120,
+        "reference_station": 1001
+    },
+    "1121": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -5153,
+        "pos_northing": -12612,
+        "pos_site": "southpole",
+        "station_id": 1121,
+        "reference_station": 1001
+    },
+    "1122": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -4278,
+        "pos_northing": -11096,
+        "pos_site": "southpole",
+        "station_id": 1122,
+        "reference_station": 1001
+    },
+    "1123": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -3403,
+        "pos_northing": -9581,
+        "pos_site": "southpole",
+        "station_id": 1123,
+        "reference_station": 1001
+    },
+    "1124": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -2528,
+        "pos_northing": -8065,
+        "pos_site": "southpole",
+        "station_id": 1124,
+        "reference_station": 1001
+    },
+    "1125": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -1653,
+        "pos_northing": -6550,
+        "pos_site": "southpole",
+        "station_id": 1125,
+        "reference_station": 1001
+    },
+    "1126": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -778,
+        "pos_northing": -5034,
+        "pos_site": "southpole",
+        "station_id": 1126,
+        "reference_station": 1001
+    },
+    "1127": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 96,
+        "pos_northing": -3519,
+        "pos_site": "southpole",
+        "station_id": 1127,
+        "reference_station": 1001
+    },
+    "1128": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 971,
+        "pos_northing": -2003,
+        "pos_site": "southpole",
+        "station_id": 1128,
+        "reference_station": 1001
+    },
+    "1129": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 1846,
+        "pos_northing": -488,
+        "pos_site": "southpole",
+        "station_id": 1129,
+        "reference_station": 1001
+    },
+    "1130": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 2721,
+        "pos_northing": 1027,
+        "pos_site": "southpole",
+        "station_id": 1130,
+        "reference_station": 1001
+    },
+    "1131": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 3596,
+        "pos_northing": 2542,
+        "pos_site": "southpole",
+        "station_id": 1131,
+        "reference_station": 1001
+    },
+    "1132": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 4471,
+        "pos_northing": 4058,
+        "pos_site": "southpole",
+        "station_id": 1132,
+        "reference_station": 1001
+    },
+    "1133": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 5346,
+        "pos_northing": 5573,
+        "pos_site": "southpole",
+        "station_id": 1133,
+        "reference_station": 1001
+    },
+    "1134": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 6221,
+        "pos_northing": 7089,
+        "pos_site": "southpole",
+        "station_id": 1134,
+        "reference_station": 1001
+    },
+    "1135": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 7096,
+        "pos_northing": 8605,
+        "pos_site": "southpole",
+        "station_id": 1135,
+        "reference_station": 1001
+    },
+    "1136": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 7971,
+        "pos_northing": 10120,
+        "pos_site": "southpole",
+        "station_id": 1136,
+        "reference_station": 1001
+    },
+    "1137": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -6028,
+        "pos_northing": -17159,
+        "pos_site": "southpole",
+        "station_id": 1137,
+        "reference_station": 1001
+    },
+    "1138": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -5153,
+        "pos_northing": -15643,
+        "pos_site": "southpole",
+        "station_id": 1138,
+        "reference_station": 1001
+    },
+    "1139": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -4278,
+        "pos_northing": -14128,
+        "pos_site": "southpole",
+        "station_id": 1139,
+        "reference_station": 1001
+    },
+    "1140": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -3403,
+        "pos_northing": -12612,
+        "pos_site": "southpole",
+        "station_id": 1140,
+        "reference_station": 1001
+    },
+    "1141": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -2528,
+        "pos_northing": -11096,
+        "pos_site": "southpole",
+        "station_id": 1141,
+        "reference_station": 1001
+    },
+    "1142": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -1653,
+        "pos_northing": -9581,
+        "pos_site": "southpole",
+        "station_id": 1142,
+        "reference_station": 1001
+    },
+    "1143": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -778,
+        "pos_northing": -8065,
+        "pos_site": "southpole",
+        "station_id": 1143,
+        "reference_station": 1001
+    },
+    "1144": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 96,
+        "pos_northing": -6550,
+        "pos_site": "southpole",
+        "station_id": 1144,
+        "reference_station": 1001
+    },
+    "1145": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 971,
+        "pos_northing": -5034,
+        "pos_site": "southpole",
+        "station_id": 1145,
+        "reference_station": 1001
+    },
+    "1146": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 1846,
+        "pos_northing": -3519,
+        "pos_site": "southpole",
+        "station_id": 1146,
+        "reference_station": 1001
+    },
+    "1147": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 2721,
+        "pos_northing": -2003,
+        "pos_site": "southpole",
+        "station_id": 1147,
+        "reference_station": 1001
+    },
+    "1148": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 3596,
+        "pos_northing": -488,
+        "pos_site": "southpole",
+        "station_id": 1148,
+        "reference_station": 1001
+    },
+    "1149": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 4471,
+        "pos_northing": 1027,
+        "pos_site": "southpole",
+        "station_id": 1149,
+        "reference_station": 1001
+    },
+    "1150": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 5346,
+        "pos_northing": 2542,
+        "pos_site": "southpole",
+        "station_id": 1150,
+        "reference_station": 1001
+    },
+    "1151": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 6221,
+        "pos_northing": 4058,
+        "pos_site": "southpole",
+        "station_id": 1151,
+        "reference_station": 1001
+    },
+    "1152": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 7096,
+        "pos_northing": 5573,
+        "pos_site": "southpole",
+        "station_id": 1152,
+        "reference_station": 1001
+    },
+    "1153": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 7971,
+        "pos_northing": 7089,
+        "pos_site": "southpole",
+        "station_id": 1153,
+        "reference_station": 1001
+    },
+    "1154": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 8846,
+        "pos_northing": 8605,
+        "pos_site": "southpole",
+        "station_id": 1154,
+        "reference_station": 1001
+    },
+    "1155": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -4278,
+        "pos_northing": -17159,
+        "pos_site": "southpole",
+        "station_id": 1155,
+        "reference_station": 1001
+    },
+    "1156": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -3403,
+        "pos_northing": -15643,
+        "pos_site": "southpole",
+        "station_id": 1156,
+        "reference_station": 1001
+    },
+    "1157": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -2528,
+        "pos_northing": -14128,
+        "pos_site": "southpole",
+        "station_id": 1157,
+        "reference_station": 1001
+    },
+    "1158": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -1653,
+        "pos_northing": -12612,
+        "pos_site": "southpole",
+        "station_id": 1158,
+        "reference_station": 1001
+    },
+    "1159": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -778,
+        "pos_northing": -11096,
+        "pos_site": "southpole",
+        "station_id": 1159,
+        "reference_station": 1001
+    },
+    "1160": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 96,
+        "pos_northing": -9581,
+        "pos_site": "southpole",
+        "station_id": 1160,
+        "reference_station": 1001
+    },
+    "1161": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 971,
+        "pos_northing": -8065,
+        "pos_site": "southpole",
+        "station_id": 1161,
+        "reference_station": 1001
+    },
+    "1162": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 1846,
+        "pos_northing": -6550,
+        "pos_site": "southpole",
+        "station_id": 1162,
+        "reference_station": 1001
+    },
+    "1163": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 2721,
+        "pos_northing": -5034,
+        "pos_site": "southpole",
+        "station_id": 1163,
+        "reference_station": 1001
+    },
+    "1164": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 3596,
+        "pos_northing": -3519,
+        "pos_site": "southpole",
+        "station_id": 1164,
+        "reference_station": 1001
+    },
+    "1165": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 4471,
+        "pos_northing": -2003,
+        "pos_site": "southpole",
+        "station_id": 1165,
+        "reference_station": 1001
+    },
+    "1166": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 5346,
+        "pos_northing": -488,
+        "pos_site": "southpole",
+        "station_id": 1166,
+        "reference_station": 1001
+    },
+    "1167": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 6221,
+        "pos_northing": 1027,
+        "pos_site": "southpole",
+        "station_id": 1167,
+        "reference_station": 1001
+    },
+    "1168": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 7096,
+        "pos_northing": 2542,
+        "pos_site": "southpole",
+        "station_id": 1168,
+        "reference_station": 1001
+    },
+    "1169": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 7971,
+        "pos_northing": 4058,
+        "pos_site": "southpole",
+        "station_id": 1169,
+        "reference_station": 1001
+    },
+    "1170": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 8846,
+        "pos_northing": 5573,
+        "pos_site": "southpole",
+        "station_id": 1170,
+        "reference_station": 1001
+    },
+    "1171": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -1653,
+        "pos_northing": -15643,
+        "pos_site": "southpole",
+        "station_id": 1171,
+        "reference_station": 1001
+    },
+    "1172": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": -778,
+        "pos_northing": -14128,
+        "pos_site": "southpole",
+        "station_id": 1172,
+        "reference_station": 1001
+    },
+    "1173": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 96,
+        "pos_northing": -12612,
+        "pos_site": "southpole",
+        "station_id": 1173,
+        "reference_station": 1001
+    },
+    "1174": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 971,
+        "pos_northing": -11096,
+        "pos_site": "southpole",
+        "station_id": 1174,
+        "reference_station": 1001
+    },
+    "1175": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 1846,
+        "pos_northing": -9581,
+        "pos_site": "southpole",
+        "station_id": 1175,
+        "reference_station": 1001
+    },
+    "1176": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 2721,
+        "pos_northing": -8065,
+        "pos_site": "southpole",
+        "station_id": 1176,
+        "reference_station": 1001
+    },
+    "1177": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 3596,
+        "pos_northing": -6550,
+        "pos_site": "southpole",
+        "station_id": 1177,
+        "reference_station": 1001
+    },
+    "1178": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 4471,
+        "pos_northing": -5034,
+        "pos_site": "southpole",
+        "station_id": 1178,
+        "reference_station": 1001
+    },
+    "1179": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 5346,
+        "pos_northing": -3519,
+        "pos_site": "southpole",
+        "station_id": 1179,
+        "reference_station": 1001
+    },
+    "1180": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 6221,
+        "pos_northing": -2003,
+        "pos_site": "southpole",
+        "station_id": 1180,
+        "reference_station": 1001
+    },
+    "1181": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 7096,
+        "pos_northing": -488,
+        "pos_site": "southpole",
+        "station_id": 1181,
+        "reference_station": 1001
+    },
+    "1182": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 7971,
+        "pos_northing": 1027,
+        "pos_site": "southpole",
+        "station_id": 1182,
+        "reference_station": 1001
+    },
+    "1183": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 8846,
+        "pos_northing": 2542,
+        "pos_site": "southpole",
+        "station_id": 1183,
+        "reference_station": 1001
+    },
+    "1184": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 9721,
+        "pos_northing": 4058,
+        "pos_site": "southpole",
+        "station_id": 1184,
+        "reference_station": 1001
+    },
+    "1185": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 1846,
+        "pos_northing": -12612,
+        "pos_site": "southpole",
+        "station_id": 1185,
+        "reference_station": 1001
+    },
+    "1186": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 2721,
+        "pos_northing": -11096,
+        "pos_site": "southpole",
+        "station_id": 1186,
+        "reference_station": 1001
+    },
+    "1187": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 3596,
+        "pos_northing": -9581,
+        "pos_site": "southpole",
+        "station_id": 1187,
+        "reference_station": 1001
+    },
+    "1188": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 4471,
+        "pos_northing": -8065,
+        "pos_site": "southpole",
+        "station_id": 1188,
+        "reference_station": 1001
+    },
+    "1189": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 5346,
+        "pos_northing": -6550,
+        "pos_site": "southpole",
+        "station_id": 1189,
+        "reference_station": 1001
+    },
+    "1190": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 6221,
+        "pos_northing": -5034,
+        "pos_site": "southpole",
+        "station_id": 1190,
+        "reference_station": 1001
+    },
+    "1191": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 7096,
+        "pos_northing": -3519,
+        "pos_site": "southpole",
+        "station_id": 1191,
+        "reference_station": 1001
+    },
+    "1192": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 7971,
+        "pos_northing": -2003,
+        "pos_site": "southpole",
+        "station_id": 1192,
+        "reference_station": 1001
+    },
+    "1193": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 8846,
+        "pos_northing": -488,
+        "pos_site": "southpole",
+        "station_id": 1193,
+        "reference_station": 1001
+    },
+    "1194": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 9721,
+        "pos_northing": 1027,
+        "pos_site": "southpole",
+        "station_id": 1194,
+        "reference_station": 1001
+    },
+    "1195": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 10596,
+        "pos_northing": 2542,
+        "pos_site": "southpole",
+        "station_id": 1195,
+        "reference_station": 1001
+    },
+    "1196": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 4471,
+        "pos_northing": -11096,
+        "pos_site": "southpole",
+        "station_id": 1196,
+        "reference_station": 1001
+    },
+    "1197": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 5346,
+        "pos_northing": -9581,
+        "pos_site": "southpole",
+        "station_id": 1197,
+        "reference_station": 1001
+    },
+    "1198": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 6221,
+        "pos_northing": -8065,
+        "pos_site": "southpole",
+        "station_id": 1198,
+        "reference_station": 1001
+    },
+    "1199": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 7096,
+        "pos_northing": -6550,
+        "pos_site": "southpole",
+        "station_id": 1199,
+        "reference_station": 1001
+    },
+    "1200": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 7971,
+        "pos_northing": -5034,
+        "pos_site": "southpole",
+        "station_id": 1200,
+        "reference_station": 1001
+    },
+    "1201": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 8846,
+        "pos_northing": -3519,
+        "pos_site": "southpole",
+        "station_id": 1201,
+        "reference_station": 1001
+    },
+    "1202": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 9721,
+        "pos_northing": -2003,
+        "pos_site": "southpole",
+        "station_id": 1202,
+        "reference_station": 1001
+    },
+    "1203": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 10596,
+        "pos_northing": -488,
+        "pos_site": "southpole",
+        "station_id": 1203,
+        "reference_station": 1001
+    },
+    "1204": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 11471,
+        "pos_northing": 1027,
+        "pos_site": "southpole",
+        "station_id": 1204,
+        "reference_station": 1001
+    },
+    "1205": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 7971,
+        "pos_northing": -8065,
+        "pos_site": "southpole",
+        "station_id": 1205,
+        "reference_station": 1001
+    },
+    "1206": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 8846,
+        "pos_northing": -6550,
+        "pos_site": "southpole",
+        "station_id": 1206,
+        "reference_station": 1001
+    },
+    "1207": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 9721,
+        "pos_northing": -5034,
+        "pos_site": "southpole",
+        "station_id": 1207,
+        "reference_station": 1001
+    },
+    "1208": {
+        "commission_time": "{TinyDate}:2017-11-04T00:00:00",
+        "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
+        "pos_easting": 12346,
+        "pos_northing": -488,
+        "pos_site": "southpole",
+        "station_id": 1208,
+        "reference_station": 1001
+    }
+}
