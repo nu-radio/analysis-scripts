@@ -70,7 +70,10 @@ for channel_id in range(0, 9):
 
 
 class TDR_Simulation(simulation.simulation):
-
+    # TODO:
+    # - ensure bandpass is applied on the fly and saved traces are without the passband
+    # - might need to implement _part1 to apply passband on the fly to all channels?
+    # - ensure Vrms is calculated correctly (caveat: passband)
     def _detector_simulation_part2(self):
         # start detector simulation
         efieldToVoltageConverter.run(self._evt, self._station, self._det)  # convolve efield with antenna pattern
@@ -98,7 +101,7 @@ class TDR_Simulation(simulation.simulation):
 
     def _detector_simulation_trigger(self, evt, station, det):
 
-        # TODO do we need a noiseless channel at 150m depth?
+        # TODO do we need a noiseless channel at 150m depth? I think we don't
         #simple_thresholds = [] # list of n-sigma thresholds to run # TODO do not run any for now
         #for n_sigma in simple_thresholds:
         #    simpleThreshold.run(evt, station, det,
@@ -107,6 +110,7 @@ class TDR_Simulation(simulation.simulation):
         #                             number_concidences=1,
         #                             trigger_name=f'dipole_{n_sigma}sigma')
 
+        # get the Vrms before applying the passband
         Vrms = self._Vrms_per_channel[station.get_id()][9]
 
         # apply the BandPassFilter just before the trigger
