@@ -1,7 +1,7 @@
 {
     "_default": {},
     "channels": {
-        "h1": {
+        "1": {
           "amp_type": "rno_surface",
           "ant_comment": "surface triangle east, upward",
           "ant_orientation_phi": 0.0,
@@ -17,7 +17,7 @@
           "channel_id": 1,
           "station_id": 1001
         },
-        "h2": {
+        "2": {
           "amp_type": "rno_surface",
           "ant_comment": "surface triangle south, upward",
           "ant_orientation_phi": 0.0,
@@ -31,7 +31,7 @@
           "channel_id": 2,
           "station_id": 1001
         },
-        "h3": {
+        "3": {
           "amp_type": "rno_surface",
           "ant_comment": "surface triangle north, upward",
           "ant_orientation_phi": 0.0,
@@ -45,7 +45,7 @@
           "channel_id": 3,
           "station_id": 1001
         },
-        "h4": {
+        "4": {
           "amp_type": "rno_surface",
           "ant_comment": "surface rectangle north west, downwards",
           "ant_orientation_phi": 0.0,
@@ -59,7 +59,7 @@
           "channel_id": 4,
           "station_id": 1001
         },
-        "h5": {
+        "5": {
           "amp_type": "rno_surface",
           "ant_comment": "surface rectangle north east, downwards",
           "ant_orientation_phi": 0.0,
@@ -73,7 +73,7 @@
           "channel_id": 5,
           "station_id": 1001
         },
-        "h6": {
+        "6": {
           "amp_type": "rno_surface",
           "ant_comment": "surface rectangle south east, downwards",
           "ant_orientation_phi": 0.0,
@@ -87,7 +87,7 @@
           "channel_id": 6,
           "station_id": 1001
         },
-        "h7": {
+        "7": {
           "amp_type": "rno_surface",
           "ant_comment": "surface rectangle south west, downwards",
           "ant_orientation_phi": 0.0,
@@ -101,7 +101,7 @@
           "channel_id": 7,
           "station_id": 1001
         },
-        "h8": {
+        "8": {
           "amp_type": "iglu",
           "ant_comment": "near-surface dipole",
           "ant_orientation_phi": 0.0,
@@ -115,7 +115,7 @@
           "channel_id": 8,
           "station_id": 1001
         },
-        "h9": {
+        "9": {
           "ant_comment": "phased array 1",
           "amp_type": "iglu",
           "adc_sampling_frequency": 2.0,
@@ -132,7 +132,7 @@
           "channel_id": 9,
           "station_id": 1001
         },
-        "h10": {
+        "10": {
           "ant_comment": "phased array 2",
           "ant_position_x": 0.0,
           "ant_position_y": 20.0,
@@ -143,7 +143,7 @@
           "channel_id": 10,
           "station_id": 1001
         },
-        "h11": {
+        "11": {
           "ant_comment": "phased array 3",
           "ant_position_x": 0.0,
           "ant_position_y": 20.0,
@@ -154,7 +154,7 @@
           "channel_id": 11,
           "station_id": 1001
         },
-        "h12": {
+        "12": {
           "ant_comment": "phased array 4",
           "ant_position_x": 0.0,
           "ant_position_y": 20.0,
@@ -165,7 +165,7 @@
           "channel_id": 12,
           "station_id": 1001
         },
-        "h13": {
+        "13": {
           "ant_comment": "phased array 5",
           "ant_position_x": 0.0,
           "ant_position_y": 20.0,
@@ -176,7 +176,7 @@
           "channel_id": 13,
           "station_id": 1001
         },
-        "h14": {
+        "14": {
           "ant_comment": "phased array 6",
           "ant_position_x": 0.0,
           "ant_position_y": 20.0,
@@ -187,7 +187,7 @@
           "channel_id": 14,
           "station_id": 1001
         },
-        "h15": {
+        "15": {
           "ant_comment": "phased array 7",
           "ant_position_x": 0.0,
           "ant_position_y": 20.0,
@@ -198,7 +198,7 @@
           "channel_id": 15,
           "station_id": 1001
         },
-        "h16": {
+        "16": {
           "ant_comment": "phased array 8",
           "ant_position_x": 0.0,
           "ant_position_y": 20.0,
@@ -209,7 +209,7 @@
           "channel_id": 16,
           "station_id": 1001
         },
-        "h17": {
+        "17": {
             "ant_comment": "Hpol power string 1",
             "ant_position_x": 0.0,
             "ant_position_y": 20.0,
@@ -220,7 +220,7 @@
             "channel_id": 17,
             "station_id": 1001
         },
-        "h18": {
+        "18": {
             "ant_comment": "Hpol power string 2",
             "ant_position_x": 0.0,
             "ant_position_y": 20.0,
@@ -231,7 +231,7 @@
             "channel_id": 18,
             "station_id": 1001
         },
-        "h19": {
+        "19": {
             "ant_comment": "Hpol power string 3",
             "ant_position_x": 0.0,
             "ant_position_y": 20.0,
@@ -242,7 +242,7 @@
             "channel_id": 19,
             "station_id": 1001
         },
-        "h20": {
+        "20": {
             "ant_comment": "Hpol power string 4",
             "ant_position_x": 0.0,
             "ant_position_y": 20.0,
@@ -253,7 +253,7 @@
             "channel_id": 20,
             "station_id": 1001
         },
-        "h21": {
+        "21": {
             "ant_comment": "Vpol helper string B",
             "ant_position_x": 17.3,
             "ant_position_y": -10.0,
@@ -264,7 +264,7 @@
             "channel_id": 21,
             "station_id": 1001
         },
-        "h22": {
+        "22": {
             "ant_comment": "Vpol helper string B",
             "ant_position_x": 17.3,
             "ant_position_y": -10.0,
@@ -275,7 +275,7 @@
             "channel_id": 22,
             "station_id": 1001
         },
-        "h23": {
+        "23": {
             "ant_comment": "Hpol helper string B",
             "ant_position_x": 17.3,
             "ant_position_y": -10.0,
@@ -286,7 +286,7 @@
             "channel_id": 23,
             "station_id": 1001
         },
-        "h24": {
+        "24": {
             "ant_comment": "Hpol helper string B",
             "ant_position_x": 17.3,
             "ant_position_y": -10.0,
@@ -297,7 +297,7 @@
             "channel_id": 24,
             "station_id": 1001
         },
-        "h25": {
+        "25": {
             "ant_comment": "Hpol helper string B",
             "ant_position_x": 17.3,
             "ant_position_y": -10.0,
@@ -308,7 +308,7 @@
             "channel_id": 25,
             "station_id": 1001
         },
-        "h26": {
+        "26": {
             "ant_comment": "Hpol helper string B",
             "ant_position_x": 17.3,
             "ant_position_y": -10.0,
@@ -319,7 +319,7 @@
             "channel_id": 26,
             "station_id": 1001
         },
-        "h27": {
+        "27": {
             "ant_comment": "Vpol helper string C",
             "ant_position_x": -17.3,
             "ant_position_y": -10.0,
@@ -330,7 +330,7 @@
             "channel_id": 27,
             "station_id": 1001
         },
-        "h28": {
+        "28": {
             "ant_comment": "Vpol helper string C",
             "ant_position_x": -17.3,
             "ant_position_y": -10.0,
@@ -341,7 +341,7 @@
             "channel_id": 28,
             "station_id": 1001
         },
-       "h29": {
+       "29": {
             "ant_comment": "Hpol helper string C",
             "ant_position_x": -17.3,
             "ant_position_y": -10.0,
@@ -352,7 +352,7 @@
             "channel_id": 29,
             "station_id": 1001
         },
-        "h30": {
+        "30": {
             "ant_comment": "Vpol power string",
             "ant_position_x": 0.0,
             "ant_position_y": 20.0,
@@ -363,7 +363,7 @@
             "channel_id": 30,
             "station_id": 1001
         },
-        "h31": {
+        "31": {
             "ant_comment": "Vpol power string",
             "ant_position_x": 0.0,
             "ant_position_y": 20.0,
@@ -374,7 +374,7 @@
             "channel_id": 31,
             "station_id": 1001
         },
-        "h32": {
+        "32": {
             "ant_comment": "Vpol power string",
             "ant_position_x": 0.0,
             "ant_position_y": 20.0,
@@ -385,7 +385,7 @@
             "channel_id": 32,
             "station_id": 1001
         },
-        "h33": {
+        "33": {
             "ant_comment": "Vpol power string",
             "ant_position_x": 0.0,
             "ant_position_y": 20.0,
@@ -396,7 +396,7 @@
             "channel_id": 33,
             "station_id": 1001
         },
-        "h34": {
+        "34": {
             "ant_comment": "Vpol power string",
             "ant_position_x": 0.0,
             "ant_position_y": 20.0,
@@ -407,7 +407,7 @@
             "channel_id": 34,
             "station_id": 1001
         },
-        "h35": {
+        "35": {
             "ant_comment": "Vpol helper string B",
             "ant_position_x": 17.3,
             "ant_position_y": -10.0,
@@ -418,7 +418,7 @@
             "channel_id": 35,
             "station_id": 1001
         },
-        "h36": {
+        "36": {
             "ant_comment": "Vpol helper string C",
             "ant_position_x": -17.3,
             "ant_position_y": -10.0,
@@ -429,7 +429,7 @@
             "channel_id": 36,
             "station_id": 1001
         },
-        "h37": {
+        "37": {
             "ant_comment": "Vpol helper string B 2",
             "ant_position_x": 22.0,
             "ant_position_y": -18.15,
@@ -440,7 +440,7 @@
             "channel_id": 37,
             "station_id": 1001
         },
-        "h38": {
+        "38": {
             "ant_comment": "Vpol helper string B 2",
             "ant_position_x": 22.0,
             "ant_position_y": -18.15,
@@ -451,7 +451,7 @@
             "channel_id": 38,
             "station_id": 1001
         },
-        "h39": {
+        "39": {
             "ant_comment": "Hpol helper string B 2",
             "ant_position_x": 22.0,
             "ant_position_y": -18.15,
@@ -462,7 +462,7 @@
             "channel_id": 39,
             "station_id": 1001
         },
-        "h40": {
+        "40": {
             "ant_comment": "Vpol helper string C 2",
             "ant_position_x": -22.0,
             "ant_position_y": -18.15,
@@ -473,7 +473,7 @@
             "channel_id": 40,
             "station_id": 1001
         },
-        "h41": {
+        "41": {
             "ant_comment": "Vpol helper string C 2",
             "ant_position_x": -22.0,
             "ant_position_y": -18.15,
@@ -484,7 +484,7 @@
             "channel_id": 41,
             "station_id": 1001
         },
-        "h42": {
+        "42": {
             "ant_comment": "Hpol helper string C 2",
             "ant_position_x": -22.0,
             "ant_position_y": -18.15,
@@ -495,7 +495,7 @@
             "channel_id": 42,
             "station_id": 1001
         },
-        "h43": {
+        "43": {
             "ant_comment": "Vpol helper string B 3",
             "ant_position_x": 40.0,
             "ant_position_y": -49.36,
@@ -506,7 +506,7 @@
             "channel_id": 43,
             "station_id": 1001
         },
-        "h44": {
+        "44": {
             "ant_comment": "Vpol helper string B 3",
             "ant_position_x": 40.0,
             "ant_position_y": -49.36,
@@ -517,7 +517,7 @@
             "channel_id": 44,
             "station_id": 1001
         },
-        "h45": {
+        "45": {
             "ant_comment": "Hpol helper string B 3",
             "ant_position_x": 40.0,
             "ant_position_y": -49.36,
@@ -528,7 +528,7 @@
             "channel_id": 45,
             "station_id": 1001
         },
-        "h46": {
+        "46": {
             "ant_comment": "Vpol helper string C 3",
             "ant_position_x": -40.0,
             "ant_position_y": -49.36,
@@ -539,7 +539,7 @@
             "channel_id": 46,
             "station_id": 1001
         },
-        "h47": {
+        "47": {
             "ant_comment": "Vpol helper string C 3",
             "ant_position_x": -40.0,
             "ant_position_y": -49.36,
@@ -550,7 +550,7 @@
             "channel_id": 47,
             "station_id": 1001
         },
-        "h48": {
+        "48": {
             "ant_comment": "Hpol helper string C 3",
             "ant_position_x": -40.0,
             "ant_position_y": -49.36,
@@ -561,7 +561,7 @@
             "channel_id": 48,
             "station_id": 1001
         },
-        "s1": {
+        "101": {
           "amp_type": "rno_surface",
           "ant_comment": "surface triangle east, upward",
           "ant_orientation_phi": 0.0,
@@ -577,7 +577,7 @@
           "channel_id": 1,
           "station_id": 2001
         },
-        "s2": {
+        "102": {
           "amp_type": "rno_surface",
           "ant_comment": "surface triangle south, upward",
           "ant_orientation_phi": 0.0,
@@ -591,7 +591,7 @@
           "channel_id": 2,
           "station_id": 2001
         },
-        "s3": {
+        "103": {
           "amp_type": "rno_surface",
           "ant_comment": "surface triangle north, upward",
           "ant_orientation_phi": 0.0,
@@ -605,7 +605,7 @@
           "channel_id": 3,
           "station_id": 2001
         },
-        "s4": {
+        "104": {
           "amp_type": "rno_surface",
           "ant_comment": "surface rectangle north west, downwards",
           "ant_orientation_phi": 0.0,
@@ -619,7 +619,7 @@
           "channel_id": 4,
           "station_id": 2001
         },
-        "s5": {
+        "105": {
           "amp_type": "rno_surface",
           "ant_comment": "surface rectangle north east, downward",
           "ant_orientation_phi": 0.0,
@@ -633,7 +633,7 @@
           "channel_id": 5,
           "station_id": 2001
         },
-        "s6": {
+        "106": {
           "amp_type": "rno_surface",
           "ant_comment": "surface rectangle south east, downwards",
           "ant_orientation_phi": 0.0,
@@ -647,7 +647,7 @@
           "channel_id": 6,
           "station_id": 2001
         },
-        "s7": {
+        "107": {
           "amp_type": "rno_surface",
           "ant_comment": "surface rectangle south west, downwards",
           "ant_orientation_phi": 0.0,
@@ -661,7 +661,7 @@
           "channel_id": 7,
           "station_id": 2001
         },
-        "s8": {
+        "108": {
           "amp_type": "iglu",
           "ant_comment": "dipole",
           "ant_orientation_phi": 0.0,

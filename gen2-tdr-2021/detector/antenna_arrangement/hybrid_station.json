@@ -15,7 +15,7 @@
             "ant_type": "RNOG_vpol_4inch_center_n1.73",
             "cab_time_delay": 0.0,
             "channel_id": 0,
-            "station_id": 101
+            "station_id": 1001
         },
         "1": {
             "ant_comment": "phased array 2",
@@ -26,7 +26,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_vpol_4inch_center_n1.73",
             "channel_id": 1,
-            "station_id": 101
+            "station_id": 1001
         },
         "2": {
             "ant_comment": "phased array 3",
@@ -37,7 +37,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_vpol_4inch_center_n1.73",
             "channel_id": 2,
-            "station_id": 101
+            "station_id": 1001
         },
         "3": {
             "ant_comment": "phased array 4",
@@ -48,7 +48,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_vpol_4inch_center_n1.73",
             "channel_id": 3,
-            "station_id": 101
+            "station_id": 1001
         },
         "4": {
             "ant_comment": "phased array 5",
@@ -59,7 +59,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_vpol_4inch_center_n1.73",
             "channel_id": 4,
-            "station_id": 101
+            "station_id": 1001
         },
         "5": {
             "ant_comment": "phased array 6",
@@ -70,7 +70,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_vpol_4inch_center_n1.73",
             "channel_id": 5,
-            "station_id": 101
+            "station_id": 1001
         },
         "6": {
             "ant_comment": "phased array 7",
@@ -81,7 +81,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_vpol_4inch_center_n1.73",
             "channel_id": 6,
-            "station_id": 101
+            "station_id": 1001
         },
         "7": {
             "ant_comment": "phased array 8",
@@ -92,7 +92,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_vpol_4inch_center_n1.73",
             "channel_id": 7,
-            "station_id": 101
+            "station_id": 1001
         },
         "8": {
             "ant_comment": "Hpol power string 1",
@@ -103,7 +103,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_quadslot_v3_air_rescaled_to_n1.74",
             "channel_id": 8,
-            "station_id": 101
+            "station_id": 1001
         },
         "9": {
             "ant_comment": "Hpol power string 2",
@@ -114,7 +114,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_quadslot_v3_air_rescaled_to_n1.74",
             "channel_id": 9,
-            "station_id": 101
+            "station_id": 1001
         },
         "10": {
             "ant_comment": "Hpol power string 3",
@@ -125,7 +125,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_quadslot_v3_air_rescaled_to_n1.74",
             "channel_id": 10,
-            "station_id": 101
+            "station_id": 1001
         },
         "11": {
             "ant_comment": "Hpol power string 4",
@@ -136,7 +136,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_quadslot_v3_air_rescaled_to_n1.74",
             "channel_id": 11,
-            "station_id": 101
+            "station_id": 1001
         },
         "12": {
             "ant_comment": "Vpol helper string B",
@@ -147,7 +147,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_vpol_4inch_center_n1.73",
             "channel_id": 12,
-            "station_id": 101
+            "station_id": 1001
         },
         "13": {
             "ant_comment": "Vpol helper string B",
@@ -158,7 +158,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_vpol_4inch_center_n1.73",
             "channel_id": 13,
-            "station_id": 101
+            "station_id": 1001
         },
         "14": {
             "ant_comment": "Hpol helper string B",
@@ -169,7 +169,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_quadslot_v3_air_rescaled_to_n1.74",
             "channel_id": 14,
-            "station_id": 101
+            "station_id": 1001
         },
         "15": {
             "ant_comment": "Hpol helper string B",
@@ -180,7 +180,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_quadslot_v3_air_rescaled_to_n1.74",
             "channel_id": 15,
-            "station_id": 101
+            "station_id": 1001
         },
         "16": {
             "ant_comment": "Hpol helper string B",
@@ -191,7 +191,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_quadslot_v3_air_rescaled_to_n1.74",
             "channel_id": 16,
-            "station_id": 101
+            "station_id": 1001
         },
         "17": {
             "ant_comment": "Hpol helper string B",
@@ -202,7 +202,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_quadslot_v3_air_rescaled_to_n1.74",
             "channel_id": 17,
-            "station_id": 101
+            "station_id": 1001
         },
         "18": {
             "ant_comment": "Vpol helper string C",
@@ -213,7 +213,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_vpol_4inch_center_n1.73",
             "channel_id": 18,
-            "station_id": 101
+            "station_id": 1001
         },
         "19": {
             "ant_comment": "Vpol helper string C",
@@ -224,7 +224,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_vpol_4inch_center_n1.73",
             "channel_id": 19,
-            "station_id": 101
+            "station_id": 1001
         },
        "20": {
             "ant_comment": "Hpol helper string C",
@@ -235,7 +235,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_quadslot_v3_air_rescaled_to_n1.74",
             "channel_id": 20,
-            "station_id": 101
+            "station_id": 1001
         },
         "21": {
             "ant_comment": "Vpol power string",
@@ -246,7 +246,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_vpol_4inch_center_n1.73",
             "channel_id": 21,
-            "station_id": 101
+            "station_id": 1001
         },
         "22": {
             "ant_comment": "Vpol power string",
@@ -257,7 +257,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_vpol_4inch_center_n1.73",
             "channel_id": 22,
-            "station_id": 101
+            "station_id": 1001
         },
         "23": {
             "ant_comment": "Vpol power string",
@@ -268,7 +268,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_vpol_4inch_center_n1.73",
             "channel_id": 23,
-            "station_id": 101
+            "station_id": 1001
         },
         "24": {
             "ant_comment": "Vpol power string",
@@ -279,7 +279,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_vpol_4inch_center_n1.73",
             "channel_id": 24,
-            "station_id": 101
+            "station_id": 1001
         },
         "25": {
             "ant_comment": "Vpol power string",
@@ -290,7 +290,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_vpol_4inch_center_n1.73",
             "channel_id": 25,
-            "station_id": 101
+            "station_id": 1001
         },
         "26": {
             "ant_comment": "Vpol helper string B",
@@ -301,7 +301,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_vpol_4inch_center_n1.73",
             "channel_id": 26,
-            "station_id": 101
+            "station_id": 1001
         },
         "27": {
             "ant_comment": "Vpol helper string C",
@@ -312,7 +312,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_vpol_4inch_center_n1.73",
             "channel_id": 27,
-            "station_id": 101
+            "station_id": 1001
         },
         "28": {
             "ant_comment": "Vpol helper string B 2",
@@ -323,7 +323,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_vpol_4inch_center_n1.73",
             "channel_id": 28,
-            "station_id": 101
+            "station_id": 1001
         },
         "29": {
             "ant_comment": "Vpol helper string B 2",
@@ -334,7 +334,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_vpol_4inch_center_n1.73",
             "channel_id": 29,
-            "station_id": 101
+            "station_id": 1001
         },
         "30": {
             "ant_comment": "Hpol helper string B 2",
@@ -345,7 +345,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_quadslot_v3_air_rescaled_to_n1.74",
             "channel_id": 30,
-            "station_id": 101
+            "station_id": 1001
         },
         "31": {
             "ant_comment": "Vpol helper string C 2",
@@ -356,7 +356,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_vpol_4inch_center_n1.73",
             "channel_id": 31,
-            "station_id": 101
+            "station_id": 1001
         },
         "32": {
             "ant_comment": "Vpol helper string C 2",
@@ -367,7 +367,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_vpol_4inch_center_n1.73",
             "channel_id": 32,
-            "station_id": 101
+            "station_id": 1001
         },
         "33": {
             "ant_comment": "Hpol helper string C 2",
@@ -378,7 +378,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_quadslot_v3_air_rescaled_to_n1.74",
             "channel_id": 33,
-            "station_id": 101
+            "station_id": 1001
         },
         "34": {
             "ant_comment": "Vpol helper string B 3",
@@ -389,7 +389,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_vpol_4inch_center_n1.73",
             "channel_id": 34,
-            "station_id": 101
+            "station_id": 1001
         },
         "35": {
             "ant_comment": "Vpol helper string B 3",
@@ -400,7 +400,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_vpol_4inch_center_n1.73",
             "channel_id": 35,
-            "station_id": 101
+            "station_id": 1001
         },
         "36": {
             "ant_comment": "Hpol helper string B 3",
@@ -411,7 +411,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_quadslot_v3_air_rescaled_to_n1.74",
             "channel_id": 36,
-            "station_id": 101
+            "station_id": 1001
         },
         "37": {
             "ant_comment": "Vpol helper string C 3",
@@ -422,7 +422,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_vpol_4inch_center_n1.73",
             "channel_id": 37,
-            "station_id": 101
+            "station_id": 1001
         },
         "38": {
             "ant_comment": "Vpol helper string C 3",
@@ -433,7 +433,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_vpol_4inch_center_n1.73",
             "channel_id": 38,
-            "station_id": 101
+            "station_id": 1001
         },
         "39": {
             "ant_comment": "Hpol helper string C 3",
@@ -444,7 +444,7 @@
             "ant_rotation_theta": 90.0,
             "ant_type": "RNOG_quadslot_v3_air_rescaled_to_n1.74",
             "channel_id": 39,
-            "station_id": 101
+            "station_id": 1001
         }
     },
     "positions": {},
@@ -454,7 +454,7 @@
             "pos_easting": 0.0,
             "pos_northing": 0.0,
             "pos_site": "southpole",
-            "station_id": 101,
+            "station_id": 1001,
             "station_type": null
         }
     }
