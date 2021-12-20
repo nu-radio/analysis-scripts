@@ -50,6 +50,8 @@ efieldToVoltageConverter = NuRadioReco.modules.efieldToVoltageConverter.efieldTo
 channelResampler = NuRadioReco.modules.channelResampler.channelResampler()
 channelGenericNoiseAdder = NuRadioReco.modules.channelGenericNoiseAdder.channelGenericNoiseAdder()
 
+
+# DEEP part
 # assuming that PA consists out of 8 antennas (channel 0-7)
 main_low_angle = np.deg2rad(-59.54968597864437)
 main_high_angle = np.deg2rad(59.54968597864437)
@@ -61,12 +63,28 @@ passband_high = {}
 filter_type = {}
 order_low = {}
 order_high = {}
-for channel_id in range(0, 9):
+for channel_id in range(9, 9+8):
     passband_low[channel_id] = [96 * units.MHz, 100 * units.GHz]
     passband_high[channel_id] = [0 * units.MHz, 220 * units.MHz]
     filter_type[channel_id] = 'cheby1'
     order_low[channel_id] = 4
     order_high[channel_id] = 7
+
+
+# SHALLOW part #TODO: update the shallow numbers
+thresholds = {
+    '2/4_100Hz': 3.9498194908011524,
+    '2/4_10mHz': 4.919151494949084,
+    '2/6_100Hz': 4.04625348733533,
+    '2/6_10mHz': 5.015585491483261,
+    'fhigh': 0.15,
+    'flow': 0.08}
+for channel_id in range(1, 5):
+    passband_low[channel_id] = [1 * units.MHz, thresholds['fhigh']]
+    passband_high[channel_id] = [thresholds['flow'], 800 * units.GHz]
+    filter_type[channel_id] = 'butter'
+    order_low[channel_id] = 10
+    order_high[channel_id] = 5
 
 
 class TDR_Simulation(simulation.simulation):
@@ -113,12 +131,13 @@ class TDR_Simulation(simulation.simulation):
         # get the Vrms before applying the passband
         Vrms = self._Vrms_per_channel[station.get_id()][9]
 
-        # apply the BandPassFilter just before the trigger
+        # apply the BandPassFilter just before the trigger # TODO need to move this to simulation part1
         channelBandPassFilter.run(evt, station, det,
                                 passband=passband_low, filter_type=filter_type, order=order_low, rp=0.1)
         channelBandPassFilter.run(evt, station, det,
                                 passband=passband_high, filter_type=filter_type, order=order_high, rp=0.1)        
 
+        # DEEP TRIGGER
         # run the 8 phased trigger
         # x4 for upsampling
         window_8ant = int(16 * units.ns * self._sampling_rate_detector * 4.0)
@@ -157,6 +176,35 @@ class TDR_Simulation(simulation.simulation):
                                window=window_4ant,
                                step=step_4ant)
 
+        # SHALLOW TRIGGER
+        # run a high/low trigger on the 4 downward pointing LPDAs
+        threshold_high = {}
+        threshold_low = {}
+        for channel_id in det.get_channel_ids(station.get_id()):
+            threshold_high[channel_id] = thresholds['2/4_100Hz'] * self._Vrms_per_channel[station.get_id()][channel_id]
+            threshold_low[channel_id] = -thresholds['2/4_100Hz'] * self._Vrms_per_channel[station.get_id()][channel_id]
+        highLowThreshold.run(evt, station, det,
+                                    threshold_high=threshold_high,
+                                    threshold_low=threshold_low,
+                                    coinc_window=40 * units.ns,
+                                    triggered_channels=[1, 2, 3, 4],  # select the LPDA channels
+                                    number_concidences=2,  # 2/4 majority logic
+                                    trigger_name='LPDA_2of4_100Hz')
+
+        threshold_high = {}
+        threshold_low = {}
+        for channel_id in det.get_channel_ids(station.get_id()):
+            threshold_high[channel_id] = thresholds['2/4_10mHz'] * self._Vrms_per_channel[station.get_id()][channel_id]
+            threshold_low[channel_id] = -thresholds['2/4_10mHz'] * self._Vrms_per_channel[station.get_id()][channel_id]
+        highLowThreshold.run(evt, station, det,
+                                    threshold_high=threshold_high,
+                                    threshold_low=threshold_low,
+                                    coinc_window=40 * units.ns,
+                                    triggered_channels=[1, 2, 3, 4],  # select the LPDA channels
+                                    number_concidences=2,  # 2/4 majority logic
+                                    trigger_name='LPDA_2of4_10mHz',
+
+
 
 parser = argparse.ArgumentParser(description='Run NuRadioMC simulation')
 parser.add_argument('inputfilename', type=str,
@@ -175,6 +223,5 @@ sim = TDR_Simulation(inputfilename=args.inputfilename,
                             outputfilename=args.outputfilename,
                             detectorfile=args.detectordescription,
                             outputfilenameNuRadioReco=args.outputfilenameNuRadioReco,
-                            config_file=args.config,
-                            default_detector_station=1)
+                            config_file=args.config)
 sim.run()
