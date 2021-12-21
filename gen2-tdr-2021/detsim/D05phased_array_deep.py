@@ -165,7 +165,7 @@ class TDR_Simulation(simulation.simulation):
         phasedArrayTrigger.run(evt, station, det,
                                Vrms=Vrms,
                                threshold=30.68 * np.power(Vrms, 2.0),
-                               triggered_channels=range(9, 9+4),
+                               triggered_channels=range(9+4, 9+8),
                                phasing_angles=phasing_angles_4ant,
                                ref_index=1.75,
                                trigger_name=f'PA_4channel_100Hz',  # the name of the trigger
@@ -187,7 +187,7 @@ class TDR_Simulation(simulation.simulation):
                                     threshold_high=threshold_high,
                                     threshold_low=threshold_low,
                                     coinc_window=40 * units.ns,
-                                    triggered_channels=[1, 2, 3, 4],  # select the LPDA channels
+                                    triggered_channels=[4, 5, 6, 7],  # select the LPDA channels
                                     number_concidences=2,  # 2/4 majority logic
                                     trigger_name='LPDA_2of4_100Hz')
 
@@ -200,7 +200,7 @@ class TDR_Simulation(simulation.simulation):
                                     threshold_high=threshold_high,
                                     threshold_low=threshold_low,
                                     coinc_window=40 * units.ns,
-                                    triggered_channels=[1, 2, 3, 4],  # select the LPDA channels
+                                    triggered_channels=[4, 5, 6, 7],  # select the LPDA channels
                                     number_concidences=2,  # 2/4 majority logic
                                     trigger_name='LPDA_2of4_10mHz',
 
