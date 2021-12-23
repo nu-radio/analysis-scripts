@@ -127,17 +127,21 @@ class TDR_Simulation(simulation.simulation):
         Vrms_per_channel_copy = copy.deepcopy(self._Vrms_per_channel)
 
         ff = np.linspace(0, 1 * units.GHz, 10000)
-        for channel_id in shallow_channels + PA_8ch_channels:
-            filt = channelBandPassFilter.get_filter(ff, station.get_id(), channel_id, det,
+        
+        for channel_id in range(station_copy.get_number_of_channels()):
+            filt = channelBandPassFilter.get_filter(ff, station_copy.get_id(), channel_id, det,
                                                     passband=passband_low_trigger, filter_type=filter_type, order=order_low, rp=0.1)
-            filt *= channelBandPassFilter.get_filter(ff, station.get_id(), channel_id, det,
+            filt *= channelBandPassFilter.get_filter(ff, station_copy.get_id(), channel_id, det,
                                                     passband=passband_high, filter_type=filter_type, order=order_high, rp=0.1)
-            filt *= channelBandPassFilter.get_filter(ff, station.get_id(), channel_id, det,
+            filt *= channelBandPassFilter.get_filter(ff, station_copy.get_id(), channel_id, det,
                                                     passband=passband_low, filter_type=filter_type, order=order_low, rp=0.1)
             bandwidth = np.trapz(np.abs(filt) ** 2, ff)
             # the Vrms scales with the squareroot of the bandwidth
-            Vrms_per_channel_copy[station.get_id()][channel_id] *= (bandwidth / self._bandwidth_per_channel[station.get_id()][channel_id]) ** 0.5
-            # print(f"channel {channel_id}: bandwidth = {bandwidth/units.MHz:.1f}MHz, new Vrms = {Vrms_per_channel_copy[station.get_id()][channel_id]/units.micro/units.V:.4g}muV")
+            Vrms_per_channel_copy[station_copy.get_id()][channel_id] *= (bandwidth / self._bandwidth_per_channel[station_copy.get_id()][channel_id]) ** 0.5
+            if 0:
+                print(f"channel {channel_id}: bandwidth = {bandwidth/units.MHz:.1f}MHz, new Vrms = {Vrms_per_channel_copy[station.get_id()][channel_id]/units.micro/units.V:.4g}muV")
+                tvrms = np.std(station_copy.get_channel(channel_id).get_trace())
+                print(f"\trealized Vrms = {tvrms/units.micro/units.V:.4g}muV")
 
         
         
@@ -146,9 +150,9 @@ class TDR_Simulation(simulation.simulation):
         # run a high/low trigger on the 4 downward pointing LPDAs
         threshold_high = {}
         threshold_low = {}
-        for channel_id in det.get_channel_ids(station.get_id()):
-            threshold_high[channel_id] = thresholds['2/4_100Hz'] * Vrms_per_channel_copy[station.get_id()][channel_id]
-            threshold_low[channel_id] = -thresholds['2/4_100Hz'] * Vrms_per_channel_copy[station.get_id()][channel_id]
+        for channel_id in det.get_channel_ids(station_copy.get_id()):
+            threshold_high[channel_id] = thresholds['2/4_100Hz'] * Vrms_per_channel_copy[station_copy.get_id()][channel_id]
+            threshold_low[channel_id] = -thresholds['2/4_100Hz'] * Vrms_per_channel_copy[station_copy.get_id()][channel_id]
         highLowThreshold.run(evt, station_copy, det,
                                     threshold_high=threshold_high,
                                     threshold_low=threshold_low,
@@ -245,7 +249,10 @@ class TDR_Simulation(simulation.simulation):
                                    window=window_4ant,
                                    step=step_4ant)
 
-            # TODO add triggers at higher threshold
+        # 5) set trigger attributes of original station
+        for trigger in station_copy.get_triggers().values():
+            station.set_trigger(trigger)
+            
 
 
 parser = argparse.ArgumentParser(description='Run NuRadioMC simulation')
