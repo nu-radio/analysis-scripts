@@ -18,3 +18,8 @@ Contains sub-directories
 Contains the python script for trigger simulation.
 There is only one script that simulated both the LPDA surface trigger as well as the 4 and 8 channel deep trigger. Based on the number of stations it is automatically determined if it is a hybrid station or shallow only station. 
 The trigger channels are low pass filtered on-the-fly to the lower trigger bandwidth. The resulting noise RMS is recalculated so that the trigger thresholds are correctly set. 
+
+
+# running a simulation
+A simulation can be run via 
+`python3 detsim/D01detector_sim.py input.hdf5 detector/trigger_Gen2_hex_shallow_array.json config/config_ARZ2020_noise.yaml output.hdf5 output.nur`
