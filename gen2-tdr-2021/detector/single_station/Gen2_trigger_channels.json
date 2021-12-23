@@ -253,8 +253,7 @@
             "pos_northing": 0,
             "pos_altitude":2800,
             "pos_site": "southpole",
-            "station_id": 1001,
-            "reference_station": 1001
+            "station_id": 1001
         },
         "2001": {
             "commission_time": "{TinyDate}:2017-11-04T00:00:00",
@@ -263,8 +262,7 @@
             "pos_northing": 0,
             "pos_altitude": 2800,
             "pos_site": "southpole",
-            "station_id": 2001,
-            "reference_station": 2001
+            "station_id": 2001
         }
     }
 }
