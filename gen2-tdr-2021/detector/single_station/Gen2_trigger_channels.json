@@ -203,7 +203,7 @@
             "channel_id": 0,
             "noise_temperature": 300,
             "noiseless": false,
-            "station_id": 1002
+            "station_id": 2001
         },
         "102": {
             "ant_orientation_phi": 0,
@@ -216,7 +216,7 @@
             "ant_type": "createLPDA_100MHz_InfFirn",
             "channel_id": 1,
             "reference_channel": 0,
-            "station_id": 1002
+            "station_id": 2001
         },
         "103": {
             "ant_orientation_phi": 0,
@@ -229,7 +229,7 @@
             "ant_type": "createLPDA_100MHz_InfFirn",
             "channel_id": 2,
             "reference_channel": 0,
-            "station_id": 1002
+            "station_id": 2001
         },
         "104": {
             "ant_orientation_phi": 0,
@@ -242,7 +242,7 @@
             "ant_type": "createLPDA_100MHz_InfFirn",
             "channel_id": 3,
             "reference_channel": 0,
-            "station_id": 1002
+            "station_id": 2001
        }
     },
     "positions": {},

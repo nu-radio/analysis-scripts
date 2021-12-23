@@ -267,5 +267,5 @@ sim = TDR_Simulation(inputfilename=args.inputfilename,
                             outputfilenameNuRadioReco=args.outputfilenameNuRadioReco,
                             config_file=args.config,
                             default_detector_station=1001,
-                            log_level=logging.WARNING)
+                            log_level=logging.INFO)
 sim.run()
