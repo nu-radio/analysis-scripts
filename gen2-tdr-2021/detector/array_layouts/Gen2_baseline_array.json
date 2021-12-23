@@ -4,6 +4,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -5194,
         "pos_northing": -16453,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1001,
         "reference_station": 1001
@@ -13,6 +14,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -3449,
         "pos_northing": -16575,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1002,
         "reference_station": 1001
@@ -22,6 +24,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -6818,
         "pos_northing": -14586,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1003,
         "reference_station": 1001
@@ -31,6 +34,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -5072,
         "pos_northing": -14708,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1004,
         "reference_station": 1001
@@ -40,6 +44,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -3326,
         "pos_northing": -14830,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1005,
         "reference_station": 1001
@@ -49,6 +54,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -1581,
         "pos_northing": -14952,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1006,
         "reference_station": 1001
@@ -58,6 +64,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -6696,
         "pos_northing": -12840,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1007,
         "reference_station": 1001
@@ -67,6 +74,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -4950,
         "pos_northing": -12962,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1008,
         "reference_station": 1001
@@ -76,6 +84,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -3204,
         "pos_northing": -13084,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1009,
         "reference_station": 1001
@@ -85,6 +94,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -1459,
         "pos_northing": -13206,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1010,
         "reference_station": 1001
@@ -94,6 +104,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 286,
         "pos_northing": -13328,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1011,
         "reference_station": 1001
@@ -103,6 +114,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -8320,
         "pos_northing": -10972,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1012,
         "reference_station": 1001
@@ -112,6 +124,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -6574,
         "pos_northing": -11094,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1013,
         "reference_station": 1001
@@ -121,6 +134,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -4828,
         "pos_northing": -11216,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1014,
         "reference_station": 1001
@@ -130,6 +144,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -3082,
         "pos_northing": -11338,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1015,
         "reference_station": 1001
@@ -139,6 +154,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -1337,
         "pos_northing": -11460,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1016,
         "reference_station": 1001
@@ -148,6 +164,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 408,
         "pos_northing": -11582,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1017,
         "reference_station": 1001
@@ -157,6 +174,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 2154,
         "pos_northing": -11704,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1018,
         "reference_station": 1001
@@ -166,6 +184,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -8197,
         "pos_northing": -9226,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1019,
         "reference_station": 1001
@@ -175,6 +194,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -6452,
         "pos_northing": -9348,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1020,
         "reference_station": 1001
@@ -184,6 +204,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -4706,
         "pos_northing": -9470,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1021,
         "reference_station": 1001
@@ -193,6 +214,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -2960,
         "pos_northing": -9592,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1022,
         "reference_station": 1001
@@ -202,6 +224,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -1215,
         "pos_northing": -9715,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1023,
         "reference_station": 1001
@@ -211,6 +234,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 530,
         "pos_northing": -9837,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1024,
         "reference_station": 1001
@@ -220,6 +244,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 2276,
         "pos_northing": -9959,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1025,
         "reference_station": 1001
@@ -229,6 +254,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 4022,
         "pos_northing": -10081,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1026,
         "reference_station": 1001
@@ -238,6 +264,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -9821,
         "pos_northing": -7358,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1027,
         "reference_station": 1001
@@ -247,6 +274,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -8075,
         "pos_northing": -7481,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1028,
         "reference_station": 1001
@@ -256,6 +284,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -6330,
         "pos_northing": -7603,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1029,
         "reference_station": 1001
@@ -265,6 +294,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -4584,
         "pos_northing": -7725,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1030,
         "reference_station": 1001
@@ -274,6 +304,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -2838,
         "pos_northing": -7847,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1031,
         "reference_station": 1001
@@ -283,6 +314,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -1092,
         "pos_northing": -7969,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1032,
         "reference_station": 1001
@@ -292,6 +324,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 652,
         "pos_northing": -8091,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1033,
         "reference_station": 1001
@@ -301,6 +334,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 2398,
         "pos_northing": -8213,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1034,
         "reference_station": 1001
@@ -310,6 +344,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 4144,
         "pos_northing": -8335,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1035,
         "reference_station": 1001
@@ -319,6 +354,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 5889,
         "pos_northing": -8457,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1036,
         "reference_station": 1001
@@ -328,6 +364,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -9699,
         "pos_northing": -5613,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1037,
         "reference_station": 1001
@@ -337,6 +374,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -7953,
         "pos_northing": -5735,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1038,
         "reference_station": 1001
@@ -346,6 +384,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -6208,
         "pos_northing": -5857,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1039,
         "reference_station": 1001
@@ -355,6 +394,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -4462,
         "pos_northing": -5979,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1040,
         "reference_station": 1001
@@ -364,6 +404,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -2716,
         "pos_northing": -6101,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1041,
         "reference_station": 1001
@@ -373,6 +414,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -970,
         "pos_northing": -6223,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1042,
         "reference_station": 1001
@@ -382,6 +424,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 774,
         "pos_northing": -6345,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1043,
         "reference_station": 1001
@@ -391,6 +434,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 2520,
         "pos_northing": -6467,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1044,
         "reference_station": 1001
@@ -400,6 +444,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 4266,
         "pos_northing": -6589,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1045,
         "reference_station": 1001
@@ -409,6 +454,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 6012,
         "pos_northing": -6711,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1046,
         "reference_station": 1001
@@ -418,6 +464,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 7757,
         "pos_northing": -6833,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1047,
         "reference_station": 1001
@@ -427,6 +474,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -9577,
         "pos_northing": -3867,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1048,
         "reference_station": 1001
@@ -436,6 +484,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -7831,
         "pos_northing": -3989,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1049,
         "reference_station": 1001
@@ -445,6 +494,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -6086,
         "pos_northing": -4111,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1050,
         "reference_station": 1001
@@ -454,6 +504,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -4340,
         "pos_northing": -4233,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1051,
         "reference_station": 1001
@@ -463,6 +514,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -2594,
         "pos_northing": -4355,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1052,
         "reference_station": 1001
@@ -472,6 +524,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -848,
         "pos_northing": -4477,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1053,
         "reference_station": 1001
@@ -481,6 +534,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 896,
         "pos_northing": -4599,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1054,
         "reference_station": 1001
@@ -490,6 +544,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 2642,
         "pos_northing": -4721,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1055,
         "reference_station": 1001
@@ -499,6 +554,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 4388,
         "pos_northing": -4844,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1056,
         "reference_station": 1001
@@ -508,6 +564,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 6134,
         "pos_northing": -4966,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1057,
         "reference_station": 1001
@@ -517,6 +574,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 7879,
         "pos_northing": -5088,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1058,
         "reference_station": 1001
@@ -526,6 +584,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 9625,
         "pos_northing": -5210,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1059,
         "reference_station": 1001
@@ -535,6 +594,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -9455,
         "pos_northing": -2121,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1060,
         "reference_station": 1001
@@ -544,6 +604,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -7709,
         "pos_northing": -2243,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1061,
         "reference_station": 1001
@@ -553,6 +614,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -5963,
         "pos_northing": -2365,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1062,
         "reference_station": 1001
@@ -562,6 +624,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -4218,
         "pos_northing": -2487,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1063,
         "reference_station": 1001
@@ -571,6 +634,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -2472,
         "pos_northing": -2610,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1064,
         "reference_station": 1001
@@ -580,6 +644,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -726,
         "pos_northing": -2732,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1065,
         "reference_station": 1001
@@ -589,6 +654,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 1018,
         "pos_northing": -2854,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1066,
         "reference_station": 1001
@@ -598,6 +664,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 2764,
         "pos_northing": -2976,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1067,
         "reference_station": 1001
@@ -607,6 +674,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 4510,
         "pos_northing": -3098,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1068,
         "reference_station": 1001
@@ -616,6 +684,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 6256,
         "pos_northing": -3220,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1069,
         "reference_station": 1001
@@ -625,6 +694,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 8001,
         "pos_northing": -3342,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1070,
         "reference_station": 1001
@@ -634,6 +704,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -9333,
         "pos_northing": -375,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1071,
         "reference_station": 1001
@@ -643,6 +714,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -7587,
         "pos_northing": -498,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1072,
         "reference_station": 1001
@@ -652,6 +724,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -5841,
         "pos_northing": -620,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1073,
         "reference_station": 1001
@@ -661,6 +734,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -4096,
         "pos_northing": -742,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1074,
         "reference_station": 1001
@@ -670,6 +744,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -2350,
         "pos_northing": -864,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1075,
         "reference_station": 1001
@@ -679,6 +754,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -604,
         "pos_northing": -986,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1076,
         "reference_station": 1001
@@ -688,6 +764,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 1141,
         "pos_northing": -1108,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1077,
         "reference_station": 1001
@@ -697,6 +774,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 2886,
         "pos_northing": -1230,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1078,
         "reference_station": 1001
@@ -706,6 +784,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 4632,
         "pos_northing": -1352,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1079,
         "reference_station": 1001
@@ -715,6 +794,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 6378,
         "pos_northing": -1474,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1080,
         "reference_station": 1001
@@ -724,6 +804,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 8124,
         "pos_northing": -1596,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1081,
         "reference_station": 1001
@@ -733,6 +814,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 9869,
         "pos_northing": -1718,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1082,
         "reference_station": 1001
@@ -742,6 +824,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -9211,
         "pos_northing": 1369,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1083,
         "reference_station": 1001
@@ -751,6 +834,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -7465,
         "pos_northing": 1247,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1084,
         "reference_station": 1001
@@ -760,6 +844,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -5719,
         "pos_northing": 1125,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1085,
         "reference_station": 1001
@@ -769,6 +854,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -3974,
         "pos_northing": 1003,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1086,
         "reference_station": 1001
@@ -778,6 +864,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -2228,
         "pos_northing": 881,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1087,
         "reference_station": 1001
@@ -787,6 +874,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -482,
         "pos_northing": 759,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1088,
         "reference_station": 1001
@@ -796,6 +884,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 1263,
         "pos_northing": 637,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1089,
         "reference_station": 1001
@@ -805,6 +894,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 3008,
         "pos_northing": 515,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1090,
         "reference_station": 1001
@@ -814,6 +904,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 4754,
         "pos_northing": 393,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1091,
         "reference_station": 1001
@@ -823,6 +914,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 6500,
         "pos_northing": 271,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1092,
         "reference_station": 1001
@@ -832,6 +924,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 8246,
         "pos_northing": 149,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1093,
         "reference_station": 1001
@@ -841,6 +934,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 9991,
         "pos_northing": 26,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1094,
         "reference_station": 1001
@@ -850,6 +944,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 7354,
         "pos_northing": 12491,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1095,
         "reference_station": 1001
@@ -859,6 +954,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -9089,
         "pos_northing": 3115,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1096,
         "reference_station": 1001
@@ -868,6 +964,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -7343,
         "pos_northing": 2993,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1097,
         "reference_station": 1001
@@ -877,6 +974,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -5597,
         "pos_northing": 2871,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1098,
         "reference_station": 1001
@@ -886,6 +984,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -3851,
         "pos_northing": 2749,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1099,
         "reference_station": 1001
@@ -895,6 +994,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -2106,
         "pos_northing": 2627,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1100,
         "reference_station": 1001
@@ -904,6 +1004,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -360,
         "pos_northing": 2505,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1101,
         "reference_station": 1001
@@ -913,6 +1014,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 1385,
         "pos_northing": 2383,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1102,
         "reference_station": 1001
@@ -922,6 +1024,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 3130,
         "pos_northing": 2260,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1103,
         "reference_station": 1001
@@ -931,6 +1034,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 4876,
         "pos_northing": 2138,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1104,
         "reference_station": 1001
@@ -940,6 +1044,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 6622,
         "pos_northing": 2016,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1105,
         "reference_station": 1001
@@ -949,6 +1054,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 8368,
         "pos_northing": 1894,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1106,
         "reference_station": 1001
@@ -958,6 +1064,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 8856,
         "pos_northing": 8877,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1107,
         "reference_station": 1001
@@ -967,6 +1074,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -7221,
         "pos_northing": 4739,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1108,
         "reference_station": 1001
@@ -976,6 +1084,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -5475,
         "pos_northing": 4617,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1109,
         "reference_station": 1001
@@ -985,6 +1094,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -3729,
         "pos_northing": 4494,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1110,
         "reference_station": 1001
@@ -994,6 +1104,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -1984,
         "pos_northing": 4372,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1111,
         "reference_station": 1001
@@ -1003,6 +1114,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -238,
         "pos_northing": 4250,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1112,
         "reference_station": 1001
@@ -1012,6 +1124,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 1507,
         "pos_northing": 4128,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1113,
         "reference_station": 1001
@@ -1021,6 +1134,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 3253,
         "pos_northing": 4006,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1114,
         "reference_station": 1001
@@ -1030,6 +1144,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 4998,
         "pos_northing": 3884,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1115,
         "reference_station": 1001
@@ -1039,6 +1154,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 6744,
         "pos_northing": 3762,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1116,
         "reference_station": 1001
@@ -1048,6 +1164,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 8490,
         "pos_northing": 3640,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1117,
         "reference_station": 1001
@@ -1057,6 +1174,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 10358,
         "pos_northing": 5264,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1118,
         "reference_station": 1001
@@ -1066,6 +1184,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -7099,
         "pos_northing": 6484,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1119,
         "reference_station": 1001
@@ -1075,6 +1194,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -5353,
         "pos_northing": 6362,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1120,
         "reference_station": 1001
@@ -1084,6 +1204,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -3607,
         "pos_northing": 6240,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1121,
         "reference_station": 1001
@@ -1093,6 +1214,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -1862,
         "pos_northing": 6118,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1122,
         "reference_station": 1001
@@ -1102,6 +1224,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -116,
         "pos_northing": 5996,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1123,
         "reference_station": 1001
@@ -1111,6 +1234,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 1629,
         "pos_northing": 5874,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1124,
         "reference_station": 1001
@@ -1120,6 +1244,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 3375,
         "pos_northing": 5752,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1125,
         "reference_station": 1001
@@ -1129,6 +1254,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 5120,
         "pos_northing": 5630,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1126,
         "reference_station": 1001
@@ -1138,6 +1264,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 6866,
         "pos_northing": 5508,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1127,
         "reference_station": 1001
@@ -1147,6 +1274,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 8612,
         "pos_northing": 5386,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1128,
         "reference_station": 1001
@@ -1156,6 +1284,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -5231,
         "pos_northing": 8108,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1129,
         "reference_station": 1001
@@ -1165,6 +1294,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -3485,
         "pos_northing": 7986,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1130,
         "reference_station": 1001
@@ -1174,6 +1304,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -1740,
         "pos_northing": 7864,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1131,
         "reference_station": 1001
@@ -1183,6 +1314,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 5,
         "pos_northing": 7742,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1132,
         "reference_station": 1001
@@ -1192,6 +1324,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 1751,
         "pos_northing": 7620,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1133,
         "reference_station": 1001
@@ -1201,6 +1334,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 3497,
         "pos_northing": 7498,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1134,
         "reference_station": 1001
@@ -1210,6 +1344,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 5242,
         "pos_northing": 7376,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1135,
         "reference_station": 1001
@@ -1219,6 +1354,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 6988,
         "pos_northing": 7254,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1136,
         "reference_station": 1001
@@ -1228,6 +1364,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 8734,
         "pos_northing": 7131,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1137,
         "reference_station": 1001
@@ -1237,6 +1374,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -5109,
         "pos_northing": 9854,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1138,
         "reference_station": 1001
@@ -1246,6 +1384,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -3363,
         "pos_northing": 9732,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1139,
         "reference_station": 1001
@@ -1255,6 +1394,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -1617,
         "pos_northing": 9610,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1140,
         "reference_station": 1001
@@ -1264,6 +1404,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 127,
         "pos_northing": 9488,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1141,
         "reference_station": 1001
@@ -1273,6 +1414,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 1873,
         "pos_northing": 9365,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1142,
         "reference_station": 1001
@@ -1282,6 +1424,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 3619,
         "pos_northing": 9243,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1143,
         "reference_station": 1001
@@ -1291,6 +1434,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 5364,
         "pos_northing": 9121,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1144,
         "reference_station": 1001
@@ -1300,6 +1444,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 7110,
         "pos_northing": 8999,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1145,
         "reference_station": 1001
@@ -1309,6 +1454,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -3241,
         "pos_northing": 11477,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1146,
         "reference_station": 1001
@@ -1318,6 +1464,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -1495,
         "pos_northing": 11355,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1147,
         "reference_station": 1001
@@ -1327,6 +1474,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 249,
         "pos_northing": 11233,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1148,
         "reference_station": 1001
@@ -1336,6 +1484,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 1995,
         "pos_northing": 11111,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1149,
         "reference_station": 1001
@@ -1345,6 +1494,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 3741,
         "pos_northing": 10989,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1150,
         "reference_station": 1001
@@ -1354,6 +1504,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 5487,
         "pos_northing": 10867,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1151,
         "reference_station": 1001
@@ -1363,6 +1514,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 7232,
         "pos_northing": 10745,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1152,
         "reference_station": 1001
@@ -1372,6 +1524,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -1373,
         "pos_northing": 13101,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1153,
         "reference_station": 1001
@@ -1381,6 +1534,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 371,
         "pos_northing": 12979,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1154,
         "reference_station": 1001
@@ -1390,6 +1544,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 2117,
         "pos_northing": 12857,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1155,
         "reference_station": 1001
@@ -1399,6 +1554,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 3863,
         "pos_northing": 12735,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1156,
         "reference_station": 1001
@@ -1408,6 +1564,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 5609,
         "pos_northing": 12613,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1157,
         "reference_station": 1001
@@ -1417,6 +1574,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 493,
         "pos_northing": 14725,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1158,
         "reference_station": 1001
@@ -1426,6 +1584,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 2239,
         "pos_northing": 14603,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1159,
         "reference_station": 1001
@@ -1435,6 +1594,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 3985,
         "pos_northing": 14481,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1160,
         "reference_station": 1001
@@ -1444,6 +1604,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 5731,
         "pos_northing": 14359,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1161,
         "reference_station": 1001
@@ -1453,6 +1614,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 2361,
         "pos_northing": 16348,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1162,
         "reference_station": 1001
@@ -1462,6 +1624,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 4107,
         "pos_northing": 16226,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1163,
         "reference_station": 1001
@@ -1471,6 +1634,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 5853,
         "pos_northing": 16104,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 1164,
         "reference_station": 1001
@@ -1480,6 +1644,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -4382,
         "pos_northing": -17387,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2001,
         "reference_station": 2001
@@ -1489,6 +1654,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -6006,
         "pos_northing": -15519,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2002,
         "reference_station": 2001
@@ -1498,6 +1664,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -4260,
         "pos_northing": -15642,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2003,
         "reference_station": 2001
@@ -1507,6 +1674,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -2515,
         "pos_northing": -15764,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2004,
         "reference_station": 2001
@@ -1516,6 +1684,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -7630,
         "pos_northing": -13652,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2005,
         "reference_station": 2001
@@ -1525,6 +1694,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -5884,
         "pos_northing": -13774,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2006,
         "reference_station": 2001
@@ -1534,6 +1704,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -4138,
         "pos_northing": -13896,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2007,
         "reference_station": 2001
@@ -1543,6 +1714,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -2393,
         "pos_northing": -14018,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2008,
         "reference_station": 2001
@@ -1552,6 +1724,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -647,
         "pos_northing": -14140,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2009,
         "reference_station": 2001
@@ -1561,6 +1734,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -7508,
         "pos_northing": -11906,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2010,
         "reference_station": 2001
@@ -1570,6 +1744,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -5762,
         "pos_northing": -12028,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2011,
         "reference_station": 2001
@@ -1579,6 +1754,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -4016,
         "pos_northing": -12150,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2012,
         "reference_station": 2001
@@ -1588,6 +1764,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -2271,
         "pos_northing": -12272,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2013,
         "reference_station": 2001
@@ -1597,6 +1774,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -525,
         "pos_northing": -12394,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2014,
         "reference_station": 2001
@@ -1606,6 +1784,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 1220,
         "pos_northing": -12516,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2015,
         "reference_station": 2001
@@ -1615,6 +1794,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -9131,
         "pos_northing": -10038,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2016,
         "reference_station": 2001
@@ -1624,6 +1804,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -7386,
         "pos_northing": -10160,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2017,
         "reference_station": 2001
@@ -1633,6 +1814,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -5640,
         "pos_northing": -10282,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2018,
         "reference_station": 2001
@@ -1642,6 +1824,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -3894,
         "pos_northing": -10404,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2019,
         "reference_station": 2001
@@ -1651,6 +1834,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -2148,
         "pos_northing": -10526,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2020,
         "reference_station": 2001
@@ -1660,6 +1844,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -403,
         "pos_northing": -10648,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2021,
         "reference_station": 2001
@@ -1669,6 +1854,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 1342,
         "pos_northing": -10771,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2022,
         "reference_station": 2001
@@ -1678,6 +1864,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 3088,
         "pos_northing": -10893,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2023,
         "reference_station": 2001
@@ -1687,6 +1874,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -9009,
         "pos_northing": -8292,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2024,
         "reference_station": 2001
@@ -1696,6 +1884,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -7264,
         "pos_northing": -8414,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2025,
         "reference_station": 2001
@@ -1705,6 +1894,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -5518,
         "pos_northing": -8536,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2026,
         "reference_station": 2001
@@ -1714,6 +1904,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -3772,
         "pos_northing": -8659,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2027,
         "reference_station": 2001
@@ -1723,6 +1914,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -2026,
         "pos_northing": -8781,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2028,
         "reference_station": 2001
@@ -1732,6 +1924,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -281,
         "pos_northing": -8903,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2029,
         "reference_station": 2001
@@ -1741,6 +1934,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 1464,
         "pos_northing": -9025,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2030,
         "reference_station": 2001
@@ -1750,6 +1944,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 3210,
         "pos_northing": -9147,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2031,
         "reference_station": 2001
@@ -1759,6 +1954,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 4956,
         "pos_northing": -9269,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2032,
         "reference_station": 2001
@@ -1768,6 +1964,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -8887,
         "pos_northing": -6547,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2033,
         "reference_station": 2001
@@ -1777,6 +1974,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -7142,
         "pos_northing": -6669,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2034,
         "reference_station": 2001
@@ -1786,6 +1984,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -5396,
         "pos_northing": -6791,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2035,
         "reference_station": 2001
@@ -1795,6 +1994,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -3650,
         "pos_northing": -6913,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2036,
         "reference_station": 2001
@@ -1804,6 +2004,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -1904,
         "pos_northing": -7035,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2037,
         "reference_station": 2001
@@ -1813,6 +2014,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -159,
         "pos_northing": -7157,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2038,
         "reference_station": 2001
@@ -1822,6 +2024,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 1586,
         "pos_northing": -7279,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2039,
         "reference_station": 2001
@@ -1831,6 +2034,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 3332,
         "pos_northing": -7401,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2040,
         "reference_station": 2001
@@ -1840,6 +2044,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 5078,
         "pos_northing": -7523,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2041,
         "reference_station": 2001
@@ -1849,6 +2054,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 6823,
         "pos_northing": -7645,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2042,
         "reference_station": 2001
@@ -1858,6 +2064,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -8765,
         "pos_northing": -4801,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2043,
         "reference_station": 2001
@@ -1867,6 +2074,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -7019,
         "pos_northing": -4923,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2044,
         "reference_station": 2001
@@ -1876,6 +2084,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -5274,
         "pos_northing": -5045,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2045,
         "reference_station": 2001
@@ -1885,6 +2094,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -3528,
         "pos_northing": -5167,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2046,
         "reference_station": 2001
@@ -1894,6 +2104,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -1782,
         "pos_northing": -5289,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2047,
         "reference_station": 2001
@@ -1903,6 +2114,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -36,
         "pos_northing": -5411,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2048,
         "reference_station": 2001
@@ -1912,6 +2124,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 1708,
         "pos_northing": -5533,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2049,
         "reference_station": 2001
@@ -1921,6 +2134,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 3454,
         "pos_northing": -5655,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2050,
         "reference_station": 2001
@@ -1930,6 +2144,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 5200,
         "pos_northing": -5777,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2051,
         "reference_station": 2001
@@ -1939,6 +2154,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 6945,
         "pos_northing": -5900,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2052,
         "reference_station": 2001
@@ -1948,6 +2164,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 8691,
         "pos_northing": -6022,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2053,
         "reference_station": 2001
@@ -1957,6 +2174,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -8643,
         "pos_northing": -3055,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2054,
         "reference_station": 2001
@@ -1966,6 +2184,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -6897,
         "pos_northing": -3177,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2055,
         "reference_station": 2001
@@ -1975,6 +2194,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -5152,
         "pos_northing": -3299,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2056,
         "reference_station": 2001
@@ -1984,6 +2204,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -3406,
         "pos_northing": -3421,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2057,
         "reference_station": 2001
@@ -1993,6 +2214,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -1660,
         "pos_northing": -3543,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2058,
         "reference_station": 2001
@@ -2002,6 +2224,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 85,
         "pos_northing": -3666,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2059,
         "reference_station": 2001
@@ -2011,6 +2234,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 1830,
         "pos_northing": -3788,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2060,
         "reference_station": 2001
@@ -2020,6 +2244,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 3576,
         "pos_northing": -3910,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2061,
         "reference_station": 2001
@@ -2029,6 +2254,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 5322,
         "pos_northing": -4032,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2062,
         "reference_station": 2001
@@ -2038,6 +2264,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 7068,
         "pos_northing": -4154,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2063,
         "reference_station": 2001
@@ -2047,6 +2274,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 8813,
         "pos_northing": -4276,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2064,
         "reference_station": 2001
@@ -2056,6 +2284,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -8521,
         "pos_northing": -1309,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2065,
         "reference_station": 2001
@@ -2065,6 +2294,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -6775,
         "pos_northing": -1431,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2066,
         "reference_station": 2001
@@ -2074,6 +2304,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -5030,
         "pos_northing": -1554,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2067,
         "reference_station": 2001
@@ -2083,6 +2314,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -3284,
         "pos_northing": -1676,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2068,
         "reference_station": 2001
@@ -2092,6 +2324,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -1538,
         "pos_northing": -1798,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2069,
         "reference_station": 2001
@@ -2101,6 +2334,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 207,
         "pos_northing": -1920,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2070,
         "reference_station": 2001
@@ -2110,6 +2344,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 1952,
         "pos_northing": -2042,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2071,
         "reference_station": 2001
@@ -2119,6 +2354,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 3698,
         "pos_northing": -2164,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2072,
         "reference_station": 2001
@@ -2128,6 +2364,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 5444,
         "pos_northing": -2286,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2073,
         "reference_station": 2001
@@ -2137,6 +2374,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 7190,
         "pos_northing": -2408,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2074,
         "reference_station": 2001
@@ -2146,6 +2384,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 8935,
         "pos_northing": -2530,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2075,
         "reference_station": 2001
@@ -2155,6 +2394,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -8399,
         "pos_northing": 435,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2076,
         "reference_station": 2001
@@ -2164,6 +2404,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -6653,
         "pos_northing": 313,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2077,
         "reference_station": 2001
@@ -2173,6 +2414,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -4907,
         "pos_northing": 191,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2078,
         "reference_station": 2001
@@ -2182,6 +2424,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -3162,
         "pos_northing": 69,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2079,
         "reference_station": 2001
@@ -2191,6 +2434,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -1416,
         "pos_northing": -52,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2080,
         "reference_station": 2001
@@ -2200,6 +2444,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 329,
         "pos_northing": -174,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2081,
         "reference_station": 2001
@@ -2209,6 +2454,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 2074,
         "pos_northing": -296,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2082,
         "reference_station": 2001
@@ -2218,6 +2464,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 3820,
         "pos_northing": -418,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2083,
         "reference_station": 2001
@@ -2227,6 +2474,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 5566,
         "pos_northing": -540,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2084,
         "reference_station": 2001
@@ -2236,6 +2484,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 7312,
         "pos_northing": -662,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2085,
         "reference_station": 2001
@@ -2245,6 +2494,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 9057,
         "pos_northing": -784,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2086,
         "reference_station": 2001
@@ -2254,6 +2504,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 10803,
         "pos_northing": -906,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2087,
         "reference_station": 2001
@@ -2263,6 +2514,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -8277,
         "pos_northing": 2181,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2088,
         "reference_station": 2001
@@ -2272,6 +2524,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -6531,
         "pos_northing": 2059,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2089,
         "reference_station": 2001
@@ -2281,6 +2534,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -4785,
         "pos_northing": 1937,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2090,
         "reference_station": 2001
@@ -2290,6 +2544,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -3040,
         "pos_northing": 1815,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2091,
         "reference_station": 2001
@@ -2299,6 +2554,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -1294,
         "pos_northing": 1693,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2092,
         "reference_station": 2001
@@ -2308,6 +2564,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 451,
         "pos_northing": 1571,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2093,
         "reference_station": 2001
@@ -2317,6 +2574,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 2197,
         "pos_northing": 1449,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2094,
         "reference_station": 2001
@@ -2326,6 +2584,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 3942,
         "pos_northing": 1327,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2095,
         "reference_station": 2001
@@ -2335,6 +2594,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 5688,
         "pos_northing": 1204,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2096,
         "reference_station": 2001
@@ -2344,6 +2604,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 7434,
         "pos_northing": 1082,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2097,
         "reference_station": 2001
@@ -2353,6 +2614,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 9179,
         "pos_northing": 960,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2098,
         "reference_station": 2001
@@ -2362,6 +2624,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 10925,
         "pos_northing": 838,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2099,
         "reference_station": 2001
@@ -2371,6 +2634,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -8155,
         "pos_northing": 3927,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2100,
         "reference_station": 2001
@@ -2380,6 +2644,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -6409,
         "pos_northing": 3805,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2101,
         "reference_station": 2001
@@ -2389,6 +2654,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -4663,
         "pos_northing": 3683,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2102,
         "reference_station": 2001
@@ -2398,6 +2664,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -2918,
         "pos_northing": 3561,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2103,
         "reference_station": 2001
@@ -2407,6 +2674,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -1172,
         "pos_northing": 3439,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2104,
         "reference_station": 2001
@@ -2416,6 +2684,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 573,
         "pos_northing": 3316,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2105,
         "reference_station": 2001
@@ -2425,6 +2694,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 2319,
         "pos_northing": 3194,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2106,
         "reference_station": 2001
@@ -2434,6 +2704,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 4064,
         "pos_northing": 3072,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2107,
         "reference_station": 2001
@@ -2443,6 +2714,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 5810,
         "pos_northing": 2950,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2108,
         "reference_station": 2001
@@ -2452,6 +2724,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 7556,
         "pos_northing": 2828,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2109,
         "reference_station": 2001
@@ -2461,6 +2734,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 9302,
         "pos_northing": 2706,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2110,
         "reference_station": 2001
@@ -2470,6 +2744,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -8033,
         "pos_northing": 5673,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2111,
         "reference_station": 2001
@@ -2479,6 +2754,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -6287,
         "pos_northing": 5550,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2112,
         "reference_station": 2001
@@ -2488,6 +2764,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -4541,
         "pos_northing": 5428,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2113,
         "reference_station": 2001
@@ -2497,6 +2774,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -2796,
         "pos_northing": 5306,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2114,
         "reference_station": 2001
@@ -2506,6 +2784,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -1050,
         "pos_northing": 5184,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2115,
         "reference_station": 2001
@@ -2515,6 +2794,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 695,
         "pos_northing": 5062,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2116,
         "reference_station": 2001
@@ -2524,6 +2804,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 2441,
         "pos_northing": 4940,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2117,
         "reference_station": 2001
@@ -2533,6 +2814,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 4186,
         "pos_northing": 4818,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2118,
         "reference_station": 2001
@@ -2542,6 +2824,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 5932,
         "pos_northing": 4696,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2119,
         "reference_station": 2001
@@ -2551,6 +2834,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 7678,
         "pos_northing": 4574,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2120,
         "reference_station": 2001
@@ -2560,6 +2844,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 9424,
         "pos_northing": 4452,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2121,
         "reference_station": 2001
@@ -2569,6 +2854,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -6165,
         "pos_northing": 7296,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2122,
         "reference_station": 2001
@@ -2578,6 +2864,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -4419,
         "pos_northing": 7174,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2123,
         "reference_station": 2001
@@ -2587,6 +2874,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -2673,
         "pos_northing": 7052,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2124,
         "reference_station": 2001
@@ -2596,6 +2884,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -928,
         "pos_northing": 6930,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2125,
         "reference_station": 2001
@@ -2605,6 +2894,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 817,
         "pos_northing": 6808,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2126,
         "reference_station": 2001
@@ -2614,6 +2904,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 2563,
         "pos_northing": 6686,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2127,
         "reference_station": 2001
@@ -2623,6 +2914,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 4309,
         "pos_northing": 6564,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2128,
         "reference_station": 2001
@@ -2632,6 +2924,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 6054,
         "pos_northing": 6442,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2129,
         "reference_station": 2001
@@ -2641,6 +2934,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 7800,
         "pos_northing": 6320,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2130,
         "reference_station": 2001
@@ -2650,6 +2944,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -6043,
         "pos_northing": 9042,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2131,
         "reference_station": 2001
@@ -2659,6 +2954,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -4297,
         "pos_northing": 8920,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2132,
         "reference_station": 2001
@@ -2668,6 +2964,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -2551,
         "pos_northing": 8798,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2133,
         "reference_station": 2001
@@ -2677,6 +2974,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -806,
         "pos_northing": 8676,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2134,
         "reference_station": 2001
@@ -2686,6 +2984,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 939,
         "pos_northing": 8554,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2135,
         "reference_station": 2001
@@ -2695,6 +2994,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 2685,
         "pos_northing": 8432,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2136,
         "reference_station": 2001
@@ -2704,6 +3004,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 4431,
         "pos_northing": 8310,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2137,
         "reference_station": 2001
@@ -2713,6 +3014,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 6176,
         "pos_northing": 8187,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2138,
         "reference_station": 2001
@@ -2722,6 +3024,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 7922,
         "pos_northing": 8065,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2139,
         "reference_station": 2001
@@ -2731,6 +3034,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -4175,
         "pos_northing": 10666,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2140,
         "reference_station": 2001
@@ -2740,6 +3044,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -2429,
         "pos_northing": 10544,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2141,
         "reference_station": 2001
@@ -2749,6 +3054,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -684,
         "pos_northing": 10421,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2142,
         "reference_station": 2001
@@ -2758,6 +3064,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 1061,
         "pos_northing": 10299,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2143,
         "reference_station": 2001
@@ -2767,6 +3074,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 2807,
         "pos_northing": 10177,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2144,
         "reference_station": 2001
@@ -2776,6 +3084,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 4553,
         "pos_northing": 10055,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2145,
         "reference_station": 2001
@@ -2785,6 +3094,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 6298,
         "pos_northing": 9933,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2146,
         "reference_station": 2001
@@ -2794,6 +3104,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 8044,
         "pos_northing": 9811,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2147,
         "reference_station": 2001
@@ -2803,6 +3114,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -2307,
         "pos_northing": 12289,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2148,
         "reference_station": 2001
@@ -2812,6 +3124,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -561,
         "pos_northing": 12167,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2149,
         "reference_station": 2001
@@ -2821,6 +3134,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 1183,
         "pos_northing": 12045,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2150,
         "reference_station": 2001
@@ -2830,6 +3144,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 2929,
         "pos_northing": 11923,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2151,
         "reference_station": 2001
@@ -2839,6 +3154,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 4675,
         "pos_northing": 11801,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2152,
         "reference_station": 2001
@@ -2848,6 +3164,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 6420,
         "pos_northing": 11679,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2153,
         "reference_station": 2001
@@ -2857,6 +3174,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -439,
         "pos_northing": 13913,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2154,
         "reference_station": 2001
@@ -2866,6 +3184,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 1305,
         "pos_northing": 13791,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2155,
         "reference_station": 2001
@@ -2875,6 +3194,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 3051,
         "pos_northing": 13669,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2156,
         "reference_station": 2001
@@ -2884,6 +3204,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 4797,
         "pos_northing": 13547,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2157,
         "reference_station": 2001
@@ -2893,6 +3214,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 6543,
         "pos_northing": 13425,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2158,
         "reference_station": 2001
@@ -2902,6 +3224,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 1427,
         "pos_northing": 15537,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2159,
         "reference_station": 2001
@@ -2911,6 +3234,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 3173,
         "pos_northing": 15415,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2160,
         "reference_station": 2001
@@ -2920,6 +3244,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 4919,
         "pos_northing": 15292,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2161,
         "reference_station": 2001
@@ -2929,6 +3254,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 5041,
         "pos_northing": 17038,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2162,
         "reference_station": 2001
@@ -2938,6 +3264,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -6187,
         "pos_northing": -17202,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2163,
         "reference_station": 2001
@@ -2947,6 +3274,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -2696,
         "pos_northing": -17446,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2164,
         "reference_station": 2001
@@ -2956,6 +3284,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -7811,
         "pos_northing": -15334,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2165,
         "reference_station": 2001
@@ -2965,6 +3294,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -828,
         "pos_northing": -15822,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2166,
         "reference_station": 2001
@@ -2974,6 +3304,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 1039,
         "pos_northing": -14199,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2167,
         "reference_station": 2001
@@ -2983,6 +3314,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -9312,
         "pos_northing": -11721,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2168,
         "reference_station": 2001
@@ -2992,6 +3324,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 2907,
         "pos_northing": -12575,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2169,
         "reference_station": 2001
@@ -3001,6 +3334,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 4775,
         "pos_northing": -10952,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2170,
         "reference_station": 2001
@@ -3010,6 +3344,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -10692,
         "pos_northing": -6361,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2171,
         "reference_station": 2001
@@ -3019,6 +3354,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -10814,
         "pos_northing": -8107,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2172,
         "reference_station": 2001
@@ -3028,6 +3364,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 6642,
         "pos_northing": -9328,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2173,
         "reference_station": 2001
@@ -3037,6 +3374,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -10570,
         "pos_northing": -4616,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2174,
         "reference_station": 2001
@@ -3046,6 +3384,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 8510,
         "pos_northing": -7704,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2175,
         "reference_station": 2001
@@ -3055,6 +3394,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -10448,
         "pos_northing": -2870,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2176,
         "reference_station": 2001
@@ -3064,6 +3404,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 10378,
         "pos_northing": -6081,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2177,
         "reference_station": 2001
@@ -3073,6 +3414,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -10326,
         "pos_northing": -1124,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2178,
         "reference_station": 2001
@@ -3082,6 +3424,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -10204,
         "pos_northing": 621,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2179,
         "reference_station": 2001
@@ -3091,6 +3434,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -10082,
         "pos_northing": 2366,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2180,
         "reference_station": 2001
@@ -3100,6 +3444,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 8229,
         "pos_northing": 13366,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2181,
         "reference_station": 2001
@@ -3109,6 +3454,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 8107,
         "pos_northing": 11620,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2182,
         "reference_station": 2001
@@ -3118,6 +3464,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -9959,
         "pos_northing": 4112,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2183,
         "reference_station": 2001
@@ -3127,6 +3474,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 9731,
         "pos_northing": 9752,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2184,
         "reference_station": 2001
@@ -3136,6 +3484,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 9609,
         "pos_northing": 8006,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2185,
         "reference_station": 2001
@@ -3145,6 +3494,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 9487,
         "pos_northing": 6261,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2186,
         "reference_station": 2001
@@ -3154,6 +3504,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 11233,
         "pos_northing": 6139,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2187,
         "reference_station": 2001
@@ -3163,6 +3514,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 11110,
         "pos_northing": 4393,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2188,
         "reference_station": 2001
@@ -3172,6 +3524,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -7970,
         "pos_northing": 7481,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2189,
         "reference_station": 2001
@@ -3181,6 +3534,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -5980,
         "pos_northing": 10851,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2190,
         "reference_station": 2001
@@ -3190,6 +3544,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -4112,
         "pos_northing": 12475,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2191,
         "reference_station": 2001
@@ -3199,6 +3554,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -2244,
         "pos_northing": 14098,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2192,
         "reference_station": 2001
@@ -3208,6 +3564,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": -376,
         "pos_northing": 15722,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2193,
         "reference_station": 2001
@@ -3217,6 +3574,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 6606,
         "pos_northing": 15234,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2194,
         "reference_station": 2001
@@ -3226,6 +3584,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 1491,
         "pos_northing": 17346,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2195,
         "reference_station": 2001
@@ -3235,6 +3594,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 3236,
         "pos_northing": 17223,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2196,
         "reference_station": 2001
@@ -3244,6 +3604,7 @@
         "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
         "pos_easting": 6728,
         "pos_northing": 16979,
+        "pos_altitude": 2800,
         "pos_site": "southpole",
         "station_id": 2197,
         "reference_station": 2001

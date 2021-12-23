@@ -12,5 +12,5 @@ for station_id in det.get_station_ids():
     yy.append(pos[1])
 
 fig, ax = plt.subplots(1, 1)
-ax.plot(xx, yy)
+ax.plot(xx, yy, "o")
 plt.show()
