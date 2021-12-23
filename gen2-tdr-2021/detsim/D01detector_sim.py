@@ -128,6 +128,12 @@ class TDR_Simulation(simulation.simulation):
         #                             number_concidences=1,
         #                             trigger_name=f'dipole_{n_sigma}sigma')
 
+
+        shallow_channels = [0,1,2,3]
+        PA_8ch_channels = [4,5,6,7,8,9,10,11]
+        PA_4ch_channels = [8,9,10,11]
+        
+        
         # get the Vrms before applying the passband
         Vrms = self._Vrms_per_channel[station.get_id()][9]
 
@@ -135,46 +141,7 @@ class TDR_Simulation(simulation.simulation):
         channelBandPassFilter.run(evt, station, det,
                                 passband=passband_low, filter_type=filter_type, order=order_low, rp=0.1)
         channelBandPassFilter.run(evt, station, det,
-                                passband=passband_high, filter_type=filter_type, order=order_high, rp=0.1)        
-
-        # DEEP TRIGGER
-        # run the 8 phased trigger
-        # x4 for upsampling
-        window_8ant = int(16 * units.ns * self._sampling_rate_detector * 4.0)
-        step_8ant = int(8 * units.ns * self._sampling_rate_detector * 4.0)
-
-        phasedArrayTrigger.run(evt, station, det,
-                               Vrms=Vrms,
-                               threshold=61.90 * np.power(Vrms, 2.0),  # see phased trigger module for explanation
-                               triggered_channels=range(9, 9+8),
-                               phasing_angles=phasing_angles_8ant,
-                               ref_index=1.75,
-                               trigger_name=f'PA_8channel_100Hz',  # the name of the trigger
-                               trigger_adc=False,  # Don't have a seperate ADC for the trigger
-                               adc_output=f'voltage',  # output in volts
-                               trigger_filter=None,
-                               upsampling_factor=4,
-                               window=window_8ant,
-                               step=step_8ant)
-
-        # run the 4 phased trigger
-        # x2 for upsampling
-        window_4ant = int(16 * units.ns * self._sampling_rate_detector * 2.0)
-        step_4ant = int(8 * units.ns * self._sampling_rate_detector * 2.0)
-
-        phasedArrayTrigger.run(evt, station, det,
-                               Vrms=Vrms,
-                               threshold=30.68 * np.power(Vrms, 2.0),
-                               triggered_channels=range(9+4, 9+8),
-                               phasing_angles=phasing_angles_4ant,
-                               ref_index=1.75,
-                               trigger_name=f'PA_4channel_100Hz',  # the name of the trigger
-                               trigger_adc=False,  # Don't have a seperate ADC for the trigger
-                               adc_output=f'voltage',  # output in volts
-                               trigger_filter=None,
-                               upsampling_factor=2,
-                               window=window_4ant,
-                               step=step_4ant)
+                                  passband=passband_high, filter_type=filter_type, order=order_high, rp=0.1) 
 
         # SHALLOW TRIGGER
         # run a high/low trigger on the 4 downward pointing LPDAs
@@ -187,7 +154,7 @@ class TDR_Simulation(simulation.simulation):
                                     threshold_high=threshold_high,
                                     threshold_low=threshold_low,
                                     coinc_window=40 * units.ns,
-                                    triggered_channels=[4, 5, 6, 7],  # select the LPDA channels
+                                    triggered_channels=shallow_channels,  # select the LPDA channels
                                     number_concidences=2,  # 2/4 majority logic
                                     trigger_name='LPDA_2of4_100Hz')
 
@@ -200,9 +167,56 @@ class TDR_Simulation(simulation.simulation):
                                     threshold_high=threshold_high,
                                     threshold_low=threshold_low,
                                     coinc_window=40 * units.ns,
-                                    triggered_channels=[4, 5, 6, 7],  # select the LPDA channels
+                                    triggered_channels=shallow_channels,  # select the LPDA channels
                                     number_concidences=2,  # 2/4 majority logic
-                                    trigger_name='LPDA_2of4_10mHz',
+                                    trigger_name='LPDA_2of4_10mHz')        
+
+        # DEEP TRIGGER
+        # check if the station is a hybrid station
+        if(station.get_number_of_channels() > 5): 
+            
+            # run the 8 phased trigger
+            # x4 for upsampling
+            window_8ant = int(16 * units.ns * self._sampling_rate_detector * 4.0)
+            step_8ant = int(8 * units.ns * self._sampling_rate_detector * 4.0)
+    
+            # run the 4 phased trigger
+            # x2 for upsampling
+            window_4ant = int(16 * units.ns * self._sampling_rate_detector * 2.0)
+            step_4ant = int(8 * units.ns * self._sampling_rate_detector * 2.0)
+            
+            
+            phasedArrayTrigger.run(evt, station, det,
+                                   Vrms=Vrms,
+                                   threshold=61.90 * np.power(Vrms, 2.0),  # see phased trigger module for explanation
+                                   triggered_channels=PA_8ch_channels,
+                                   phasing_angles=phasing_angles_8ant,
+                                   ref_index=1.75,
+                                   trigger_name=f'PA_8channel_100Hz',  # the name of the trigger
+                                   trigger_adc=False,  # Don't have a seperate ADC for the trigger
+                                   adc_output=f'voltage',  # output in volts
+                                   trigger_filter=None,
+                                   upsampling_factor=4,
+                                   window=window_8ant,
+                                   step=step_8ant)
+    
+            phasedArrayTrigger.run(evt, station, det,
+                                   Vrms=Vrms,
+                                   threshold=30.68 * np.power(Vrms, 2.0),
+                                   triggered_channels=PA_4ch_channels,
+                                   phasing_angles=phasing_angles_4ant,
+                                   ref_index=1.75,
+                                   trigger_name=f'PA_4channel_100Hz',  # the name of the trigger
+                                   trigger_adc=False,  # Don't have a seperate ADC for the trigger
+                                   adc_output=f'voltage',  # output in volts
+                                   trigger_filter=None,
+                                   upsampling_factor=2,
+                                   window=window_4ant,
+                                   step=step_4ant)
+            
+            # TODO add triggers at higher threshold
+
+
 
 
 
