@@ -30,7 +30,7 @@ propagation:
 
 signal:
   model: ARZ2020
-  zerosignal: True  # if True, the signal is set to zero. This is useful to study 'noise' only simulations
+  zerosignal: False  # if True, the signal is set to zero. This is useful to study 'noise' only simulations
   polarization: auto # can be either 'auto' or 'custom'
 
 trigger:

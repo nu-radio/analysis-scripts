@@ -249,6 +249,8 @@ class TDR_Simulation(simulation.simulation):
                                    window=window_4ant,
                                    step=step_4ant)
 
+        # if(station_copy.has_triggered()):
+        #     print("TRIGGERED!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
         # 5) set trigger attributes of original station
         for trigger in station_copy.get_triggers().values():
             station.set_trigger(trigger)
