@@ -93,7 +93,7 @@ for it, number in enumerate(np.arange(1001, 1001+n_deep_trim, 1)):
                 "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
                 "pos_easting": int(xx_deep_trim[it]-center_xx),
                 "pos_northing": int(yy_deep_trim[it]-center_yy),
-                "pos_altitude":2800,
+                "pos_altitude": None,
                 "pos_site": "southpole",
                 "station_id": int(number),
                 "reference_station": 1001}
@@ -104,7 +104,7 @@ for it, number in enumerate(np.arange(2001, 2001+n_shallow_trim, 1)):
                 "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
                 "pos_easting": int(xx_shallow_trim[it]-center_xx),
                 "pos_northing": int(yy_shallow_trim[it]-center_yy),
-                "pos_altitude":2800,
+                "pos_altitude": None,
                 "pos_site": "southpole",
                 "station_id": int(number),
                 "reference_station": 2001}
@@ -115,7 +115,7 @@ for it, number in enumerate(np.arange(2001+n_shallow_trim, 2001+n_shallow_trim+n
                 "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
                 "pos_easting": int(xx_shallow_ring_trim[it]-center_xx),
                 "pos_northing": int(yy_shallow_ring_trim[it]-center_yy),
-                "pos_altitude":2800,
+                "pos_altitude": None,
                 "pos_site": "southpole",
                 "station_id": int(number),
                 "reference_station": 2001}

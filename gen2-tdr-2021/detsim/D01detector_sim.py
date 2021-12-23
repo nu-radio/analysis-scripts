@@ -117,22 +117,27 @@ class TDR_Simulation(simulation.simulation):
         # 5) set trigger attributes of original station
 
         # 1) creat a copy of the station object
-        station_copy = copy.copy(station)
+        station_copy = copy.deepcopy(station)
 
         # 2) apply additional lowpass filter
         channelBandPassFilter.run(evt, station_copy, det,
                                 passband=passband_low_trigger, filter_type=filter_type, order=order_low, rp=0.1)
 
         # 3) calculate new noise RMS for filtered signals
-        Vrms_per_channel_copy = copy.copy(self._Vrms_per_channel)
+        Vrms_per_channel_copy = copy.deepcopy(self._Vrms_per_channel)
 
         ff = np.linspace(0, 1 * units.GHz, 10000)
         for channel_id in shallow_channels + PA_8ch_channels:
             filt = channelBandPassFilter.get_filter(ff, station.get_id(), channel_id, det,
                                                     passband=passband_low_trigger, filter_type=filter_type, order=order_low, rp=0.1)
+            filt *= channelBandPassFilter.get_filter(ff, station.get_id(), channel_id, det,
+                                                    passband=passband_high, filter_type=filter_type, order=order_high, rp=0.1)
+            filt *= channelBandPassFilter.get_filter(ff, station.get_id(), channel_id, det,
+                                                    passband=passband_low, filter_type=filter_type, order=order_low, rp=0.1)
             bandwidth = np.trapz(np.abs(filt) ** 2, ff)
             # the Vrms scales with the squareroot of the bandwidth
             Vrms_per_channel_copy[station.get_id()][channel_id] *= (bandwidth / self._bandwidth_per_channel[station.get_id()][channel_id]) ** 0.5
+            # print(f"channel {channel_id}: bandwidth = {bandwidth/units.MHz:.1f}MHz, new Vrms = {Vrms_per_channel_copy[station.get_id()][channel_id]/units.micro/units.V:.4g}muV")
 
         
         
@@ -185,7 +190,7 @@ class TDR_Simulation(simulation.simulation):
             
 
             phasedArrayTrigger.run(evt, station_copy, det,
-                                   Vrms=Vrms,
+                                   Vrms=Vrms_PA,
                                    threshold=thresholds_pa['8ch']['100Hz'] * np.power(Vrms_PA, 2.0),  # see phased trigger module for explanation
                                    triggered_channels=PA_8ch_channels,
                                    phasing_angles=phasing_angles_8ant,
@@ -199,7 +204,7 @@ class TDR_Simulation(simulation.simulation):
                                    step=step_8ant)
 
             phasedArrayTrigger.run(evt, station_copy, det,
-                                   Vrms=Vrms,
+                                   Vrms=Vrms_PA,
                                    threshold=thresholds_pa['4ch']['100Hz'] * np.power(Vrms_PA, 2.0),
                                    triggered_channels=PA_4ch_channels,
                                    phasing_angles=phasing_angles_4ant,
@@ -213,7 +218,7 @@ class TDR_Simulation(simulation.simulation):
                                    step=step_4ant)
             
             phasedArrayTrigger.run(evt, station_copy, det,
-                                   Vrms=Vrms,
+                                   Vrms=Vrms_PA,
                                    threshold=thresholds_pa['8ch']['1mHz'] * np.power(Vrms_PA, 2.0),  # see phased trigger module for explanation
                                    triggered_channels=PA_8ch_channels,
                                    phasing_angles=phasing_angles_8ant,
@@ -227,7 +232,7 @@ class TDR_Simulation(simulation.simulation):
                                    step=step_8ant)
 
             phasedArrayTrigger.run(evt, station_copy, det,
-                                   Vrms=Vrms,
+                                   Vrms=Vrms_PA,
                                    threshold=thresholds_pa['4ch']['1mHz'] * np.power(Vrms_PA, 2.0),
                                    triggered_channels=PA_4ch_channels,
                                    phasing_angles=phasing_angles_4ant,
@@ -261,5 +266,6 @@ sim = TDR_Simulation(inputfilename=args.inputfilename,
                             detectorfile=args.detectordescription,
                             outputfilenameNuRadioReco=args.outputfilenameNuRadioReco,
                             config_file=args.config,
-                            default_detector_station=1001)
+                            default_detector_station=1001,
+                            log_level=logging.WARNING)
 sim.run()
