@@ -188,12 +188,13 @@ class TDR_Simulation(simulation.simulation):
                                     trigger_name='LPDA_2of4_10mHz',
                                     set_not_triggered=not station_copy.has_triggered(trigger_name='LPDA_2of4_100Hz')) # only calculate the trigger at a lower threshold if the previous one triggered
 
-        # get the Vrms of the phased array channels
-        Vrms_PA = Vrms_per_channel_copy[station_copy.get_id()][7]
         # DEEP TRIGGER
         # check if the station is a hybrid station
         if(station_copy.get_number_of_channels() > 5):
-            sampling_rate_phased_array = 500 * units.MHz  # the phased array is digitized with a smaller sampling rate
+            # get the Vrms of the phased array channels
+            Vrms_PA = Vrms_per_channel_copy[station_copy.get_id()][PA_4ch_channels[0]]
+            det_channel = det.get_channel(station_copy.get_id(), PA_4ch_channels[0])
+            sampling_rate_phased_array = det_channel["trigger_adc_sampling_frequency"]  # the phased array is digitized with a smaller sampling rate
             # run the 8 phased trigger
             # x4 for upsampling
             window_8ant = int(16 * units.ns * sampling_rate_phased_array * 4.0)
