@@ -99,30 +99,6 @@ for channel_id in shallow_channels:
 
 class TDR_Simulation(simulation.simulation):
 
-    # TODO:
-    # - ensure bandpass is applied on the fly and saved traces are without the passband
-    # - might need to implement _part1 to apply passband on the fly to all channels?
-    # - ensure Vrms is calculated correctly (caveat: passband)
-    def _detector_simulation_part2(self):
-        # start detector simulation
-        efieldToVoltageConverter.run(self._evt, self._station, self._det)  # convolve efield with antenna pattern
-        # downsample trace to internal simulation sampling rate (the efieldToVoltageConverter upsamples the trace to
-        # 20 GHz by default to achive a good time resolution when the two signals from the two signal paths are added)
-        channelResampler.run(self._evt, self._station, self._det, sampling_rate=1. / self._dt)
-
-        if self._is_simulate_noise():
-            max_freq = 0.5 / self._dt
-            channel_ids = self._det.get_channel_ids(self._station.get_id())
-            Vrms = {}
-            for channel_id in channel_ids:
-                norm = self._bandwidth_per_channel[self._station.get_id()][channel_id]
-                Vrms[channel_id] = self._Vrms_per_channel[self._station.get_id()][channel_id] / (norm / (max_freq)) ** 0.5  # normalize noise level to the bandwidth its generated for
-                channelGenericNoiseAdder.run(self._evt, self._station, self._det, amplitude=Vrms, min_freq=0 * units.MHz,
-                                        max_freq=max_freq, type='rayleigh', excluded_channels=self._noiseless_channels[self._station])
-
-        self._detector_simulation_filter_amp(self._evt, self._station, self._det)
-        self._detector_simulation_trigger(self._evt, self._station, self._det)
-
     def _detector_simulation_filter_amp(self, evt, station, det):
         # here we apply a larger bandpass filter up to 1GHz
         channelBandPassFilter.run(evt, station, det,
