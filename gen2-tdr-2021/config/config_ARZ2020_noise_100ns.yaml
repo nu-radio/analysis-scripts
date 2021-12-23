@@ -32,15 +32,13 @@ signal:
   model: ARZ2020
   zerosignal: False  # if True, the signal is set to zero. This is useful to study 'noise' only simulations
   polarization: auto # can be either 'auto' or 'custom'
-  ePhi: 0.  # only used if 'polarization = custom', fraction of ePhi component, the eTheta component is eTheta = (1 - ePhi**2)**0.5
-  shower_type: null # optional argument to only simulate certain shower types. Arguments can be "had" or "em".
 
 trigger:
   noise_temperature: detector  # in Kelvin
   Vrms: null  # the RMS noise value in volts. Not compatible with 'noise_temperature', if Vrms is set, 'noise_temperature' must be None
 
 output:
-  channel_traces: False
+  channel_traces: True
   electric_field_traces: False
   sim_channel_traces: False
   sim_electric_field_traces: False
