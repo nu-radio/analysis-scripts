@@ -5,7 +5,7 @@ Contains a config file for the simulation. Differences to February review:
 * events are split up if time differences are larger than 1000ns (instead of 100ns). This is needed for the simulation of a hybrid station with time delays between the shallow and deep components. 
 
 # detector
-Contains the 4 json detector description files for the 4 arrays under study. 
+Contains the 4 json detector description files for the 4 arrays under study. The filenames star with `trigger_*.json`. 
 
 There are two bash scripts, which can be used to (re)build the `array_layouts` for the arrays to be simulated and to combine the trigger channels with the array layouts to have `.json` files for running the trigger.
 
