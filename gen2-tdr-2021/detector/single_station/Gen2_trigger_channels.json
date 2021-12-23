@@ -82,6 +82,7 @@
           "ant_type": "RNOG_vpol_4inch_center_n1.73",
           "cab_length": 170,
           "cab_time_delay": 850,
+          "noise_temperature": 300,
           "channel_id": 4,
           "station_id": 1001
         },

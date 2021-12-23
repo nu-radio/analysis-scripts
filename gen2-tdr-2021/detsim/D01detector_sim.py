@@ -41,10 +41,12 @@ logger = logging.getLogger("runMB")
 # 0.001 Hz -> 99.22
 
 thresholds_pa = {}
+thresholds_pa['8ch'] = {}
 thresholds_pa['8ch']['100Hz'] = 61.90
 thresholds_pa['8ch']['1Hz'] = 76.83
 thresholds_pa['8ch']['1mHz'] = 99.22
 
+thresholds_pa['4ch'] = {}
 thresholds_pa['4ch']['100Hz'] = 30.68
 thresholds_pa['4ch']['1Hz'] = 38.62
 thresholds_pa['4ch']['1mHz'] = 50.53 
@@ -258,5 +260,6 @@ sim = TDR_Simulation(inputfilename=args.inputfilename,
                             outputfilename=args.outputfilename,
                             detectorfile=args.detectordescription,
                             outputfilenameNuRadioReco=args.outputfilenameNuRadioReco,
-                            config_file=args.config)
+                            config_file=args.config,
+                            default_detector_station=1001)
 sim.run()
