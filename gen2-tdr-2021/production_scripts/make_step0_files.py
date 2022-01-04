@@ -95,7 +95,7 @@ for flavor in flavors:
                 instruction += f"start_event_id={start_event_id},\n"
                 instruction += f"proposal=True, proposal_config='config_PROPOSAL.json', n_events_per_file=None,\n"
                 instruction += f"flavor={flavor_ids[flavor]},\n"
-                instruction += f"proposal_kwargs={{'low_nu': {minEproposal}, 'min_energy_loss_nu': {minEproposal}}})\n"
+                instruction += f"proposal_kwargs={{'low_nu': {minEproposal}*units.eV, 'min_energy_loss_nu': {minEproposal}*units.eV}})\n"
                 instruction += "\n"
                 python_filename = f'{pattern}_{ijob:06d}.py'
                 
