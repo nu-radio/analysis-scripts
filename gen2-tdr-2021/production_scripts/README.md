@@ -5,12 +5,12 @@ repository for gen2 radio sim production stuff
 
 The strategy for the simulation requires a few stages:
 
-- step 0: create the configuration files for how to diDostribute the vertices, zeniths, azimuths, energies, etc of incident neutrinos
+- step 0: create the configuration files for how to distribute the vertices, zeniths, azimuths, energies, etc of incident neutrinos
 - step 1: generate a list of energy depositions in the ice based on the neutrino primaries from step 0 (from neutrino primary interactions, but also secondary interactions like pair production, etc. in the case of electron and muon neutrinos)
 - step 2: propagate radio emission from the energy depositions in step 1 to a simulated station, run triggering, etc.
 - step 3: combine all of the small "output" files into a single main file
 
-The simulation inputs, Step 0 and 1, are defined by input configuration names such as `secondaries_1700km2`, which suggest that principle fiducial volume is distributed over a 1700 km^2 area. For the 
+The simulation inputs, Step 0 and 1, are defined by input configuration names such as `secondaries_1700km2`, which suggest that principle fiducial volume is distributed over a 1700 km^2 area. For the tau and muon simulation, the volume is automatically enlarged by NuRadioMC.
 
 The simulation outputs, Step 2 and 3, are defined by a combination of:
 1. a geometry specification (how antennas are distributed in the ice, etc.), defined in a `.json` file
