@@ -51,7 +51,7 @@ This directory for production scripts only includes the scripts for step 0, whic
 
 We are using [NuRadioMC tag v2.1.2](https://github.com/nu-radio/NuRadioMC/releases/tag/v2.1.2).
 
-There is a small "helper" class provided also. This standardizes things like the zenith binning, energy binning, etc. To use it, you will need to do:
+There is a small "helper" class provided in this repository. This standardizes things like the zenith binning, energy binning, etc. To use it, you will need to do:
 
 `export PYTHONPATH=/path/to/tools/directory/:$PYTHONPATH`
 
