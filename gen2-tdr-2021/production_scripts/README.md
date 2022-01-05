@@ -49,7 +49,9 @@ This directory for production scripts only includes the scripts for step 0, whic
 
 ## Simulation Tools and Steps
 
-We are using [NuRadioMC tag v2.1.2](https://github.com/nu-radio/NuRadioMC/releases/tag/v2.1.2).
+We are using [NuRadioMC tag v2.1.2](https://github.com/nu-radio/NuRadioMC/releases/tag/v2.1.3). 
+The X.X.3 hotfix version is important, as during TDR simulation prep, a bug was found in the units used in the proposal shower energy cut.
+(See [this](https://github.com/nu-radio/NuRadioMC/pull/363) pull request.)
 
 There is a small "helper" class provided in this repository. This standardizes things like the zenith binning, energy binning, etc. To use it, you will need to do:
 
