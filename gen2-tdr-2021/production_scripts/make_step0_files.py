@@ -54,6 +54,12 @@ flavor_ids = {
             }
 
 for flavor in flavors:
+
+    run_proposal = 'True'
+    if flavor == "e":
+        # if it's nu-e events, we can turn proposal off
+        run_proposal = 'False'
+
     for iE in range(len(logEs)):
 
 
@@ -93,7 +99,7 @@ for flavor in flavors:
                 instruction += f"thetamin={thetamin}, thetamax={thetamax}, phimin={phimin},\n"
                 instruction += f"phimax={phimax}, \n"
                 instruction += f"start_event_id={start_event_id},\n"
-                instruction += f"proposal=True, proposal_config='config_PROPOSAL.json', n_events_per_file=None,\n"
+                instruction += f"proposal={run_proposal}, proposal_config='config_PROPOSAL.json', n_events_per_file=None,\n"
                 instruction += f"flavor={flavor_ids[flavor]},\n"
                 instruction += f"proposal_kwargs={{'low_nu': {minEproposal}*units.eV, 'min_energy_loss_nu': {minEproposal}*units.eV}})\n"
                 instruction += "\n"
