@@ -65,12 +65,25 @@ xx_shallow_ring, yy_shallow_ring = helper.get_shallow_ring(b0scaled, b1scaled, x
 xx_shallow_ring_trim, yy_shallow_ring_trim = helper.softtrim_to_radius(xx_shallow_ring, yy_shallow_ring, min_s_rad, max_s_rad, b0scaled, b1scaled)
 
 
-center_xx = np.average(np.concatenate([xx_deep_trim, xx_shallow_trim, xx_shallow_ring_trim]))
-center_yy = np.average(np.concatenate([yy_deep_trim, yy_shallow_trim, yy_shallow_ring_trim]))
+# filter out duplicates of deep and shallow positions
+xx_shallow_trim_filtered = []
+yy_shallow_trim_filtered = []
+nclose = 0
+for x, y in zip(xx_shallow_trim, yy_shallow_trim):
+    if np.any(np.isclose(x, np.array(xx_deep_trim), atol=1e-2) & np.isclose(y, np.array(yy_deep_trim))):
+        nclose += 1
+        continue
+    else:
+        xx_shallow_trim_filtered.append(x)
+        yy_shallow_trim_filtered.append(y)
+print(f"skipped {nclose} shallow stations, because there are deep already at the same position")
+
+center_xx = np.average(np.concatenate([xx_deep_trim, xx_shallow_trim_filtered, xx_shallow_ring_trim]))
+center_yy = np.average(np.concatenate([yy_deep_trim, yy_shallow_trim_filtered, yy_shallow_ring_trim]))
 print(center_xx, center_yy)
 
 n_deep_trim = len(xx_deep_trim)
-n_shallow_trim = len(xx_shallow_trim)
+n_shallow_trim_filtered = len(xx_shallow_trim_filtered)
 n_shallow_ring_trim = len(xx_shallow_ring_trim)
 
 dic = {}
@@ -85,18 +98,18 @@ for it, number in enumerate(np.arange(1001, 1001+n_deep_trim, 1)):
                 "station_id": int(number),
                 "reference_station": 1001}
 
-for it, number in enumerate(np.arange(2001, 2001+n_shallow_trim, 1)):
+for it, number in enumerate(np.arange(2001, 2001+n_shallow_trim_filtered, 1)):
     dic[int(number)] = {
                 "commission_time": "{TinyDate}:2017-11-04T00:00:00",
                 "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
-                "pos_easting": int(xx_shallow_trim[it]-center_xx),
-                "pos_northing": int(yy_shallow_trim[it]-center_yy),
+                "pos_easting": int(xx_shallow_trim_filtered[it]-center_xx),
+                "pos_northing": int(yy_shallow_trim_filtered[it]-center_yy),
                 "pos_altitude": None,
                 "pos_site": "southpole",
                 "station_id": int(number),
                 "reference_station": 2001}
 
-for it, number in enumerate(np.arange(2001+n_shallow_trim, 2001+n_shallow_trim+n_shallow_ring_trim, 1)):
+for it, number in enumerate(np.arange(2001+n_shallow_trim_filtered, 2001+n_shallow_trim_filtered+n_shallow_ring_trim, 1)):
     dic[int(number)] = {
                 "commission_time": "{TinyDate}:2017-11-04T00:00:00",
                 "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
