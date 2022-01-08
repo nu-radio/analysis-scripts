@@ -254,8 +254,12 @@ class TDR_Simulation(simulation.simulation):
         # 5) set trigger attributes of original station
         for trigger in station_copy.get_triggers().values():
             station.set_trigger(trigger)
-            
 
+        if not 'trigger_names' in self._mout_attrs:
+            # Might have some files which never ever trigger on a hybrid station and would consequently produce output trigger structures (nevents, 2) instead of (nevents, 6)
+            # and only the LPDA trigger names. Merging and Veff calculation is then complicated.
+            # This hack makes sure all triggers are written to the output hdf5. CAVEAT: make sure to adjust if trigger names above are changed!!!
+            self._mout_attrs['trigger_names'] = ['LPDA_2of4_100Hz', 'LPDA_2of4_10mHz', 'PA_8channel_100Hz', 'PA_4channel_100Hz', 'PA_8channel_1mHz', 'PA_4channel_1mHz']
 
 parser = argparse.ArgumentParser(description='Run NuRadioMC simulation')
 parser.add_argument('inputfilename', type=str,
