@@ -72,3 +72,15 @@ def get_number_of_parts_and_events(flavor, logE, czmin):
                 num_parts = int(1000)
 
     return num_parts, num_events
+
+def get_file_pattern(flavor, logE, cosz_bin):
+    coszenbins = get_coszenbins()
+    czen1 = coszenbins[cosz_bin]
+    czen2 = coszenbins[cosz_bin + 1]
+    pattern = f"{flavor}_{logE:.2f}eV_{czen1:.1f}_{czen2:.1f}"
+    return pattern
+
+def get_gen_filename(flavor, logE, cosz_bin, part):
+    pattern = get_file_pattern(flavor, logE, cosz_bin)
+    out_filename = "in_" + f"{pattern}" + f".part{part:06}" + ".hdf5"
+    return out_filename
