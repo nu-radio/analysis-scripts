@@ -62,6 +62,7 @@ channelResampler = NuRadioReco.modules.channelResampler.channelResampler()
 channelGenericNoiseAdder = NuRadioReco.modules.channelGenericNoiseAdder.channelGenericNoiseAdder()
 
 triggerTimeAdjuster = NuRadioReco.modules.triggerTimeAdjuster.triggerTimeAdjuster()
+triggerTimeAdjuster.begin(pre_trigger_time=200*units.ns)
 
 # DEEP part
 # assuming that PA consists out of 8 antennas (channel 0-7)
