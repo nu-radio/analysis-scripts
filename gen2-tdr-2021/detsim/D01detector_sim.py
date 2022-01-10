@@ -4,6 +4,7 @@ import NuRadioReco.modules.efieldToVoltageConverter
 import NuRadioReco.modules.trigger.highLowThreshold
 import NuRadioReco.modules.phasedarray.triggerSimulator
 import NuRadioReco.modules.channelBandPassFilter
+import NuRadioReco.modules.triggerTimeAdjuster
 import NuRadioReco.modules.efieldToVoltageConverter
 import NuRadioReco.modules.channelAddCableDelay
 import NuRadioReco.modules.channelResampler
@@ -59,6 +60,8 @@ channelAddCableDelay = NuRadioReco.modules.channelAddCableDelay.channelAddCableD
 efieldToVoltageConverter = NuRadioReco.modules.efieldToVoltageConverter.efieldToVoltageConverter()
 channelResampler = NuRadioReco.modules.channelResampler.channelResampler()
 channelGenericNoiseAdder = NuRadioReco.modules.channelGenericNoiseAdder.channelGenericNoiseAdder()
+
+triggerTimeAdjuster = NuRadioReco.modules.triggerTimeAdjuster.triggerTimeAdjuster()
 
 # DEEP part
 # assuming that PA consists out of 8 antennas (channel 0-7)
@@ -254,6 +257,9 @@ class TDR_Simulation(simulation.simulation):
         # 5) set trigger attributes of original station
         for trigger in station_copy.get_triggers().values():
             station.set_trigger(trigger)
+            
+        # this module cuts the trace to the record length of the detector
+        triggerTimeAdjuster.run(evt, station, det)
 
         if not 'trigger_names' in self._mout_attrs:
             # Might have some files which never ever trigger on a hybrid station and would consequently produce output trigger structures (nevents, 2) instead of (nevents, 6)
