@@ -674,6 +674,20 @@
             "reference_channel": 4,
             "channel_id": 46,
             "station_id": 1001
+        },
+        "48": {
+            "ant_comment": "Hpol helper string C 3",
+            "ant_position_x": 0,
+            "ant_position_y": 0,
+            "ant_position_z": -15.0,
+            "ant_rotation_phi": 90.0,
+            "ant_rotation_theta": 90.0,
+            "ant_type": "RNOG_quadslot_v3_air_rescaled_to_n1.74",
+            "cab_length": 20,
+            "cab_time_delay": 60,
+            "reference_channel": 4,
+            "channel_id": 47,
+            "station_id": 1001
         }
     },
     "positions": {},
