@@ -22,7 +22,8 @@ def get_coszenbins():
     return np.linspace(-1,1,21)
 
 def get_logEs():
-    return np.arange(18.5, 20.1, 0.5)
+    # return np.arange(18.5, 20.1, 0.5)
+    return np.arange(19.0, 19.1, 0.5)
 
 def get_number_of_parts_and_events(flavor, logE, czmin):
     num_parts=1
@@ -72,6 +73,46 @@ def get_number_of_parts_and_events(flavor, logE, czmin):
                 num_parts = int(1000)
 
     return num_parts, num_events
+
+def get_number_of_parts_and_events_grid(flavor, logE, czmin):
+    # this is to get number of parts (files) and events per file
+    # for the grid, where Brian ran the very highest energies
+    # these are tuned to finish in roughly 2 to 2.5 hours
+    # assuming a relatively "moderate" array, like the baseline or hex hybrid
+    num_parts = 1
+    num_events = 1
+
+    if logE>=19:
+        # right now, Brian is only doing E==19 (other energies to come later)
+        if flavor=='e':
+            if czmin < -0.3:
+                num_parts = int(10)
+                num_events = int(5000)
+            else:
+                num_parts = int(250)
+                num_events = int(200)
+        if flavor=='mu':
+            if czmin < -0.3:
+                num_parts = int(10)
+                num_events = int(5000)
+            elif (czmin < 0.5 and czmin >=-0.3):
+                num_parts = int(1000)
+                num_events = int(50)
+            elif (czmin >= 0.5):
+                num_parts = int(500)
+                num_events = int(100)
+        if flavor=='tau':
+            if czmin < -0.3:
+                num_parts = int(10)
+                num_events = int(5000)
+            elif (czmin < 0.5 and czmin >=-0.3):
+                num_parts = int(1000)
+                num_events = int(50)
+            elif (czmin >= 0.5):
+                num_parts = int(250)
+                num_events = int(200)
+    
+    return num_parts, num_events  
 
 def get_file_pattern(flavor, logE, cosz_bin):
     coszenbins = get_coszenbins()
