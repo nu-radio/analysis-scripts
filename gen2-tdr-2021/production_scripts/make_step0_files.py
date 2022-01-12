@@ -62,7 +62,6 @@ for flavor in flavors:
 
     for iE in range(len(logEs)):
 
-
         max_dist = get_distance_cut(10 ** logEs[iE])
         print(f"maximum radius for E = {10**logEs[iE]:.2g} is {max_dist/units.m:.0f}m")
 
@@ -73,6 +72,12 @@ for flavor in flavors:
             czen1 = coszenbins[iC]
             czen2 = coszenbins[iC + 1]
             E = energies[iE]
+
+            volume['full_zmin'] =  -3.3 * units.km
+            if flavor in ["mu", "tau"] and czen1 < 0:
+                volume['full_zmin'] = hp.full_zmin_below_ice(logEs[iE], czen1)
+                print(f"decreasing full_zmin to {volume['full_zmin']}")
+
             minEproposal = 1E-3 * E
             thetamax = np.arccos(czen1)
             thetamin = np.arccos(czen2)

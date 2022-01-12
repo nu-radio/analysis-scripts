@@ -1,6 +1,7 @@
 import numpy as np
 import h5py
 from six import iteritems
+from NuRadioReco.utilities import units
 
 def read_input_hdf5_file(filename):
     fin = h5py.File(filename, 'r')
@@ -126,7 +127,7 @@ def get_gen_filename(flavor, logE, cosz_bin, part):
     out_filename = "in_" + f"{pattern}" + f".part{part:06}" + ".hdf5"
     return out_filename
 
-def full_zmin_below_ice(logE, cz0, ice_depth=-2.7, default_dzmin=-0.6):
+def full_zmin_below_ice(logE, cz0, ice_depth=-2.7*units.km, default_dzmin=-0.6*units.km):
     # maximum additional z extension needed in km
     # calculated using 95% quantile of tau length for a given energy times the cz0 (or minimum cosz for which PREM transmisssion prob is > 1e-5)
     # values for ice have been divided by 2.5 (for rough / conservative estimate on rock)
@@ -143,4 +144,5 @@ def full_zmin_below_ice(logE, cz0, ice_depth=-2.7, default_dzmin=-0.6):
         19.0: {-1.0: -4.8, -0.9: -4.8, -0.8: -4.8, -0.7: -4.8, -0.6: -4.8, -0.5: -4.8, -0.4: -4.8, -0.3: -4.8, -0.2: -4.8, -0.1: -3.0},
         19.5: {-1.0: -3.9, -0.9: -3.9, -0.8: -3.9, -0.7: -3.9, -0.6: -3.9, -0.5: -3.9, -0.4: -3.9, -0.3: -3.9, -0.2: -3.9, -0.1: -3.4},
         20.0: {-1.0: -3.4, -0.9: -3.4, -0.8: -3.4, -0.7: -3.4, -0.6: -3.4, -0.5: -3.4, -0.4: -3.4, -0.3: -3.4, -0.2: -3.4, -0.1: -3.4}}
-    return ice_depth + min(dzmin[np.round(logE, 1)][np.round(cz0, 1)], default_dzmin)
+    full_zmin = ice_depth + min(dzmin[np.round(logE, 1)][np.round(cz0, 1)]*units.km, default_dzmin)
+    return full_zmin
