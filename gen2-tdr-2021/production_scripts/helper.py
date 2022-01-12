@@ -130,6 +130,7 @@ def full_zmin_below_ice(logE, cz0, ice_depth=-2.7, default_dzmin=-0.6):
     # maximum additional z extension needed in km
     # calculated using 95% quantile of tau length for a given energy times the cz0 (or minimum cosz for which PREM transmisssion prob is > 1e-5)
     # values for ice have been divided by 2.5 (for rough / conservative estimate on rock)
+
     dzmin = {
         15.0: {-1.0: -0.1, -0.9: -0.1, -0.8: -0.0, -0.7: -0.0, -0.6: -0.0, -0.5: -0.0, -0.4: -0.0, -0.3: -0.0, -0.2: -0.0, -0.1: -0.0},
         15.5: {-1.0: -0.2, -0.9: -0.2, -0.8: -0.1, -0.7: -0.1, -0.6: -0.1, -0.5: -0.1, -0.4: -0.1, -0.3: -0.1, -0.2: -0.0, -0.1: -0.0},
