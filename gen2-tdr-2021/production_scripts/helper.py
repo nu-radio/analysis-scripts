@@ -75,6 +75,90 @@ def get_number_of_parts_and_events(flavor, logE, czmin):
 
     return num_parts, num_events
 
+def get_number_of_parts_and_events_desy(flavor, logE, czmin):
+    # this is to get number of parts (files) and events per file
+    # for the desy cluster, where Steffen ran energies up to 10**18.5
+    # these are tuned to finish in roughly 5 hours in case of numu/tau
+    # some nue are faster. Values above 18.5 are left unchanged wrt.the original
+    num_parts=1
+    num_events=1
+
+    if flavor=='e':
+        # the electron flavor is always fast, and can always take 1000 events
+        if czmin < -0.5:
+            num_events = int(10000)
+            num_parts = int(10)
+        else:
+            num_events = int(5000)
+            num_parts = int(20)
+            if logE < 19:
+                num_events = int(500)
+                num_parts = int(200)
+    elif flavor=='mu' or flavor=='tau':
+        # otherwise, be clever
+
+        if czmin < -0.3:
+            num_events = int(10000)
+            num_parts = int(10)
+            if logE < 16.5:
+                num_events = int(20000)
+                num_parts = int(50)
+
+        elif (czmin < 0.4 and czmin >=-0.3 ):
+            if logE<17:
+                num_events = int(10000)
+                num_parts = int(100)
+            elif logE<17.5:
+                num_events = int(2500)
+                num_parts = int(400)
+            elif logE<18.5:
+                num_events = int(500)
+                num_parts = int(400)
+            elif logE<19:
+                num_events = int(250)
+                num_parts = int(400)
+            elif (logE<19.5 and logE>=19):
+                num_events = int(100)
+                num_parts = int(1000)
+            elif (logE<20 and logE>=19.5):
+                num_events = int(50)
+                num_parts = int(2000)
+            elif (logE>=20):
+                num_events = int(25)
+                num_parts = int(4000)
+
+        elif (czmin >= 0.4 ):
+            if logE<17.5:
+                num_events = int(10000)
+                num_parts = int(100)
+                if czmin >= 0.7:
+                    num_events = int(50000)
+                    num_parts = int(20)
+            elif logE<18.5:
+                num_events = int(1000)
+                num_parts = int(100)
+                if czmin >= 0.7:
+                    num_events = int(5000)
+                    num_parts = int(20)
+            elif logE<19.0:
+                num_events = int(500)
+                num_parts = int(200)
+                if czmin >= 0.8:
+                    num_events = int(5000)
+                    num_parts = int(20)
+            elif (logE<19.5 and logE>=19):
+                num_events = int(500)
+                num_parts = int(200)
+            elif (logE<20 and logE>=19.5):
+                num_events = int(250)
+                num_parts = int(400)
+            elif (logE>=20):
+                num_events = int(100)
+                num_parts = int(1000)
+
+    return num_parts, num_events
+
+
 def get_number_of_parts_and_events_grid(flavor, logE, czmin):
     # this is to get number of parts (files) and events per file
     # for the grid, where Brian ran the very highest energies
@@ -146,3 +230,18 @@ def full_zmin_below_ice(logE, cz0, ice_depth=-2.7*units.km, default_dzmin=-0.6*u
         20.0: {-1.0: -3.4, -0.9: -3.4, -0.8: -3.4, -0.7: -3.4, -0.6: -3.4, -0.5: -3.4, -0.4: -3.4, -0.3: -3.4, -0.2: -3.4, -0.1: -3.4}}
     full_zmin = ice_depth + min(dzmin[np.round(logE, 1)][np.round(cz0, 1)]*units.km, default_dzmin)
     return full_zmin
+
+def get_nsim_ntrig(filename):
+    """ get simulated and triggered event numbers from a triggered .hdf5 output file """
+    try:
+        f = h5py.File(filename, "r")
+    except:
+        return None, None
+    nsim = f.attrs["n_events"]
+    ntrig = len(np.unique(np.array(f["event_group_ids"])))
+    return nsim, ntrig
+
+trigger_combinations = {'combined_4channelPA' : {'triggers': ["LPDA_2of4_100Hz", "PA_4channel_100Hz"]},
+                        'combined_8channelPA' : {'triggers': ["LPDA_2of4_100Hz", "PA_8channel_100Hz"]},
+                        'combined_4channelPA_highThreshold' : {'triggers': ["LPDA_2of4_10mHz", "PA_4channel_1mHz"]},
+                        'combined_8channelPA_highThreshold' : {'triggers': ["LPDA_2of4_10mHz", "PA_8channel_1mHz"]}}
