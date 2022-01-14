@@ -24,7 +24,7 @@ def get_coszenbins():
 
 def get_logEs():
     # return np.arange(18.5, 20.1, 0.5)
-    return np.arange(19.0, 19.1, 0.5)
+    return np.arange(19.5, 19.6, 0.5)
 
 def get_number_of_parts_and_events(flavor, logE, czmin):
     num_parts=1
@@ -196,6 +196,9 @@ def get_number_of_parts_and_events_grid(flavor, logE, czmin):
             elif (czmin >= 0.5):
                 num_parts = int(250)
                 num_events = int(200)
+    
+    if logE >=19.5:
+        num_parts = int(num_parts/2) # reduce by factor of two at the higher energies
     
     return num_parts, num_events  
 
