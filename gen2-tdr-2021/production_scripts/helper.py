@@ -24,7 +24,7 @@ def get_coszenbins():
 
 def get_logEs():
     # return np.arange(18.5, 20.1, 0.5)
-    return np.arange(19.5, 19.6, 0.5)
+    return np.arange(20, 20.1, 0.5)
 
 def get_number_of_parts_and_events(flavor, logE, czmin):
     num_parts=1
