@@ -46,6 +46,7 @@ def matching_files(files, identifier):
     return matches 
 
 identifiers = get_identifiers(files, args.separator)
+print("identifiers are {}".format(identifiers))
 
 for identifier in identifiers:
     mfiles = matching_files(files, identifier)
