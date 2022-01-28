@@ -49,13 +49,36 @@ This directory for production scripts only includes the scripts for step 0, whic
 
 ## Simulation Tools and Steps
 
-We are using [NuRadioMC tag v2.1.2](https://github.com/nu-radio/NuRadioMC/releases/tag/v2.1.3). 
-The X.X.3 hotfix version is important, as during TDR simulation prep, a bug was found in the units used in the proposal shower energy cut.
+We are using [NuRadioMC tag v2.1.3](https://github.com/nu-radio/NuRadioMC/releases/tag/v2.1.3) and tag [NuRadioMC tag v2.1.5](https://github.com/nu-radio/NuRadioMC/releases/tag/v2.1.5)
+The >=X.X.3 hotfix version is important, as during TDR simulation prep, a bug was found in the units used in the proposal shower energy cut.
 (See [this](https://github.com/nu-radio/NuRadioMC/pull/363) pull request.)
+
+More explanation on why multiple versions were used is explained below.
 
 There is a small "helper" class provided in this repository. This standardizes things like the zenith binning, energy binning, etc. To use it, you will need to do:
 
 `export PYTHONPATH=/path/to/tools/directory/:$PYTHONPATH`
+
+### NuRadioMC Versions
+We realized mid-production that there was a bug in versions less than v2.1.5. 
+The bug is that the trigger time was not set correctly in the phased array
+module, and so the time traces were cut incorreclty in the .nur files.
+(Meaning the waveforms are trimmed incorrectly and 
+the pulse is often not present in the simulated waveform.)
+The hdf5 files, and the veffs, coincidences, etc, are all correct.
+This bug is discussed more [here](https://github.com/nu-radio/NuRadioMC/pull/372).
+
+Because we distributed production, and did the arrays out of order, different
+versions were used on differente arrays and energy ranges.
+Again, this should only affect .nur files, not the .hdf5 files 
+and the general high-level physics conclusions.
+
+Information on which versions were used where is below.
+
+**1E19 and Above (computed by Brian on the Grid)**
+- Baseline, Hybrid-Only:  v2.1.4
+- Shallow, Shallow-Heavy: v2.1.5
+
 
 ## step 0 scripts
 Step 0 is where we output the "control" `.py` files for NuRadioMC that tell NuRadioMC how to distribute the neutrinos that will become the step 1 files. This includes the neutrino energy, zeniths, vertex volume, etc. Run this by doing:
