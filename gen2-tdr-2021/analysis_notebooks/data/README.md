@@ -25,13 +25,13 @@ Sunflower 240m detector configuration and pDOMs as detector modules (essentially
 IceCube DOMs with HQE PMTs).
 
 The nu/nubar averaged effective area, given in m2, is binned in three dimensions:
-    - True cos(zenith)
-    - Energy at the detector volume
-    - Neutrino energy at the surface
+- True cos(zenith)
+- Energy at the detector volume
+- Neutrino energy at the surface
 
 The binning scheme used is given in the npz file.
 
-In short, to the effective area vs energy and zenith, a user should sum over
-the second dimension. To the get the sky-averaged effective area,
+In short, to get the effective area vs energy and zenith, a user should sum over
+the second dimension. To the get the all-sky-averaged effective area,
 the user should average over the first dimension, and multiply by pi.
 This would produce aeff*str.
