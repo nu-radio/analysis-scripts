@@ -18,14 +18,27 @@ def stepped_path(edges, bins):
     return x,y
 
 def load_gen2opticalehe_aeffs(flavor):
+
+    """
+    These files were provided by Max Meier
+
+    The effective areas are binned in 3 dimensions
+
+    first dimension: true cos(zenith)
+    second dimension: energy at the detector volume
+    third dimension: neutrino energy at the surface
+    sum over the second dimension to get effective area vs energy and zenith
+    average over the first dimension, and multiply by pi, to get aeff*str vs energy
+    
+    """
+
     f = np.load("data/Gen2_EHE_effective_area_{}.npz".format(flavor))
     cos_theta = f['cos_theta_bins']
     energies = f['energy_bins']
 
-    areas = f['area_in_sqm']
-    areas = np.asarray(areas)
-    areas_vs_energy_zenith = np.sum(areas, axis=1)
-    areas_vs_energy = np.sum(areas_vs_energy_zenith, axis=0) / len(cos_theta) * np.pi
+    areas = np.asarray(f['area_in_sqm'])
+    areas_vs_energy_zenith = np.sum(areas, axis=1) # sum over the second dimension
+    areas_vs_energy = np.sum(areas_vs_energy_zenith, axis=0) / len(cos_theta) * np.pi # average over the first
     
     return energies, areas_vs_energy
 
