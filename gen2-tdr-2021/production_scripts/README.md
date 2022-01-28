@@ -73,11 +73,18 @@ versions were used on differente arrays and energy ranges.
 Again, this should only affect .nur files, not the .hdf5 files 
 and the general high-level physics conclusions.
 
-Information on which versions were used where is below.
+Information on which versions were used where is below. 
 
 **1E19 and Above (computed by Brian on the Grid)**
 - Baseline, Hybrid-Only:  v2.1.4
 - Shallow, Shallow-Heavy: v2.1.5
+
+This information is also contained in the hdf5 files themselves,
+and so can be recovered after the fact.  It can be extracted by doing:
+```python
+f = h5py.open('filename.hdf5')
+f.attrs['NuRadioMC_version']
+```
 
 
 ## step 0 scripts
