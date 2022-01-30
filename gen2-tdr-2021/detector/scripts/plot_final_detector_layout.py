@@ -3,6 +3,7 @@ from NuRadioReco.utilities import units
 from matplotlib import pyplot as plt
 import sys, os
 import numpy as np
+plt.rcParams["figure.dpi"] = 300
 
 filename = sys.argv[1]
 basename = os.path.splitext(os.path.basename(filename))[0]
@@ -21,8 +22,18 @@ xx = np.array(xx)
 yy = np.array(yy)
 
 fig, ax = plt.subplots(1, 1)
-ax.plot(xx, yy, "o")
+ax.plot(xx[station_ids<2000], yy[station_ids<2000], "o")
+ax.plot(xx[station_ids>=2000], yy[station_ids>=2000], "x")
 ax.set_aspect('equal')
+
+# plot the area of thrown events in tdr sims
+plt.plot(np.array([-16,-16, 18, 18, -16])*units.km, np.array([-25,25,25,-25, -25])*units.km, "-", color="black")
+plt.plot(np.array([-16+5,-16+5, 18-5, 18-5, -16+5])*units.km, np.array([-20,20,20,-20, -20])*units.km, "--", color="black")
+
+plt.xlabel("x [m]")
+plt.ylabel("y [m]")
+plt.title(f"{basename}")
+
 fig.savefig(f"{basename}.png")
 
 
