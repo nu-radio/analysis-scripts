@@ -75,6 +75,9 @@ n_deep_trim = len(xx_deep_trim)
 n_shallow_trim = len(xx_shallow_trim)
 n_shallow_ring_trim = len(xx_shallow_ring_trim)
 
+print(f"hybrid stations: {n_deep_trim}")
+print(f"shallow-only stations: {n_shallow_trim+n_shallow_ring_trim}")
+
 dic = {}
 for it, number in enumerate(np.arange(1001, 1001+n_deep_trim, 1)):
     dic[int(number)] = {
@@ -86,7 +89,7 @@ for it, number in enumerate(np.arange(1001, 1001+n_deep_trim, 1)):
                 "pos_site": "southpole",
                 "station_id": int(number),
                 "reference_station": 1001}
-print(it)
+
 for it, number in enumerate(np.arange(2001, 2001+n_shallow_trim, 1)):
     dic[int(number)] = {
                 "commission_time": "{TinyDate}:2017-11-04T00:00:00",
@@ -97,7 +100,7 @@ for it, number in enumerate(np.arange(2001, 2001+n_shallow_trim, 1)):
                 "pos_site": "southpole",
                 "station_id": int(number),
                 "reference_station": 2001}
-s1 = it
+
 for it, number in enumerate(np.arange(2001+n_shallow_trim, 2001+n_shallow_trim+n_shallow_ring_trim, 1)):
     dic[int(number)] = {
                 "commission_time": "{TinyDate}:2017-11-04T00:00:00",
@@ -108,6 +111,6 @@ for it, number in enumerate(np.arange(2001+n_shallow_trim, 2001+n_shallow_trim+n
                 "pos_site": "southpole",
                 "station_id": int(number),
                 "reference_station": 2001}
-print(it+s1)
+
 with open('hex_shallow_1.2km_array.json', 'w') as outfile:
     json.dump(dic, outfile, cls=NumpyEncoder, indent=4)
