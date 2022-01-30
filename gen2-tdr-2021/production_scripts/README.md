@@ -79,6 +79,10 @@ Information on which versions were used where is below.
 - Baseline, Hybrid-Only:  v2.1.4
 - Shallow, Shallow-Heavy: v2.1.5
 
+**1E18.5 and Below (computed by Steffen on the Desy cluster)**
+- Baseline, Hybrid-Only, Shallow, Shallow-Heavy:  v2.1.4
+
+
 This information is also contained in the hdf5 files themselves,
 and so can be recovered after the fact.  It can be extracted by doing:
 ```python
