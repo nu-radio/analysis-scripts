@@ -13,7 +13,7 @@ for more discussion.
 It can also make plots of the triggering statistics,
 plots of the veff/aeff, and projected limits.
 
-To get all the plots at once, run `bash do_calculations.sh`.
+To get all the plots at once, run `bash run_all.sh`.
 
 A fair warning, it takes about 20-30 minutes, as it has to 
 go over all the hdf5 files for all arrays (4), all energies (9),
