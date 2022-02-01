@@ -3,6 +3,16 @@ import matplotlib.pyplot as plt
 from NuRadioReco.utilities import units
 import plot_helper as helper
 
+"""
+This script compares the Feb 2021 baseline effective area,
+to that of the Gen2 Extremely High Energy (EHE)
+effective area at analysis level.
+
+So, be careful: this will compare radio trigger level
+to optical analysis level.
+
+"""
+
 
 fig, ax = plt.subplots(1, 1)
 

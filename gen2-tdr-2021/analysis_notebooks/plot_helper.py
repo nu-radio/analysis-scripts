@@ -1,4 +1,5 @@
 import numpy as np
+import os
 
 def stepped_path(edges, bins):
     
@@ -32,7 +33,7 @@ def load_gen2opticalehe_aeffs(flavor):
     
     """
 
-    f = np.load("data/Gen2_EHE_effective_area_{}.npz".format(flavor))
+    f = np.load("{}/data/Gen2_EHE_effective_area_{}.npz".format(os.getenv('NOTEBOOKDIR'), flavor))
     cos_theta = f['cos_theta_bins']
     energies = f['energy_bins']
 
@@ -55,9 +56,31 @@ def get_radio_review_array():
     n_deep = 144*1
     n_shallow = (169+144)*1
 
-    data_i = np.genfromtxt(f'data/tabulated_veff_aeff_review_hybrid.csv', delimiter=',', skip_header=6, names=['logE', 'dveff', 'daeff', 'sveff', 'saeff', 'overlap_frac', 'deep_only', 'shallow_only'])
+    data_i = np.genfromtxt('{}/data/tabulated_veff_aeff_review_hybrid.csv'.format(os.getenv('NOTEBOOKDIR')), 
+        delimiter=',', skip_header=6, names=['logE', 'dveff', 'daeff', 'sveff', 'saeff', 'overlap_frac', 'deep_only', 'shallow_only'])
     energies = np.power(10.,data_i['logE'])
 
     average_total_veff = ((data_i['dveff']*n_deep + data_i['sveff']*n_shallow)) * (1/(1+data_i['overlap_frac']))
     average_total_aeff = ((data_i['daeff']*n_deep + data_i['saeff']*n_shallow)) * (1/(1+data_i['overlap_frac']))
     return np.asarray(energies), np.asarray(average_total_veff), np.asarray(average_total_aeff)
+
+def get_review_array_padded():
+
+    """
+    A function to get the veff and aeff of the review array
+    """
+
+    average_deep_veff = np.zeros(9)
+    average_shallow_veff = np.zeros(9)
+    average_dual_veff = np.zeros(9)
+    average_deep_aeff = np.zeros(9)
+    average_shallow_aeff = np.zeros(9)
+    average_dual_aeff = np.zeros(9)
+
+    # return these!
+    energies, veff, aeff = get_radio_review_array()
+
+    return veff, average_deep_veff, \
+            average_shallow_veff, average_dual_veff, \
+            aeff, average_deep_aeff, \
+            average_shallow_aeff, average_dual_aeff
