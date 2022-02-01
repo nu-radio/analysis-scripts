@@ -101,9 +101,10 @@ The main parameter, which sits near the top of the file, is the `base_dir`, whic
 ## step 4 scripts
 Step 4 is the step where the merged hdf5 files are put into json files
 (one per zenith and energy bin).
+We put them into json files so they are more human readable.
 Instructions on running step 4 are in the corresponding directory.
 
-After step 4 has been run, all the output json fils have to be merged togeter.
+After step 4 has been run, all the output json fils have to be merged together.
 
 This can be done by doing:
 
