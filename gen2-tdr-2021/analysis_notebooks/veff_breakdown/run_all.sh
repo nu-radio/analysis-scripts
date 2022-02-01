@@ -1,4 +1,7 @@
-# export PYTHONPATH=$PWD../$PYTHONPATH
+
+# you need the plot_helper (from one directory up) in your python path
+# you also need to set the NOTEBOOKDIR (for one directory up)
+# this needs to be an absolute path, sorry...
 export PYTHONPATH=$PWD/..:$PYTHONPATH
 export NOTEBOOKDIR="/home/brianclark/Gen2/radio/analysis-scripts/gen2-tdr-2021/analysis_notebooks"
 
