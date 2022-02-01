@@ -97,3 +97,14 @@ Step 0 is where we output the "control" `.py` files for NuRadioMC that tell NuRa
 `python make_step0_files.py`
 
 The main parameter, which sits near the top of the file, is the `base_dir`, which is where you ant the step 0 and step 1 files to be placed.
+
+## step 4 scripts
+Step 4 is the step where the merged hdf5 files are put into json files
+(one per zenith and energy bin).
+Instructions on running step 4 are in the corresponding directory.
+
+After step 4 has been run, all the output json fils have to be merged togeter.
+
+This can be done by doing:
+
+`python merge_json_veff_files.py --input_dir /path/to/unmerged_jsons --output_dir /path/to/output_location`
