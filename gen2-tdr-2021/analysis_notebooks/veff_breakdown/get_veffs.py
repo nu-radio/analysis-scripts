@@ -181,6 +181,7 @@ with open(f'results/stats_{detector}_deeptrig_{deep_trigger}_shallowtrig_{shallo
 
 
 
+
 fig, axs = plt.subplots(1, 2, figsize=(12,6))
 colors = ['C0', 'C1', 'C2']
 markers = ['o', 's', '^']
@@ -260,3 +261,19 @@ fig.savefig(f"plots/christian_veff_energy_{detector}.png")
 # plt.show()
 # a =1/0
 plt.close("all")
+
+if mode == 'deepshallow':
+    output_csv_3 = "energy, veff [km^3], deep inclusive, shallow inclusive, deep exclusive, shallow exclusive, coincidences"
+    output_csv_3 += "\n"
+    for iE, energy in enumerate(energies):
+        output_csv_3 += '{:.1f}, {:e}, {:>.4f}, {:>.4f}, {:>.4f}, {:>.4f}, {:>.4f} \n'.format(
+            float(energy), 
+            average_total_veff[iE]/scaling, 
+            fraction_deeporhybrid[iE]+fraction_dual[iE],
+            fraction_shallow[iE]+fraction_dual[iE],
+            fraction_deeporhybrid[iE],
+            fraction_shallow[iE],
+            fraction_dual[iE]
+            )
+    with open(f'results/veff_fractions_{detector}_deeptrig_{deep_trigger}_shallowtrig_{shallow_trigger}.csv', 'w') as fout:
+        fout.write(output_csv_3)
