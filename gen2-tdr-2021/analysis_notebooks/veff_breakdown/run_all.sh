@@ -16,7 +16,7 @@ for det in "${dets[@]}"
 do
     for mode in "${modes[@]}"
     do
-        python calc_fractions.py --det $det --mode $mode # first, calculate the information
+        # python calc_fractions.py --det $det --mode $mode # first, calculate the information
         python get_veffs.py --det $det --mode $mode # now, make plots and write to csv
     done
 done
@@ -30,10 +30,18 @@ python plot_veffs.py --det 4 --mode "review"
 
 
 #############################
+# and now to make plots
+#############################
+
+python plot_stats.py
+python plot_limits.py
+
+
+#############################
 # now, the advanced mode statistics calculations
 #############################
 
-declare -a modes=("advanced")
+declare -a modes=("stations_and_triggers", "triggers_coincidences")
 for det in "${dets[@]}"
 do
     for mode in "${modes[@]}"
@@ -44,9 +52,4 @@ do
 done
 
 
-#############################
-# and now to make plots
-#############################
 
-python plot_stats.py
-python plot_limits.py

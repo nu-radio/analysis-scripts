@@ -7,11 +7,11 @@ import os
 import sys
 import pickle
 from multiprocessing import Pool, pool
-from functools import partial
 from NuRadioReco.utilities import units
 from NuRadioMC.utilities.Veff import get_Veff_water_equivalent as gwe
 import helper
 import argparse
+
 
 
 """
@@ -20,6 +20,7 @@ various detector components. It does this in a more "advanced" fashion.
 It tries to break out the volume by all the triggering components.
 So, hybrid-phased array part, hybrid-surface part, shallow-surface part,
 and the coincidences between all components.
+Or sometimes by deep vs shallow, according to coincidence
 
 The output is a pkl file with the triggering stats and the veffs.
 
@@ -31,15 +32,11 @@ parser.add_argument('--mode', required=True, help='which mode: deepshallow or hy
 args = parser.parse_args()
 
 the_det = int(args.det)
-the_mode = args.mode
+mode = args.mode
+helper.check_requested_mode(mode)    
 
 top = "/data/sim/Gen2/radio/2020/gen2-tdr-2021/simulation_output/secondaries_1700km2/step3"
-detectors = [
-    "baseline_array",
-    "hex_hybrid_only_array",
-    "hex_shallow_array",
-    "hex_shallowheavy_array"
-]
+detectors = helper.get_detectors()
 
 detector = detectors[the_det]
 config = "config_ARZ2020_noise"
@@ -48,15 +45,11 @@ path=os.path.join(top, detector, config, detsim)
 
 deep_trigger = 'PA_4channel_100Hz'
 shallow_trigger = 'LPDA_2of4_100Hz'
-mode = the_mode
+
 hybrid_list = np.genfromtxt(f"../../detector/station_lists/stations_{detector}_hybrid.csv")
 shallow_list = np.genfromtxt(f"../../detector/station_lists/stations_{detector}_shallow.csv")
 
-flavors = [
-    "e",
-    "mu",
-    "tau"
-]
+flavors = helper.get_flavors()
 
 zen_bins = np.linspace(-1,1,21)
 coszen_to_bin = {}
@@ -65,12 +58,11 @@ for iZ, czen1 in enumerate(zen_bins[:-1]):
 logEs = np.arange(16, 20.1, 0.5)
 n_cores = 15
 
-local_func = partial(helper.tmp_advanced, 
-    hybrid_list=hybrid_list, 
-    shallow_list=shallow_list,
-    deep_trigger=deep_trigger,
-    shallow_trigger=shallow_trigger,
-    )
+the_list, labels_dict = helper.get_list_and_labels(mode)
+local_func = helper.get_partial_func(mode, hybrid_list, shallow_list,
+    deep_trigger, shallow_trigger
+)
+
 
 for flavor in flavors:
     total_veff = {}
@@ -78,7 +70,6 @@ for flavor in flavors:
         total_veff[f"{logE:.1f}"] = {}
         num_zen_bins = 20
 
-        the_list = ['total', 'hd', 'hs', 'ss', 'hd_hs', 'hd_ss', 'hs_ss', 'hd_hs_ss']
         all_sky = {}
         binned = {}
         for l in the_list:
