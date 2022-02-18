@@ -4,7 +4,7 @@
         "1": {
             "commission_time": "{TinyDate}:2017-11-04T00:00:00",
             "decommission_time": "{TinyDate}:2038-01-01T00:00:00", 
-            "ant_comment": "Hpol PA 1",
+            "ant_comment": "Hpol PA (4Ch) 1",
             "ant_position_x": 0,
             "ant_position_y": 0,
             "ant_position_z": -147.0,
@@ -29,7 +29,7 @@
           "2": {
               "commission_time": "{TinyDate}:2017-11-04T00:00:00",
               "decommission_time": "{TinyDate}:2038-01-01T00:00:00", 
-              "ant_comment": "Hpol PA 2",
+              "ant_comment": "Hpol PA (4Ch) 2",
               "ant_position_x": 0,
               "ant_position_y": 0,
               "ant_position_z": -148.0,
@@ -54,7 +54,7 @@
           "3": {
               "commission_time": "{TinyDate}:2017-11-04T00:00:00",
               "decommission_time": "{TinyDate}:2038-01-01T00:00:00", 
-              "ant_comment": "Hpol PA 3",
+              "ant_comment": "Hpol PA (4Ch) 3",
               "ant_position_x": 0,
               "ant_position_y": 0,
               "ant_position_z": -149.0,
@@ -79,7 +79,7 @@
           "4": {
               "commission_time": "{TinyDate}:2017-11-04T00:00:00",
               "decommission_time": "{TinyDate}:2038-01-01T00:00:00",
-              "ant_comment": "Hpol PA 4",
+              "ant_comment": "Hpol PA (4Ch) 4",
               "ant_position_x": 0,
               "ant_position_y": 0,
               "ant_position_z": -150.0,
