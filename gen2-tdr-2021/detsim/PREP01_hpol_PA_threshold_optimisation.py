@@ -1,3 +1,4 @@
+import sys
 import argparse
 import time
 import numpy as np
@@ -19,7 +20,7 @@ parser.add_argument('--ntries', type=int, help='number noise traces to which a t
 parser.add_argument('--ncpus', type=int, help='number of parallel jobs that can be run',
                     default=1)
 parser.add_argument('--detectordescription', type=str,
-                    help='path to file containing the detector description', default='../Effective_volume/8antennas_100m_0.5GHz.json')
+                    help='path to file containing the detector description', default='../detector/single_station/HPol_PA_channels.json')
 parser.add_argument('--threshold', type=float,
                     help='threshold to test. If -1, runs a default sweep', default=-1.0)
 parser.add_argument('--nchannels', type=int,
@@ -71,9 +72,10 @@ Vrms = 1
 
 dt = 1 / sampling_rate
 ff = np.fft.rfftfreq(n_samples, dt)
-filt1 = channelBandPassFilter.get_filter(ff, 0, 0, None, passband=[0, 220 * units.MHz], filter_type="cheby1", order=9, rp=.1)
+filt0 = channelBandPassFilter.get_filter(ff, 0, 0, None, passband=[0, 1 * units.GHz], filter_type="cheby1", order=7, rp=.1)
+filt1 = channelBandPassFilter.get_filter(ff, 0, 0, None, passband=[0, 220 * units.MHz], filter_type="cheby1", order=7, rp=.1)
 filt2 = channelBandPassFilter.get_filter(ff, 0, 0, None, passband=[96 * units.MHz, 100 * units.GHz], filter_type="cheby1", order=4, rp=.1)
-filt = filt1 * filt2
+filt = filt0 * filt1 * filt2
 
 # calculate bandwith
 max_freq = ff[-1]
@@ -92,6 +94,7 @@ pattern = f"pa_trigger_rate_{n_channels:d}channels_{upsampling_factor}xupsamplin
 triggerSimulator = NuRadioReco.modules.phasedarray.triggerSimulator.triggerSimulator()
 thresholdSimulator = NuRadioReco.modules.trigger.simpleThreshold.triggerSimulator()
 
+print(f"amplitude {amplitude}, bandwidth {bandwidth}, Vrms {Vrms}, Vrms_ratio {Vrms_ratio}, max_freq {max_freq}")
 
 def loop(threshold, seed):
 
@@ -122,7 +125,7 @@ def loop(threshold, seed):
                                      phasing_angles=default_angles,
                                      ref_index=1.75,
                                      trigger_name='primary_phasing',
-                                     trigger_adc=False,
+                                     trigger_adc=True,
                                      adc_output='voltage',
                                      trigger_filter=None,
                                      upsampling_factor=upsampling_factor,
@@ -137,6 +140,7 @@ def loop(threshold, seed):
 #    multiprocessing.spawn.freeze_support()
 #pool = ThreadPool(ncpus)
 for threshold in thresholds:
+    print(f"running with threshold: {threshold}")
     n_triggers = 0
     i = 0
     t00 = time.time()
