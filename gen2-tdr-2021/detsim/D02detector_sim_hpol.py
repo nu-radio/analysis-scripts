@@ -38,14 +38,14 @@ logger = logging.getLogger("runMB")
 thresholds_pa = {}
 # TODO do we need to adapt HPol thresholds? For now they are just copied from VPol.
 thresholds_pa['4ch_hpol'] = {}
-thresholds_pa['4ch_hpol']['100Hz'] = 30.68
-thresholds_pa['4ch_hpol']['1Hz'] = 38.62
-thresholds_pa['4ch_hpol']['1mHz'] = 50.53
+thresholds_pa['4ch_hpol']['100Hz'] = 11.89
+#thresholds_pa['4ch_hpol']['1Hz'] = None # not used
+#thresholds_pa['4ch_hpol']['1mHz'] = None # not used
 
 thresholds_pa['4ch_vpol'] = {}
 thresholds_pa['4ch_vpol']['100Hz'] = 30.68
 thresholds_pa['4ch_vpol']['1Hz'] = 38.62
-thresholds_pa['4ch_vpol']['1mHz'] = 50.53 
+thresholds_pa['4ch_vpol']['1mHz'] = 50.53
 
 # initialize detector sim modules
 highLowThreshold = NuRadioReco.modules.trigger.highLowThreshold.triggerSimulator()

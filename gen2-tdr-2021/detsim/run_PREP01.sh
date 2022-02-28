@@ -1,4 +1,4 @@
-THRES=20
+THRES=10
 # ntries:
 # a reasonable quantity is probably simulating 1 minute of detector livetime
 # ntries = 60 sec * 2.4 GHz / 2048 samples ~= 7e7
