@@ -16,7 +16,7 @@ for det in "${dets[@]}"
 do
     for mode in "${modes[@]}"
     do
-        # python calc_fractions.py --det $det --mode $mode # first, calculate the information
+        python calc_fractions.py --det $det --mode $mode # first, calculate the information
         python get_veffs.py --det $det --mode $mode # now, make plots and write to csv
     done
 done
