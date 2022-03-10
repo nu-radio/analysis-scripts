@@ -13,6 +13,7 @@ import NuRadioReco.framework.channel
 from NuRadioReco.utilities import units
 from NuRadioReco.utilities import fft
 from NuRadioReco.detector import detector
+from scipy import constants
 
 parser = argparse.ArgumentParser(description='calculates noise trigger rate for phased array')
 parser.add_argument('--ntries', type=int, help='number noise traces to which a trigger is applied for each threshold',
@@ -70,6 +71,9 @@ step_length = int(8 * units.ns * sampling_rate * upsampling_factor)
 channel_ids = np.arange(8)
 Vrms = 1
 
+
+
+
 dt = 1 / sampling_rate
 ff = np.fft.rfftfreq(n_samples, dt)
 filt0 = channelBandPassFilter.get_filter(ff, 0, 0, None, passband=[0, 1 * units.GHz], filter_type="cheby1", order=7, rp=.1)
@@ -78,13 +82,17 @@ filt2 = channelBandPassFilter.get_filter(ff, 0, 0, None, passband=[96 * units.MH
 filt = filt0 * filt1 * filt2
 
 # calculate bandwith
-max_freq = ff[-1]
+max_freq = 1 * units.GHz
 min_freq = 0
 fff = np.linspace(min_freq, max_freq, 10000)
+filt0_highres = channelBandPassFilter.get_filter(fff, 0, 0, None, passband=[0, 1 * units.GHz], filter_type="cheby1", order=7, rp=.1)
 filt1_highres = channelBandPassFilter.get_filter(fff, 0, 0, None, passband=[0, 220 * units.MHz], filter_type="cheby1", order=7, rp=.1)
 filt2_highres = channelBandPassFilter.get_filter(fff, 0, 0, None, passband=[96 * units.MHz, 100 * units.GHz], filter_type="cheby1", order=4, rp=.1)
-filt_highres = filt1_highres * filt2_highres
+filt_highres = filt0_highres * filt1_highres * filt2_highres
 bandwidth = np.trapz(np.abs(filt_highres) ** 2, fff)
+
+Vrms = (300 * 50 * constants.k * bandwidth / units.Hz) ** 0.5 
+print(f'Vrms is {Vrms}')
 
 Vrms_ratio = np.sqrt(bandwidth / (max_freq - min_freq))
 amplitude = Vrms / Vrms_ratio
@@ -146,16 +154,14 @@ for threshold in thresholds:
     t00 = time.time()
     t0 = time.time()
 
-    while i < ntrials:
-        n_pool = 1 #int(float(ntrials) / 10.0)
-
-        #print("Events:", i, " Delta t=", time.time() - t00, " N_triggers =", n_triggers)
+    n_pool = 1
+    while i<ntrials:
         i += n_pool
         t00 = time.time()
         #results = pool.map(loop, zip(threshold * np.ones(n_pool), np.random.get_state()[1][0] + i + np.arange(n_pool)))
         results = loop(threshold, i)#np.random.get_state()[1][0] + i + np.arange(n_pool))
-        n_triggers += np.sum(results)
-        #rate = 1. * n_triggers / (i * n_samples * dt)
+        n_triggers += np.sum(results) 
+        
 
     rate = 1. * n_triggers / (i * n_samples * dt)
 
