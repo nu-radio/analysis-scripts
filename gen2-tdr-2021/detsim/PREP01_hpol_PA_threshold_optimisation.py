@@ -26,6 +26,8 @@ parser.add_argument('--threshold', type=float,
                     help='threshold to test. If -1, runs a default sweep', default=-1.0)
 parser.add_argument('--nchannels', type=int,
                     help='number of channels to phase', default=4)
+parser.add_argument('--seed', type=int,
+                    help='random seed which will be added by 1 for each consecutive try', default=1)
 
 args = parser.parse_args()
 
@@ -51,7 +53,7 @@ channels = []
 station_id = 1
 n_samples = det.get_number_of_samples(station_id, 1)  # we assume that all channels have the same parameters
 sampling_rate = det.get_sampling_frequency(station_id, 1)
-print(f"sampling rate = {sampling_rate/units.MHz}MHz, {n_samples} samples")
+print(f"sampling rate = {sampling_rate/units.MHz}MHz, {n_samples} samples, seed {args.seed}" )
 
 if(n_channels == 4):
     upsampling_factor = 2
@@ -159,7 +161,7 @@ for threshold in thresholds:
         i += n_pool
         t00 = time.time()
         #results = pool.map(loop, zip(threshold * np.ones(n_pool), np.random.get_state()[1][0] + i + np.arange(n_pool)))
-        results = loop(threshold, i)#np.random.get_state()[1][0] + i + np.arange(n_pool))
+        results = loop(threshold, args.seed + i)#np.random.get_state()[1][0] + i + np.arange(n_pool))
         n_triggers += np.sum(results) 
         
 
