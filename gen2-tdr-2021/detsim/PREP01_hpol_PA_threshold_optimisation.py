@@ -135,7 +135,7 @@ def loop(threshold, seed):
                                      phasing_angles=default_angles,
                                      ref_index=1.75,
                                      trigger_name='primary_phasing',
-                                     trigger_adc=True,
+                                     trigger_adc=False,
                                      adc_output='voltage',
                                      trigger_filter=None,
                                      upsampling_factor=upsampling_factor,
