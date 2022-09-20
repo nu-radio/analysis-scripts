@@ -13,6 +13,7 @@ from NuRadioReco.utilities import units
 import numpy as np
 from NuRadioMC.simulation import simulation
 import os
+import copy
 
 # deep config
 deep_channels = [0, 1, 2, 3]
@@ -32,7 +33,6 @@ thresholds_LPDA = {
     '2/4_100Hz': 3.9498194908011524,
     '2/4_10mHz': 4.919151494949084}
 
-
 if __name__ == "__main__":
     results_folder = '/lustre/fs22/group/radio/lpyras/muon_sim/M2_results'
     if not os.path.exists(results_folder):
@@ -40,14 +40,15 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description='Run NuRadioMC simulation')
     parser.add_argument('--inputfilename', type=str, default='/lustre/fs22/group/radio/lpyras/muon_sim'
-                                                      '/M1_simulation_input/input_1.0e+19_1.0e+20_cos_theta_1.0_0.0_job_0.hdf5',
+                                                             '/M1_simulation_input/input_1.0e+19_1.0e+20_cos_theta_1.0_0.0_job_0.hdf5',
                         help='path to NuRadioMC input event list')
     parser.add_argument('--detectordescription', type=str, default='/afs/ifh.de/group/radio/scratch/lpyras/muon_sim'
                                                                    '/detector.json',
                         help='path to file containing the detector description')
     parser.add_argument('--config', type=str, default='/afs/ifh.de/group/radio/scratch/lpyras/muon_sim/config.yaml',
                         help='NuRadioMC yaml config file')
-    parser.add_argument('--outputfilename', type=str, default=os.path.join(results_folder, 'MC_input_1.0e+19_1.0e+20_cos_theta_1.0_0.0_job_0.hdf5'),
+    parser.add_argument('--outputfilename', type=str,
+                        default=os.path.join(results_folder, 'MC_input_1.0e+19_1.0e+20_cos_theta_1.0_0.0_job_0.hdf5'),
                         help='hdf5 output filename')
     parser.add_argument('--outputfilename_NuRadioReco', type=str, nargs='?', default=None,
                         help='outputfilename of NuRadioReco detector sim file')
@@ -62,7 +63,6 @@ if __name__ == "__main__":
     channelGenericNoiseAdder = NuRadioReco.modules.channelGenericNoiseAdder.channelGenericNoiseAdder()
     hardwareResponseIncorporator = NuRadioReco.modules.RNO_G.hardwareResponseIncorporator.hardwareResponseIncorporator()
 
-    
     triggerTimeAdjuster = NuRadioReco.modules.triggerTimeAdjuster.triggerTimeAdjuster()
     triggerTimeAdjuster.begin(pre_trigger_time=200 * units.ns)
 
@@ -73,9 +73,14 @@ if __name__ == "__main__":
             # hardware response
             hardwareResponseIncorporator.run(evt, station, det, sim_to_data=True)
 
-
         def _detector_simulation_trigger(self, evt, station, det):
-            #highLowThreshold.run(evt, station, det,
+            station_copy = copy.deepcopy(station)
+
+            Vrms_per_channel_copy = copy.deepcopy(self._Vrms_per_channel)
+            Vrms_PA = Vrms_per_channel_copy[station_copy.get_id()][deep_channels[0]]
+            Vrms_LPDA = Vrms_per_channel_copy[station_copy.get_id()][shallow_channels[0]]
+
+            # highLowThreshold.run(evt, station, det,
             #                     threshold_high=2 * self._Vrms,
             #                     threshold_low=-2 * self._Vrms,
             #                     coinc_window=40 * units.ns,
@@ -83,14 +88,14 @@ if __name__ == "__main__":
             #                     number_concidences=2,  # 2/4 majority logic
             #                     trigger_name='hilo_2of4_2_sigma')
 
-            simpleThreshold.run(evt, station, det,
-                                threshold=.5 * self._Vrms,
+            simpleThreshold.run(evt, station_copy, det,
+                                threshold=1 * Vrms_LPDA,
                                 triggered_channels=shallow_channels,
-                                trigger_name='simple_05_sigma')
+                                trigger_name='simple_1_sigma')
 
-            phasedArrayTrigger.run(evt, station, det,
-                                   Vrms=self._Vrms,
-                                   threshold=threshold_pa * np.power(self._Vrms, 2.0),
+            phasedArrayTrigger.run(evt, station_copy, det,
+                                   Vrms=Vrms_PA,
+                                   threshold=threshold_pa * np.power(Vrms_PA, 2.0),
                                    triggered_channels=deep_channels,
                                    phasing_angles=phasing_angles_4ant,
                                    ref_index=1.75,
@@ -101,6 +106,15 @@ if __name__ == "__main__":
                                    upsampling_factor=2,
                                    window=window_4ant,
                                    step=step_4ant)
+
+            # if(station_copy.has_triggered()):
+            #     print("TRIGGERED!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!", flush=True)
+            # 5) set trigger attributes of original station
+            for trigger in station_copy.get_triggers().values():
+                station.set_trigger(trigger)
+
+            # this module cuts the trace to the record length of the detector
+            triggerTimeAdjuster.run(evt, station, det)
 
 
     sim = mySimulation(inputfilename=args.inputfilename,
