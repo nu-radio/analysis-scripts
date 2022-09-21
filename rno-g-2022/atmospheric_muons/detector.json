@@ -31,7 +31,8 @@
       "ant_rotation_theta": 90.0,
       "ant_type": "RNOG_vpol_4inch_center_n1.73",
       "channel_id": 1,
-      "station_id": 11
+      "station_id": 11,
+      "reference_channel": 0
     },
     "2": {
       "ant_comment": "phased array",
@@ -45,7 +46,8 @@
       "ant_rotation_theta": 90.0,
       "ant_type": "RNOG_vpol_4inch_center_n1.73",
       "channel_id": 2,
-      "station_id": 11
+      "station_id": 11,
+      "reference_channel": 0
     },
     "3": {
       "ant_comment": "phased array",
@@ -59,12 +61,15 @@
       "ant_rotation_theta": 90.0,
       "ant_type": "RNOG_vpol_4inch_center_n1.73",
       "channel_id": 3,
-      "station_id": 11
+      "station_id": 11,
+      "reference_channel": 0
     },
-    
+
     "12": {
         "amp_type": "rno_surface",
         "amp_reference_measurement": "300-03-00",
+        "adc_sampling_frequency": 3.2,
+        "adc_n_samples": 8192,
         "ant_comment": "first arm north from DAQ, west postition in arm, pointing side-downwards",
         "ant_orientation_phi": 0.0,
         "ant_orientation_theta": 135.0,
@@ -78,8 +83,11 @@
         "cab_reference_measurement": null,
         "cab_time_delay": 19.8,
         "cab_type": "LMR_400",
+        "noise_temperature": 300,
+        "noiseless": false,
         "channel_id": 12,
-        "station_id": 11
+        "station_id": 11,
+        "reference_channel": 12
         },
 
     "14": {
@@ -99,7 +107,8 @@
       "cab_time_delay": 19.8,
       "cab_type": "LMR_400",
       "channel_id": 14,
-      "station_id": 11
+      "station_id": 11,
+      "reference_channel": 12
       },
 
     "15": {
@@ -119,7 +128,8 @@
         "cab_time_delay": 19.8,
         "cab_type": "LMR_400",
         "channel_id": 15,
-        "station_id": 11
+        "station_id": 11,
+        "reference_channel": 12
         },
 
       "17": {
@@ -139,7 +149,8 @@
         "cab_time_delay": 19.8,
         "cab_type": "LMR_400",
         "channel_id": 17,
-        "station_id": 11
+        "station_id": 11,
+        "reference_channel": 12
         },
 
     "18": {
@@ -159,7 +170,8 @@
         "cab_time_delay": 19.8,
         "cab_type": "LMR_400",
         "channel_id": 18,
-        "station_id": 11
+        "station_id": 11,
+        "reference_channel": 12
         },
 
     "20": {
@@ -179,7 +191,8 @@
         "cab_time_delay": 19.8,
         "cab_type": "LMR_400",
         "channel_id": 20,
-        "station_id": 11
+        "station_id": 11,
+        "reference_channel": 0
       }
   },
   "stations": {
