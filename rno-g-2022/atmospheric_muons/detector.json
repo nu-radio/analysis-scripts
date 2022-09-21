@@ -192,7 +192,7 @@
         "cab_type": "LMR_400",
         "channel_id": 20,
         "station_id": 11,
-        "reference_channel": 0
+        "reference_channel": 12
       }
   },
   "stations": {
