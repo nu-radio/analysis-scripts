@@ -15,8 +15,10 @@ from NuRadioMC.simulation import simulation
 import os
 import copy
 
-deep_channels = [0, 1, 2, 3]
-shallow_channels = [4, 5, 6]
+dipole_channels = [0]
+dipole_noise_channels = [1]
+deep_channels = [1, 2, 3, 4]
+shallow_channels = [5, 6, 7]
 channel_ids = [0, 1, 2, 3, 4, 5, 6]
 thresholds_pa = {}
 thresholds_pa['1Hz'] = 38.62
@@ -25,6 +27,12 @@ thresholds_pa['1mHz'] = 50.53
 passband_low_per_channel = {}
 passband_high_per_channel = {}
 for channel_id in deep_channels:
+    passband_low_per_channel[channel_id] = {}
+    passband_high_per_channel[channel_id] = {}
+    passband_low_per_channel[channel_id] = [0, 220 * units.MHz]
+    passband_high_per_channel[channel_id] = [96 * units.MHz, 100 * units.GHz]
+
+for channel_id in dipole_channels:
     passband_low_per_channel[channel_id] = {}
     passband_high_per_channel[channel_id] = {}
     passband_low_per_channel[channel_id] = [0, 220 * units.MHz]
@@ -89,99 +97,104 @@ if __name__ == "__main__":
             channelBandPassFilter.run(evt, station_copy, det, passband=passband_low_per_channel, filter_type="cheby1", order=9, rp=.1)
             channelBandPassFilter.run(evt, station_copy, det, passband=passband_high_per_channel, filter_type="cheby1", order=4, rp=.1)
 
-            Vrms_PA = np.sqrt(np.mean((station_copy.get_channel(deep_channels[0]).get_trace()) ** 2))
-            Vrms_LPDA = np.sqrt(np.mean((station_copy.get_channel(shallow_channels[0]).get_trace()) ** 2))
-            print('Vrms_PA, Vrms_LPDA', Vrms_PA, Vrms_LPDA)
+            Vrms_deep = np.sqrt(np.mean((station_copy.get_channel(deep_channels[0]).get_trace()) ** 2))
+            Vrms_dipole = np.sqrt(np.mean((station_copy.get_channel(dipole_channels[0]).get_trace()) ** 2))
+            Vrms_shallow = np.sqrt(np.mean((station_copy.get_channel(shallow_channels[0]).get_trace()) ** 2))
+
+            print('Vrms_deep', Vrms_deep)
+            print('Vrms_dipole', Vrms_dipole)
+            print('Vrms_shallow', Vrms_shallow)
+
+            # LPDAs
+            highLowThreshold.run(evt, station_copy, det,
+                                 threshold_high=2.5 * Vrms_shallow,
+                                 threshold_low=-2.5 * Vrms_shallow,
+                                 coinc_window=50 * units.ns,
+                                 triggered_channels=shallow_channels,
+                                 number_concidences=2,  # 2/3 majority logic
+                                 trigger_name='hilo_2of3_2.5sigma')
 
             highLowThreshold.run(evt, station_copy, det,
-                                 threshold_high=3.5 * Vrms_LPDA,
-                                 threshold_low=-3.5 * Vrms_LPDA,
+                                 threshold_high=3 * Vrms_shallow,
+                                 threshold_low=-3 * Vrms_shallow,
+                                 coinc_window=50 * units.ns,
+                                 triggered_channels=shallow_channels,
+                                 number_concidences=2,  # 2/3 majority logic
+                                 trigger_name='hilo_2of3_3sigma')
+
+            highLowThreshold.run(evt, station_copy, det,
+                                 threshold_high=3.5 * Vrms_shallow,
+                                 threshold_low=-3.5 * Vrms_shallow,
                                  coinc_window=50 * units.ns,
                                  triggered_channels=shallow_channels,
                                  number_concidences=2,  # 2/3 majority logic
                                  trigger_name='hilo_2of3_3.5sigma')
-
-            print('station_copy.has_triggered()', station_copy.has_triggered())
-
-            highLowThreshold.run(evt, station_copy, det,
-                                 threshold_high=3 * Vrms_LPDA,
-                                 threshold_low=-3 * Vrms_LPDA,
-                                 coinc_window=50 * units.ns,
-                                 triggered_channels=shallow_channels,
-                                 number_concidences=2,  # 2/3 majority logic
-                                 trigger_name='hilo_2of3_3sigma',
-                                 set_not_triggered=not station_copy.has_triggered(trigger_name='hilo_2of3_3.5sigma'))
-            # only calculate the trigger at a lower threshold if the previous one triggered
-
-            highLowThreshold.run(evt, station_copy, det,
-                                 threshold_high=2.5 * Vrms_LPDA,
-                                 threshold_low=-2.5 * Vrms_LPDA,
-                                 coinc_window=50 * units.ns,
-                                 triggered_channels=shallow_channels,
-                                 number_concidences=2,  # 2/3 majority logic
-                                 trigger_name='hilo_2of3_2.5sigma',
-                                 set_not_triggered=not station_copy.has_triggered(trigger_name='hilo_2of3_3sigma'))
+            # noiseless dipole
+            simpleThreshold.run(evt, station_copy, det,
+                                threshold=1.5 * Vrms_dipole,
+                                triggered_channels=dipole_channels,
+                                trigger_name=f'dipole_1.5sigma')
 
             simpleThreshold.run(evt, station_copy, det,
-                                threshold=3 * Vrms_PA,
-                                triggered_channels=[0],
+                                threshold=2 * Vrms_dipole,
+                                triggered_channels=dipole_channels,
+                                trigger_name=f'dipole_2sigma')
+
+            simpleThreshold.run(evt, station_copy, det,
+                                threshold=2.5 * Vrms_dipole,
+                                triggered_channels=dipole_channels,
+                                trigger_name=f'dipole_2.5sigma')
+
+            # noise dipole
+            simpleThreshold.run(evt, station_copy, det,
+                                threshold=2 * Vrms_deep,
+                                triggered_channels=dipole_noise_channels,
+                                trigger_name=f'deep_simple_2sigma')
+
+            simpleThreshold.run(evt, station_copy, det,
+                                threshold=2.5 * Vrms_deep,
+                                triggered_channels=dipole_noise_channels,
+                                trigger_name=f'deep_simple_2.5sigma')
+
+            simpleThreshold.run(evt, station_copy, det,
+                                threshold=3 * Vrms_deep,
+                                triggered_channels=dipole_noise_channels,
                                 trigger_name=f'deep_simple_3sigma')
 
-            if station_copy.has_triggered(trigger_name='deep_simple_3sigma'):
-                simpleThreshold.run(evt, station_copy, det,
-                                    threshold=2.5 * Vrms_PA,
-                                    triggered_channels=[0],
-                                    trigger_name=f'deep_simple_2.5sigma')
-            else:
-                station_copy.set_triggered(False, trigger_name='deep_simple_2.5sigma')
+            # PA
+            phasedArrayTrigger.run(evt, station_copy, det,
+                                   Vrms=Vrms_deep,
+                                   threshold=thresholds_pa['1mHz'] * np.power(Vrms_deep, 2.0),
+                                   triggered_channels=deep_channels,
+                                   phasing_angles=phasing_angles_4ant,
+                                   ref_index=1.76,
+                                   trigger_name=f'PA_1mHz',  # the name of the trigger
+                                   trigger_adc=True,  # Don't have a seperate ADC for the trigger
+                                   adc_output=f'voltage',  # output in volts
+                                   trigger_filter=None,
+                                   upsampling_factor=2,
+                                   window=window_4ant,
+                                   step=step_4ant)
 
-            if station_copy.has_triggered(trigger_name='deep_simple_2.5sigma'):
-                simpleThreshold.run(evt, station_copy, det,
-                                    threshold=2 * Vrms_PA,
-                                    triggered_channels=[0],
-                                    trigger_name=f'deep_simple_2sigma')
-            else:
-                station_copy.set_triggered(False, trigger_name='deep_simple_2sigma')
-
-            if station_copy.has_triggered(trigger_name='deep_simple_2sigma'):
-                phasedArrayTrigger.run(evt, station_copy, det,
-                                       Vrms=Vrms_PA,
-                                       threshold=thresholds_pa['1Hz'] * np.power(Vrms_PA, 2.0),
-                                       triggered_channels=deep_channels,
-                                       phasing_angles=phasing_angles_4ant,
-                                       ref_index=1.76,
-                                       trigger_name=f'PA_1Hz',  # the name of the trigger
-                                       trigger_adc=True,  # Don't have a seperate ADC for the trigger
-                                       adc_output=f'voltage',  # output in volts
-                                       trigger_filter=None,
-                                       upsampling_factor=2,
-                                       window=window_4ant,
-                                       step=step_4ant)
-            else:
-                station_copy.set_triggered(False, trigger_name='PA_1Hz')
-
-            if station_copy.has_triggered(trigger_name='PA_1Hz'):
-                phasedArrayTrigger.run(evt, station_copy, det,
-                                       Vrms=Vrms_PA,
-                                       threshold=thresholds_pa['1mHz'] * np.power(Vrms_PA, 2.0),
-                                       triggered_channels=deep_channels,
-                                       phasing_angles=phasing_angles_4ant,
-                                       ref_index=1.76,
-                                       trigger_name=f'PA_1mHz',  # the name of the trigger
-                                       trigger_adc=True,  # Don't have a seperate ADC for the trigger
-                                       adc_output=f'voltage',  # output in volts
-                                       trigger_filter=None,
-                                       upsampling_factor=2,
-                                       window=window_4ant,
-                                       step=step_4ant)
-            else:
-                station_copy.set_triggered(False, trigger_name='PA_1mHz')
+            phasedArrayTrigger.run(evt, station_copy, det,
+                                   Vrms=Vrms_deep,
+                                   threshold=thresholds_pa['1Hz'] * np.power(Vrms_deep, 2.0),
+                                   triggered_channels=deep_channels,
+                                   phasing_angles=phasing_angles_4ant,
+                                   ref_index=1.76,
+                                   trigger_name=f'PA_1Hz',  # the name of the trigger
+                                   trigger_adc=True,  # Don't have a seperate ADC for the trigger
+                                   adc_output=f'voltage',  # output in volts
+                                   trigger_filter=None,
+                                   upsampling_factor=2,
+                                   window=window_4ant,
+                                   step=step_4ant)
 
             # if(station_copy.has_triggered()):
             #     print("TRIGGERED!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!", flush=True)
             # 5) set trigger attributes of original station
             for trigger in station_copy.get_triggers().values():
-                print(trigger)
+                # print(trigger)
                 station.set_trigger(trigger)
 
             # this module cuts the trace to the record length of the detector
