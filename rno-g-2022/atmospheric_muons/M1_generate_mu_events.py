@@ -5,12 +5,12 @@ import os
 import argparse
 
 parser = argparse.ArgumentParser(description='Generate events for muon simulations.')
-parser.add_argument('--n_events', type=int, default=10, help='Choose the number of events for this file')
+parser.add_argument('--n_events', type=int, default=2, help='Choose the number of events for this file')
 parser.add_argument('--Emin', type=float, default=18, help='min energy of muon energy to simulate in log(eV)')
 parser.add_argument('--Emax', type=float, default=19, help='max energy of muon energy to simulate in log(eV)')
 parser.add_argument('--cos_theta_min', type=float, default=0.5, help='cos zenith bin max (1...0.2')
 parser.add_argument('--cos_theta_max', type=float, default=0.4, help='cos zenith bin max (0.8...0')
-parser.add_argument('--part', type=int, default=0, help='number of part to simulate')
+parser.add_argument('--part', type=str, default=0, help='number of part to simulate')
 parser.add_argument('--base_dir', default="/lustre/fs22/group/radio/lpyras/muon_sim/M1_simulation_input",
                     help='"base" directory for the simulations')
 args = parser.parse_args()

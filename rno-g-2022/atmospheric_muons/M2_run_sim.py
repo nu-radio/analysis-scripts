@@ -100,7 +100,7 @@ class mySimulation(simulation.simulation):
         channelBandPassFilter.run(evt, station_copy, det, passband=passband_low, filter_type=filter_type, order=order_low, rp=0.1)
 
         Vrms_per_channel_copy = copy.deepcopy(self._Vrms_per_channel)
-        print('Vrms_per_channel_copy[station_copy.get_id()]', Vrms_per_channel_copy[station_copy.get_id()], flush=True)
+        #print('Vrms_per_channel_copy[station_copy.get_id()]', Vrms_per_channel_copy[station_copy.get_id()], flush=True)
 
         # LPDAs
         threshold_high = {}
@@ -117,8 +117,8 @@ class mySimulation(simulation.simulation):
                              number_concidences=2,  # 2/3 majority logic
                              trigger_name='hilo_2of3_2sigma')
 
-        print('shallow trace', np.max(np.abs(station_copy.get_channel(shallow_channels[0]).get_trace())), flush=True)
-        print('shallow trace threshold', threshold_high, flush=True)
+        #print('shallow trace', np.max(np.abs(station_copy.get_channel(shallow_channels[0]).get_trace())), flush=True)
+        #print('shallow trace threshold', threshold_high, flush=True)
 
         threshold_high = {}
         threshold_low = {}
@@ -149,11 +149,11 @@ class mySimulation(simulation.simulation):
                              trigger_name='hilo_2of3_3sigma')
 
         Vrms_deep = Vrms_per_channel_copy[station_copy.get_id()][deep_channels[0]]
-        print("Vrms_deep", Vrms_deep, flush=True)
+        #print("Vrms_deep", Vrms_deep, flush=True)
 
         trace = station_copy.get_channel(dipole_channels[0]).get_trace()
-        print('dipole trace', np.max(np.abs(trace)), flush=True)
-        print('dipole trace threshold', 1.5 * Vrms_deep, flush=True)
+        #print('dipole trace', np.max(np.abs(trace)), flush=True)
+        #print('dipole trace threshold', 1.5 * Vrms_deep, flush=True)
 
         # noiseless dipole
         simpleThreshold.run(evt, station_copy, det,
@@ -188,6 +188,7 @@ class mySimulation(simulation.simulation):
                             trigger_name=f'deep_simple_3sigma')
 
         # PA
+        # PA trigger didn't work in this sim, all three returned the same Aeff
         phasedArrayTrigger.run(evt, station_copy, det,
                                Vrms=Vrms_deep,
                                threshold=thresholds_pa['100Hz'] * np.power(Vrms_deep, 2.0),
@@ -255,14 +256,14 @@ if not os.path.exists(results_folder):
     os.mkdir(results_folder)
 
 parser = argparse.ArgumentParser(description='Run NuRadioMC simulation')
-parser.add_argument('--inputfilename', type=str, default='/lustre/fs22/group/radio/lpyras/muon_sim/M1_simulation_input/M1_18.75_19.00_cos_theta_0.5_0.4_n_10_part_1.hdf5',
+parser.add_argument('--inputfilename', type=str, default='/lustre/fs22/group/radio/lpyras/muon_sim/M1_simulation_input/M1_16.50_16.75_cos_theta_0.6_0.5_n_1000_part_26.hdf5',
                     help='path to NuRadioMC input event list')
 parser.add_argument('--detectordescription', type=str, default='/afs/ifh.de/group/radio/scratch/lpyras/muon_sim'
                                                                '/detector_4PA.json',
                     help='path to file containing the detector description')
 parser.add_argument('--config', type=str, default='/afs/ifh.de/group/radio/scratch/lpyras/muon_sim/config.yaml',
                     help='NuRadioMC yaml config file')
-parser.add_argument('--outputfilename', type=str, default=os.path.join(results_folder, 'M2_18.75_19.00_cos_theta_0.5_0.4_n_10_part_1.hdf5'),
+parser.add_argument('--outputfilename', type=str, default=os.path.join(results_folder, 'M2_16.50_16.75_cos_theta_0.6_0.5_n_1000_part_26.hdf5'),
                     help='hdf5 output filename')
 parser.add_argument('--outputfilename_NuRadioReco', type=str, nargs='?', default=None,
                     help='outputfilename of NuRadioReco detector sim file')
