@@ -1,0 +1,92 @@
+[
+    {
+        "SNRs": {},
+        "deposited": false,
+        "domega": 0.6283185307179596,
+        "energy": -10,
+        "energy_max": -10,
+        "energy_min": -10,
+        "n_triggered_weighted": {},
+        "thetamax": -10,
+        "thetamin": -10,
+        "veff": {
+            "LPDA_2of4_100Hz": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "LPDA_2of4_10mHz": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "PA_4channel_100Hz": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "PA_4channel_1mHz": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "PA_8channel_100Hz": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "PA_8channel_1mHz": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "all_triggers": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "combined_4channelPA": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "combined_4channelPA_highThreshold": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "combined_8channelPA": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "combined_8channelPA_highThreshold": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ]
+        }
+    }
+]
